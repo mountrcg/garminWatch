@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : service delegation of iAPS connexion 
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : service delegation of iAPS connexion
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Application;
@@ -31,10 +31,10 @@ class iAPSBGServiceDelegate extends System.ServiceDelegate {
         // call the callback if data is available
         Communications.transmit("status", null, new CommsRelay(method(:onTransmitComplete)));
         //for fenix 5
-        //phoneCallback = method(:onReceiveMessage) as Communications.PhoneMessageCallback;
-        //Communications.registerForPhoneAppMessages(phoneCallback);
+        phoneCallback = method(:onReceiveMessage) as Communications.PhoneMessageCallback;
+        Communications.registerForPhoneAppMessages(phoneCallback);
         Background.exit(null);
-    
+
     }
 
     function onPhoneAppMessage(msg) {

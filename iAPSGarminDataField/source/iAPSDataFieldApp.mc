@@ -1,9 +1,9 @@
 //**********************************************************************
 // DESCRIPTION : Application for data field for iAPS
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Application;
@@ -34,7 +34,7 @@ class iAPSDataFieldApp extends Application.AppBase {
             } else {
                   System.println("****registerForPhoneAppMessageEvent is not available****");
             }
-            
+
         } else {
             System.println("****background not available on this device****");
         }
@@ -42,7 +42,7 @@ class iAPSDataFieldApp extends Application.AppBase {
 
     function onBackgroundData(data) {
         // for Fenix5
-        //Application.Storage.setValue("status", data as Dictionary);
+        Application.Storage.setValue("status", data as Dictionary);
         WatchUi.requestUpdate();
     }
 
