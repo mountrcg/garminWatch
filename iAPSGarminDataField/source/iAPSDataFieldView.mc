@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : DataField for iAPS 
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : DataField for iAPS
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Activity;
@@ -14,10 +14,10 @@ import Toybox.WatchUi;
 
 class iAPSDataFieldView extends WatchUi.DataField {
 
-   
+
     function initialize() {
         DataField.initialize();
-       
+
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -52,10 +52,10 @@ class iAPSDataFieldView extends WatchUi.DataField {
             valueView.locY = valueView.locY - 10;
             var valueViewTime = View.findDrawableById("valueTime");
             valueViewTime.locX = valueViewTime.locX  + 10 ;
-            valueViewTime.locY = valueViewTime.locY + 20; 
-            var valueViewDelta = View.findDrawableById("valueDelta"); 
-            valueViewDelta.locX = valueViewDelta.locX - 40;   
-            valueViewDelta.locY = valueViewDelta.locY + 20;   
+            valueViewTime.locY = valueViewTime.locY + 20;
+            var valueViewDelta = View.findDrawableById("valueDelta");
+            valueViewDelta.locX = valueViewDelta.locX - 40;
+            valueViewDelta.locY = valueViewDelta.locY + 20;
 
         }
 
@@ -68,7 +68,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
     // guarantee that compute() will be called before onUpdate().
     function compute(info as Activity.Info) as Void {
         // See Activity.Info in the documentation for available information.
-        
+
     }
 
     // Display the value you computed here. This will be called
@@ -91,13 +91,13 @@ class iAPSDataFieldView extends WatchUi.DataField {
             bgString = (bg == null) ? "--" : bg as String;
             var min = getMinutes(status);
             loopColor = getLoopColor(min);
-            loopString = (min < 0 ? "(--)" : "(" + min.format("%d")) + " mn)" as String;
-            deltaString = getDeltaText(status) as String; 
+            loopString = (min < 0 ? " (--)" : " (" + min.format("%d")) + " m)" as String;
+            deltaString = getDeltaText(status) as String;
         }
         // Set the background color
         //View.findDrawableById("Background").setColor(loopColor);
         (View.findDrawableById("Background") as Text).setColor(loopColor);    //getBackgroundColor());
-      
+
         // Set the foreground color and value
         var value = View.findDrawableById("value") as Text;
         var valueTime = View.findDrawableById("valueTime") as Text;
@@ -132,10 +132,10 @@ class iAPSDataFieldView extends WatchUi.DataField {
         }
 
         if (lastLoopDate instanceof Number) {
-            
+
 
             var now = Time.now().value() as Number;
-            
+
             var min = (now - lastLoopDate) / 60;
             return min;
         } else {
@@ -154,7 +154,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
         } else {
             return Graphics.COLOR_RED as Number;
         }
-    } 
+    }
 
     function getDeltaText(status as Dictionary) as String {
         // var status = Application.Storage.getValue("status") as Dictionary;
