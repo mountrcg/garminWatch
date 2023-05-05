@@ -12,6 +12,9 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 
+var height, width, center;
+var xPosWatch;
+
 class iAPSDataFieldView extends WatchUi.DataField {
 
 
@@ -22,43 +25,12 @@ class iAPSDataFieldView extends WatchUi.DataField {
 
     // Set your layout here. Anytime the size of obscurity of
     // the draw context is changed this will be called.
-    function onLayout(dc as Dc) as Void {
-        var obscurityFlags = DataField.getObscurityFlags();
+    function onLayout(dc) {
+        View.setLayout(Rez.Layouts.MainLayout(dc));
 
-        // Top left quadrant so we'll use the top left layout
-        if (obscurityFlags == (OBSCURE_TOP | OBSCURE_LEFT)) {
-            View.setLayout(Rez.Layouts.TopLeftLayout(dc));
-
-        // Top right quadrant so we'll use the top right layout
-        } else if (obscurityFlags == (OBSCURE_TOP | OBSCURE_RIGHT)) {
-            View.setLayout(Rez.Layouts.TopRightLayout(dc));
-
-        // Bottom left quadrant so we'll use the bottom left layout
-        } else if (obscurityFlags == (OBSCURE_BOTTOM | OBSCURE_LEFT)) {
-            View.setLayout(Rez.Layouts.BottomLeftLayout(dc));
-
-        // Bottom right quadrant so we'll use the bottom right layout
-        } else if (obscurityFlags == (OBSCURE_BOTTOM | OBSCURE_RIGHT)) {
-            View.setLayout(Rez.Layouts.BottomRightLayout(dc));
-
-        // Use the generic, centered layout
-        } else {
-            View.setLayout(Rez.Layouts.MainLayout(dc));
-            var labelView = View.findDrawableById("label");
-            labelView.locX = labelView.locX - 40;
-            labelView.locY = labelView.locY - 10;
-            var valueView = View.findDrawableById("value");
-             valueView.locX = valueView.locX + 5;
-            valueView.locY = valueView.locY - 10;
-            var valueViewTime = View.findDrawableById("valueTime");
-            valueViewTime.locX = valueViewTime.locX  + 10 ;
-            valueViewTime.locY = valueViewTime.locY + 20;
-            var valueViewDelta = View.findDrawableById("valueDelta");
-            valueViewDelta.locX = valueViewDelta.locX - 40;
-            valueViewDelta.locY = valueViewDelta.locY + 20;
-
-        }
-
+        width = dc.getWidth();
+        center = width * 0.5;
+        height = dc.getHeight();
         (View.findDrawableById("label") as Text).setText(Rez.Strings.label);
     }
 
@@ -73,7 +45,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
 
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
-    function onUpdate(dc as Dc) as Void {
+    function onUpdate(dc) {
         var bgString;
         var loopColor;
         var loopString;
@@ -84,36 +56,132 @@ class iAPSDataFieldView extends WatchUi.DataField {
         if (status == null) {
             bgString = "---";
             loopColor = getLoopColor(-1);
-            loopString = "(xx)";
+            loopString = "?";
             deltaString = "??";
         } else {
             var bg = status["glucose"] as String;
             bgString = (bg == null) ? "--" : bg as String;
             var min = getMinutes(status);
             loopColor = getLoopColor(min);
-            loopString = (min < 0 ? " (--)" : " (" + min.format("%d")) + " m)" as String;
+            loopString = (min < 0 ? "0'" : min.format("%d")) + "'" as String;
             deltaString = getDeltaText(status) as String;
         }
         // Set the background color
         //View.findDrawableById("Background").setColor(loopColor);
         (View.findDrawableById("Background") as Text).setColor(loopColor);    //getBackgroundColor());
 
-        // Set the foreground color and value
+
+        // Load layout elements
         var value = View.findDrawableById("value") as Text;
         var valueTime = View.findDrawableById("valueTime") as Text;
         var valueDelta = View.findDrawableById("valueDelta") as Text;
+        var label = View.findDrawableById("label") as Text;
+        var mLabel = "CGM";
+
+        // Set the foreground color and value
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
+            label.setColor(Graphics.COLOR_WHITE);
             value.setColor(Graphics.COLOR_WHITE);
             valueTime.setColor(Graphics.COLOR_WHITE);
             valueDelta.setColor(Graphics.COLOR_WHITE);
         } else {
+            label.setColor(Graphics.COLOR_BLACK);
             value.setColor(Graphics.COLOR_BLACK);
             valueTime.setColor(Graphics.COLOR_BLACK);
             valueDelta.setColor(Graphics.COLOR_BLACK);
         }
+
+        if( bgString == null ) { bgString = "???"; }
+        if( loopString == null ) { loopString = "?"; }
+        if( deltaString == null ) { deltaString = "??"; }
+        var yPosValue, yPosLabel;
+        var xPosVerz, xPosDelta;
+        var yPosVerzDelta;
+
+        var fontVerzDelta = Graphics.FONT_LARGE;
+        var fontSGV = bgString.length() <= 5 ? Graphics.FONT_NUMBER_HOT : Graphics.FONT_LARGE;
+        var fontLabel = Graphics.FONT_MEDIUM;
+        // Verschiebung oberes/unteres Datenfeld
+        var korrektur1 = 6;
+        //System.println(dc.getTextWidthInPixels(loopString, fontVerzDelta) + 5 + dc.getTextWidthInPixels(bgString, fontSGV) + 5 + dc.getTextWidthInPixels(deltaString, fontVerzDelta));
+        //System.println(dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontSGV));
+        if( dc.getTextWidthInPixels(loopString, fontVerzDelta) + 5 + dc.getTextWidthInPixels(bgString, fontSGV) + 5 + dc.getTextWidthInPixels(deltaString, fontVerzDelta) > width
+        || dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontSGV) > height ) {
+            fontVerzDelta = Graphics.FONT_MEDIUM;
+            fontSGV = bgString.length() <= 5 ? Graphics.FONT_NUMBER_MEDIUM : Graphics.FONT_LARGE;
+            fontLabel = Graphics.FONT_SYSTEM_TINY;
+            korrektur1 = 3;
+        }
+        if ( dc.getTextWidthInPixels(loopString, fontVerzDelta) + 5 + dc.getTextWidthInPixels(bgString, fontSGV) + 5 + dc.getTextWidthInPixels(deltaString, fontVerzDelta) > width
+        || dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontSGV) > height + 3 ) {
+            fontVerzDelta = Graphics.FONT_SYSTEM_TINY;
+            fontSGV = bgString.length() <= 5 ? Graphics.FONT_SYSTEM_NUMBER_MILD : Graphics.FONT_SYSTEM_TINY;
+            fontLabel = Graphics.FONT_SYSTEM_TINY;
+            korrektur1 = 1;
+        }
+        if ( dc.getTextWidthInPixels(loopString, fontVerzDelta) + 5 + dc.getTextWidthInPixels(bgString, fontSGV) + 5 + dc.getTextWidthInPixels(deltaString, fontVerzDelta) > width
+        || dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontSGV) > height + 5 ) {
+            fontVerzDelta = Graphics.FONT_SYSTEM_TINY;
+            fontSGV = bgString.length() <= 5 ? Graphics.FONT_SYSTEM_MEDIUM : Graphics.FONT_SYSTEM_TINY;
+            fontLabel = Graphics.FONT_SYSTEM_TINY;
+            korrektur1 = -1;
+            //System.println(dc.getTextWidthInPixels(loopString, fontVerzDelta) + 5 + dc.getTextWidthInPixels(bgString, fontSGV) + 5 + dc.getTextWidthInPixels(deltaString, fontVerzDelta));
+            //System.println(dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontSGV));
+        }
+
+        value.setFont(fontSGV);
+        valueTime.setFont(fontVerzDelta);
+        valueDelta.setFont(fontVerzDelta);
+        label.setFont(fontLabel);
+
+        var obscurityFlags = DataField.getObscurityFlags();
+
+        var verschiebung = (dc.getFontHeight(fontLabel) - Toybox.Graphics.getFontAscent(fontSGV))/2;
+        if( dc.getFontHeight(fontSGV) == Toybox.Graphics.getFontAscent(fontSGV) || bgString.length() > 5 ) {
+            korrektur1 = -2;
+        }
+        if( obscurityFlags == 7 ) {
+            // Oberes Datenfeld rundes Display, hier Tausch von BG und AAPS-Daten
+            if( mLabel.equals("CGM") ){
+                yPosLabel = height - Toybox.Graphics.getFontAscent(fontSGV) - dc.getFontHeight(fontLabel)/2 + korrektur1;
+                yPosValue = height - Toybox.Graphics.getFontAscent(fontSGV)/2  + korrektur1;
+                yPosVerzDelta = yPosValue;
+            } else {
+                yPosValue = height - dc.getFontHeight(fontLabel) - Toybox.Graphics.getFontAscent(fontSGV)/2 + korrektur1;
+                yPosLabel = height - dc.getFontHeight(fontLabel)/2 - 1;
+                yPosVerzDelta = height - dc.getFontHeight(fontLabel) - dc.getFontHeight(fontVerzDelta)/2;
+            }
+        } else if( obscurityFlags == 13 ) {
+            // Unteres Datenfeld rundes Display
+            yPosLabel = dc.getFontHeight(fontLabel)/2 - 2;
+            yPosValue = dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontSGV)/2 - 3 - korrektur1;
+            yPosVerzDelta = dc.getFontHeight(fontLabel) + Toybox.Graphics.getFontAscent(fontVerzDelta)/2 - 4 + korrektur1;
+        } else {
+            var edgeKorrektur =  obscurityFlags == 0 ? 2 : 0;
+            yPosLabel = height/2 - dc.getFontHeight(fontLabel)/2 + verschiebung - edgeKorrektur + 1;
+            yPosValue = height/2 + Toybox.Graphics.getFontAscent(fontSGV)/2 + verschiebung + edgeKorrektur - 1;
+            yPosVerzDelta = yPosValue - edgeKorrektur;
+        }
+        var korrekturPos = dc.getTextWidthInPixels(loopString, fontVerzDelta) > dc.getTextWidthInPixels(deltaString, fontVerzDelta) ?
+                0 : (dc.getTextWidthInPixels(deltaString, fontVerzDelta) - dc.getTextWidthInPixels(loopString, fontVerzDelta)) / 2 - 1;
+        xPosWatch = width/2 - dc.getTextWidthInPixels(bgString, fontSGV)/2 - dc.getTextWidthInPixels(loopString, fontVerzDelta) - 24 - korrekturPos;
+        xPosVerz = width/2 - dc.getTextWidthInPixels(bgString, fontSGV)/2 - 3 - korrekturPos;
+        xPosDelta = width/2 + dc.getTextWidthInPixels(bgString, fontSGV)/2 + 2 - korrekturPos;
+
+        value.setLocation(center - korrekturPos, yPosValue);
+        valueTime.setLocation(xPosVerz, yPosVerzDelta);
+        valueDelta.setLocation(xPosDelta, yPosVerzDelta);
+        label.setLocation(center, yPosLabel);
+
+        if ( bgString.length() > 5  &&  System.getDeviceSettings().phoneConnected == false ) {
+            bgString = "Bluetooth!";
+        }
+
+        // Set text to display
         value.setText(bgString);
-        valueDelta.setText(deltaString);
         valueTime.setText(loopString);
+        valueDelta.setText(deltaString);
+
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
