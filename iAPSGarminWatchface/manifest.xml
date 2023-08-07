@@ -6,7 +6,7 @@
         to update the application attributes.
     -->
     <iq:application id="ec3420f6-027d-49b3-b45f-d81d6d3ed90a" type="watchface" name="@Strings.AppName" entry="iAPSWatchfaceApp" launcherIcon="@Drawables.LauncherIcon" minApiLevel="3.1.0">
-        <!-- 
+        <!--
             Use the following from the Visual Studio Code comand palette to edit
             the build targets:
             "Monkey C: Set Products by Version" - Lets you add all producs that meet the
@@ -15,7 +15,6 @@
         -->
         <iq:products>
             <iq:product id="epix2"/>
-            <iq:product id="epix2pro47mm"/>
             <iq:product id="fenix5"/>
             <iq:product id="fenix5plus"/>
             <iq:product id="fenix5s"/>
