@@ -34,8 +34,9 @@ class HeaderDrawable extends WatchUi.Drawable {
         var glucoseWidth = dc.getTextWidthInPixels(glucoseText, Graphics.FONT_LARGE) as Number;
         var glucoseHeight = dc.getFontHeight(Graphics.FONT_LARGE) as Number;
         var deltaHeight = dc.getFontHeight(Graphics.FONT_XTINY) as Number;
+        var deltaWidth = dc.getTextWidthInPixels(deltaText, Graphics.FONT_XTINY) as Number;
 
-        var glucoseX = width * 0.6;
+        var glucoseX = width * 0.1;
         var glucoseY = height * 0.26;
 
         dc.setColor(primaryColor, Graphics.COLOR_TRANSPARENT);
@@ -43,15 +44,15 @@ class HeaderDrawable extends WatchUi.Drawable {
 
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
 
-        dc.drawText(glucoseX  + glucoseWidth + width * 0.01,
-            glucoseY + (glucoseHeight - deltaHeight) - deltaHeight * 0.1,
+        dc.drawText(glucoseX  + glucoseWidth + width * 0.02,
+            glucoseY + (glucoseHeight - deltaHeight) * 0.5,
             Graphics.FONT_SYSTEM_XTINY,
             deltaText,
             Graphics.TEXT_JUSTIFY_LEFT);
 
 
         //fenix 5 not display
-        dc.drawBitmap(glucoseX  + glucoseWidth + width * 0.01, glucoseY + height * 0.025, getDirection(status));
+        dc.drawBitmap(glucoseX  + glucoseWidth + deltaWidth + width * 0.02, glucoseY + (glucoseHeight - deltaHeight) * 0.5, getDirection(status));
 
         var min = getMinutes(status);
         var loopColor = getLoopColor(min);
@@ -59,14 +60,14 @@ class HeaderDrawable extends WatchUi.Drawable {
         dc.setColor(loopColor, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(6);
        // dc.drawCircle(width * 0.55 + glucoseHeight * 0.3, glucoseY + glucoseHeight / 2, glucoseHeight * 0.3);
-        dc.drawCircle(width * 0.1 + glucoseHeight * 0.3, glucoseY + glucoseHeight / 2, glucoseHeight * 0.3);
+        dc.drawCircle(width * 0.78 + glucoseHeight * 0.4, glucoseY + glucoseHeight / 2 - 0.02 * height, glucoseHeight * 0.4);
 
-        var loopString = (min < 0 ? "--" : min.format("%d")) + " min";
+        var loopString = (min < 0 ? "--" : min.format("%d")) + "m";
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
         // dc.drawText(width * 0.85,
         //fenix 5 --> change 0.4 by 0.45
-        dc.drawText(width * 0.4,
-            glucoseY + (glucoseHeight - deltaHeight) - deltaHeight * 0.2,
+        dc.drawText(width * 0.75,
+            glucoseY + (glucoseHeight - deltaHeight) * 0.5,
             Graphics.FONT_XTINY,
             loopString,
             Graphics.TEXT_JUSTIFY_RIGHT);
@@ -162,9 +163,9 @@ class HeaderDrawable extends WatchUi.Drawable {
     function getLoopColor(min as Number) as Number {
         if (min < 0) {
             return Graphics.COLOR_LT_GRAY as Number;
-        } else if (min <= 5) {
+        } else if (min <= 7) {
             return Graphics.COLOR_GREEN as Number;
-        } else if (min <= 10) {
+        } else if (min <= 12) {
             return Graphics.COLOR_YELLOW as Number;
         } else {
             return Graphics.COLOR_RED as Number;
