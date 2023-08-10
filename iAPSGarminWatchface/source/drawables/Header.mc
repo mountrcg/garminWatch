@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : Header for Watch Faces for iAPS 
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : Header for Watch Faces for iAPS
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Lang;
@@ -36,21 +36,21 @@ class HeaderDrawable extends WatchUi.Drawable {
         var deltaHeight = dc.getFontHeight(Graphics.FONT_XTINY) as Number;
 
         var glucoseX = width * 0.6;
-        var glucoseY = height * 0.23;
-        
+        var glucoseY = height * 0.26;
+
         dc.setColor(primaryColor, Graphics.COLOR_TRANSPARENT);
-        dc.drawText(glucoseX , glucoseY, Graphics.FONT_LARGE, glucoseText, Graphics.TEXT_JUSTIFY_LEFT);
+        dc.drawText(glucoseX , glucoseY, Graphics.FONT_NUMBER_MILD, glucoseText, Graphics.TEXT_JUSTIFY_LEFT);
 
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
 
-        dc.drawText(glucoseX  + glucoseWidth + width * 0.01, 
-            glucoseY + (glucoseHeight - deltaHeight) - deltaHeight * 0.1, 
+        dc.drawText(glucoseX  + glucoseWidth + width * 0.01,
+            glucoseY + (glucoseHeight - deltaHeight) - deltaHeight * 0.1,
             Graphics.FONT_SYSTEM_XTINY,
-            deltaText, 
+            deltaText,
             Graphics.TEXT_JUSTIFY_LEFT);
-        
-        
-        //fenix 5 not display 
+
+
+        //fenix 5 not display
         dc.drawBitmap(glucoseX  + glucoseWidth + width * 0.01, glucoseY + height * 0.025, getDirection(status));
 
         var min = getMinutes(status);
@@ -63,39 +63,39 @@ class HeaderDrawable extends WatchUi.Drawable {
 
         var loopString = (min < 0 ? "--" : min.format("%d")) + " min";
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
-        // dc.drawText(width * 0.85, 
+        // dc.drawText(width * 0.85,
         //fenix 5 --> change 0.4 by 0.45
-        dc.drawText(width * 0.4, 
-            glucoseY + (glucoseHeight - deltaHeight) - deltaHeight * 0.2, 
-            Graphics.FONT_XTINY, 
-            loopString, 
+        dc.drawText(width * 0.4,
+            glucoseY + (glucoseHeight - deltaHeight) - deltaHeight * 0.2,
+            Graphics.FONT_XTINY,
+            loopString,
             Graphics.TEXT_JUSTIFY_RIGHT);
     }
 
     function getGlucoseText(status) as String {
-        
+
         if (status instanceof Dictionary)  {
             var bg = status["glucose"] as String;
             var bgString = (bg == null) ? "--" : bg;
             return bgString;
-          
+
         } else {
               return "--";
         }
-        
+
     }
 
     function getDeltaText(status) as String {
-        
+
        if (status instanceof Dictionary)  {
             var delta = status["delta"] as String;
             var deltaString = (delta == null) ? "--" : delta;
             return deltaString;
-           
+
         } else {
              return "--";
         }
-        
+
     }
 
     function getDirection(status) as BitmapType {
@@ -137,11 +137,11 @@ class HeaderDrawable extends WatchUi.Drawable {
         } else {
             return bitmap;
         }
-        
+
     }
 
     function getMinutes(status) as Number {
-       
+
         if (status instanceof Dictionary)  {
             var lastLoopDate = status["lastLoopDateInterval"] as Number;
             if (lastLoopDate == null) {
@@ -149,14 +149,14 @@ class HeaderDrawable extends WatchUi.Drawable {
             }
 
             var now = Time.now().value() as Number;
-            
+
             var min = (now - lastLoopDate) / 60;
 
             return min;
         } else {
             return -1;
         }
-        
+
     }
 
     function getLoopColor(min as Number) as Number {
@@ -169,5 +169,5 @@ class HeaderDrawable extends WatchUi.Drawable {
         } else {
             return Graphics.COLOR_RED as Number;
         }
-    } 
+    }
 }

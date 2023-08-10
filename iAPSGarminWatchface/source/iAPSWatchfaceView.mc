@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : Watch Faces for iAPS 
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : Watch Faces for iAPS
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Application;
@@ -98,12 +98,12 @@ class iAPSWatchfaceView extends WatchUi.WatchFace {
 
         var myStats = System.getSystemStats();
         var batlevel = myStats.battery;
-        var batString = Lang.format( "$1$%", [ batlevel.format( "%2d" ) ] );  
-       
-        var info =  ActivityMonitor.getInfo(); 
-        var steps =   info.steps; 
-        var stepsString = (steps == null || steps == 0) ? "--" : steps.toString();   
-        
+        var batString = Lang.format( "$1$%", [ batlevel.format( "%2d" ) ] );
+
+        var info =  ActivityMonitor.getInfo();
+        var steps =   info.steps;
+        var stepsString = (steps == null || steps == 0) ? "--" : steps.toString();
+
         var view = View.findDrawableById("StepsLabel") as Text;
         view.setText(batString);
     }
@@ -114,18 +114,18 @@ class iAPSWatchfaceView extends WatchUi.WatchFace {
          if (status instanceof Dictionary)  {
             var iob = status["iob"];
             if (iob instanceof Number) {
-                iobString = (iob == null) ? "--" : iob.format("%3.2f") + " U";
+                iobString = (iob == null) ? "--" : iob.format("%2.1f") + "U";
             } else {
-                iobString = (iob == null) ? "--" : iob.toDouble().format("%3.2f") + " U";
+                iobString = (iob == null) ? "--" : iob.toDouble().format("%2.1f")+ "U";
             }
-            
+
             view.setText(iobString);
             return;
-            
+
         } else {
             view.setText("--");
             return;
-        }  
+        }
     }
 
     function setCOB(status) as Void {
@@ -135,9 +135,9 @@ class iAPSWatchfaceView extends WatchUi.WatchFace {
             var cob = status["cob"];
             var cobString;
             if (cob instanceof Number) {
-              cobString = (cob == null) ? "--" : cob.format("%3d") + " g";
+              cobString = (cob == null) ? "--" : cob.format("%3d") + "g";
             } else {
-              cobString = (cob == null) ? "--" : cob.toDouble().format("%3d") + " g";
+              cobString = (cob == null) ? "--" : cob.toDouble().format("%3d") + "g";
             }
             view.setText(cobString);
             return;
@@ -145,7 +145,7 @@ class iAPSWatchfaceView extends WatchUi.WatchFace {
             view.setText("--");
             return;
         }
-        
+
     }
 
     function setEventualBG(status) as Void {
@@ -159,12 +159,12 @@ class iAPSWatchfaceView extends WatchUi.WatchFace {
             }
             var ebgString = (ebg == null) ? "--" : ebg;
             view.setText(ebgString);
-            return; 
+            return;
         } else {
             view.setText("--");
             return;
         }
-        
+
     }
 
     // Called when this View is removed from the screen. Save the
