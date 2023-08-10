@@ -52,7 +52,7 @@ class HeaderDrawable extends WatchUi.Drawable {
 
 
         //fenix 5 not display
-        dc.drawBitmap(glucoseX  + glucoseWidth + deltaWidth + width * 0.02, glucoseY + (glucoseHeight - deltaHeight) * 0.5, getDirection(status));
+        dc.drawBitmap(glucoseX  + glucoseWidth + deltaWidth + width * 0.06, glucoseY + glucoseHeight/3, getDirection(status));
 
         var min = getMinutes(status);
         var loopColor = getLoopColor(min);

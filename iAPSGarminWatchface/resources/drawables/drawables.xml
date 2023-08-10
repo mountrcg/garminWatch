@@ -9,10 +9,10 @@
     </drawable-list>
 
     <drawable-list id="Eventual">
-        <bitmap id="arrow2" filename="right-arrow.svg" x="73%" y="49%" scaleX="4%" scaleY="4%" scaleRelativeTo="screen">
+        <bitmap id="arrow2" filename="right-arrow.svg" x="68%" y="49%" scaleX="6%" scaleY="6%" scaleRelativeTo="screen">
             <palette>
                 <color>FFFFFF</color>
-            </palette> 
+            </palette>
         </bitmap>
     </drawable-list>
 
@@ -20,65 +20,65 @@
         <bitmap id="HR" filename="heart.svg" x="20%" y="65%" scaleY="7%" scaleRelativeTo="screen">
             <palette>
                 <color>FF0000</color>
-            </palette> 
+            </palette>
         </bitmap>
     </drawable-list>
     <drawable-list id="StepsIcon">
         <bitmap id="Steps" filename="steps.svg" x="45%" y="65%" scaleY="15%" scaleRelativeTo="screen">
             <palette>
                 <color>FFFFFF</color>
-            </palette> 
+            </palette>
         </bitmap>
     </drawable-list>
 
     <!-- Arrows -->
 
-    <bitmap id="Flat" filename="Flat.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="Flat" filename="Flat.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="Unknown" filename="Unknown.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="Unknown" filename="Unknown.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="FortyFiveUp" filename="FortyFiveUp.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="FortyFiveUp" filename="FortyFiveUp.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="FortyFiveDown" filename="FortyFiveDown.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="FortyFiveDown" filename="FortyFiveDown.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="SingleUp" filename="SingleUp.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="SingleUp" filename="SingleUp.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="SingleDown" filename="SingleDown.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="SingleDown" filename="SingleDown.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="DoubleUp" filename="DoubleUp.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="DoubleUp" filename="DoubleUp.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
 
-    <bitmap id="DoubleDown" filename="DoubleDown.svg" scaleX="5%" scaleY="5%" scaleRelativeTo="screen"> 
+    <bitmap id="DoubleDown" filename="DoubleDown.svg" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
         <palette>
             <color>FFFFFF</color>
-        </palette> 
+        </palette>
     </bitmap>
-    
+
 </drawables>
