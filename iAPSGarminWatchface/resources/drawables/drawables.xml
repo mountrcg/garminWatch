@@ -16,6 +16,14 @@
         </bitmap>
     </drawable-list>
 
+    <drawable-list id="ISF">
+        <bitmap id="UpDown" filename="UpDown.svg" x="53%" y="47%" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
+            <palette>
+                <color>00FF00</color>
+            </palette>
+        </bitmap>
+    </drawable-list>
+
     <drawable-list id="HeartRate">
         <bitmap id="HR" filename="heart.svg" x="20%" y="65%" scaleY="7%" scaleRelativeTo="screen">
             <palette>
