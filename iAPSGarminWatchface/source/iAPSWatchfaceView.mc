@@ -76,8 +76,9 @@ class iAPSWatchfaceView extends WatchUi.WatchFace {
 
     function setDate() as Void {
         var now = Time.now();
-        var info = Calendar.info(now, Time.FORMAT_LONG);
-        var dateStr = Lang.format("$1$ $2$ $3$", [info.day_of_week, info.month, info.day]);
+        var info = Calendar.info(now, Time.FORMAT_MEDIUM);
+        // var dateStr = info.day_of_week.substring(0,3) + " " + info.day + "." info.month + ".";
+        var dateStr = Lang.format("$1$ $2$.$3$", [info.day_of_week, info.day, info.month]);
 
         var view = View.findDrawableById("DateLabel") as TextArea;
         view.setColor(getApp().getProperty("PrimaryColor") as Number);
