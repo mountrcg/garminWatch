@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : Watch Faces for iAPS 
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : Watch Faces for iAPS
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Application;
@@ -35,11 +35,11 @@ class iAPSWatchfaceApp extends Application.AppBase {
             } else {
                 System.println("****registerForPhoneAppMessageEvent is not available****");
             }
-            
+
         } else {
             System.println("****background not available on this device****");
         }
-        
+
     }
 
     function onBackgroundData(data) {
@@ -53,9 +53,9 @@ class iAPSWatchfaceApp extends Application.AppBase {
                     } else {
                         System.println("update status");
                         Application.Storage.setValue("status", data as Dictionary);
-                        Background.registerForTemporalEvent(new Time.Duration(5 * 60));    
+                        Background.registerForTemporalEvent(new Time.Duration(5 * 60));
                     }
-            } 
+            }
          System.println("requestUpdate");
          WatchUi.requestUpdate();
     }
@@ -69,8 +69,8 @@ class iAPSWatchfaceApp extends Application.AppBase {
     }
 
     // Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new iAPSWatchfaceView() ] as Array<Views or InputDelegates>;
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+        return [ new iAPSWatchfaceView() ] as [Views];
     }
 
     // New app settings have been received so trigger a UI update
