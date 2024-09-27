@@ -16,8 +16,9 @@
         <iq:products>
             <iq:product id="edge1030plus"/>
             <iq:product id="edge830"/>
+            <iq:product id="enduro3"/>
             <iq:product id="epix2"/>
-            <iq:product id="epix2pro47mm"/>
+            <iq:product id="epix2pro51mm"/>
             <iq:product id="fenix5"/>
             <iq:product id="fenix5plus"/>
             <iq:product id="fenix5s"/>

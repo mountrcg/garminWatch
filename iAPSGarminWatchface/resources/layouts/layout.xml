@@ -4,7 +4,7 @@
 
 
     <!-- Time -->
-    <text-area id="TimeLabel" width="fill" height="20%" x="center" y="10%" font="Graphics.FONT_NUMBER_MEDIUM" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
+    <text-area id="TimeLabel" width="fill" height="20%" x="center" y="10%" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_WHITE" />
 
     <!-- Header -->
     <drawable class="HeaderDrawable" />
