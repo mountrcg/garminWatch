@@ -9,7 +9,7 @@
     </drawable-list>
 
     <drawable-list id="Eventual">
-        <bitmap id="arrow2" filename="right-arrow.svg" x="68%" y="49%" scaleX="6%" scaleY="6%" scaleRelativeTo="screen">
+        <bitmap id="arrow2" filename="right-arrow.svg" x="68%" y="48%" scaleX="6%" scaleY="6%" scaleRelativeTo="screen">
             <palette>
                 <color>FFFFFF</color>
             </palette>
@@ -17,7 +17,7 @@
     </drawable-list>
 
     <drawable-list id="ISF">
-        <bitmap id="UpDown" filename="UpDown.svg" x="53%" y="47%" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
+        <bitmap id="UpDown" filename="UpDown.svg" x="56%" y="46%" scaleX="8%" scaleY="8%" scaleRelativeTo="screen">
             <palette>
                 <color>00FF00</color>
             </palette>

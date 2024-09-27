@@ -40,6 +40,26 @@ class iAPSWatchfaceApp extends Application.AppBase {
             System.println("****background not available on this device****");
         }
 
+        // Get the current Unix time
+        var now = Time.now().value() as Number;
+
+        // Subtract x minutes (x * 60 seconds) to get the timestamp for x minutes ago
+        var lastLoopDateInterval = now - (4 * 60);
+
+        // Simulate data for testing in the simulator
+        var sampleData = {
+            "glucose" => "188",
+            "lastLoopDateInterval" => lastLoopDateInterval,
+            "delta" => "-20",
+            "iob" => "2.42",
+            "cob" => "70.2",
+            "isf" => "124",
+            "eventualBGRaw" => "166",
+            "trendRaw" => "FortyFiveDown"
+        } as Dictionary;
+
+        // Store the sample data
+        Application.Storage.setValue("status", sampleData);
     }
 
     function onBackgroundData(data) {

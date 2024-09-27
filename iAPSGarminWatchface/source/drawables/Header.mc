@@ -31,22 +31,23 @@ class HeaderDrawable extends WatchUi.Drawable {
         var status = Application.Storage.getValue("status") as Dictionary;
         var glucoseText = getGlucoseText(status);
         var deltaText = getDeltaText(status);
-        var glucoseWidth = dc.getTextWidthInPixels(glucoseText, Graphics.FONT_LARGE) as Number;
-        var glucoseHeight = dc.getFontHeight(Graphics.FONT_LARGE) as Number;
-        var deltaHeight = dc.getFontHeight(Graphics.FONT_XTINY) as Number;
-        var deltaWidth = dc.getTextWidthInPixels(deltaText, Graphics.FONT_XTINY) as Number;
+        var glucoseWidth = dc.getTextWidthInPixels(glucoseText, Graphics.FONT_NUMBER_MILD) as Number;
+        var glucoseHeight = dc.getFontHeight(Graphics.FONT_NUMBER_MILD) as Number;
+        var deltaHeight = dc.getFontHeight(Graphics.FONT_TINY) as Number;
+        var deltaWidth = dc.getTextWidthInPixels(deltaText, Graphics.FONT_TINY) as Number;
 
-        var glucoseX = width * 0.1;
-        var glucoseY = height * 0.26;
+        var glucoseX = width * 0.07;
+        var glucoseY = (height * 0.22);
 
         dc.setColor(primaryColor, Graphics.COLOR_TRANSPARENT);
+        // dc.drawText(glucoseX, glucoseY - glucoseHeight, Graphics.FONT_NUMBER_MILD, glucoseText, Graphics.TEXT_JUSTIFY_LEFT);
         dc.drawText(glucoseX , glucoseY, Graphics.FONT_NUMBER_MILD, glucoseText, Graphics.TEXT_JUSTIFY_LEFT);
 
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
 
         dc.drawText(glucoseX  + glucoseWidth + width * 0.02,
             glucoseY + (glucoseHeight - deltaHeight) * 0.5,
-            Graphics.FONT_SYSTEM_XTINY,
+            Graphics.FONT_SYSTEM_TINY,
             deltaText,
             Graphics.TEXT_JUSTIFY_LEFT);
 
@@ -60,7 +61,7 @@ class HeaderDrawable extends WatchUi.Drawable {
         dc.setColor(loopColor, Graphics.COLOR_TRANSPARENT);
         dc.setPenWidth(6);
        // dc.drawCircle(width * 0.55 + glucoseHeight * 0.3, glucoseY + glucoseHeight / 2, glucoseHeight * 0.3);
-        dc.drawCircle(width * 0.78 + glucoseHeight * 0.4, glucoseY + glucoseHeight / 2 - 0.02 * height, glucoseHeight * 0.4);
+        dc.drawCircle(width * 0.78 + glucoseHeight * 0.3, glucoseY + glucoseHeight / 2 - 0.03 * height, glucoseHeight * 0.3);
 
         var loopString = (min < 0 ? "--" : min.format("%d")) + "m";
         dc.setColor(Graphics.COLOR_LT_GRAY, Graphics.COLOR_TRANSPARENT);
@@ -68,7 +69,7 @@ class HeaderDrawable extends WatchUi.Drawable {
         //fenix 5 --> change 0.4 by 0.45
         dc.drawText(width * 0.75,
             glucoseY + (glucoseHeight - deltaHeight) * 0.5,
-            Graphics.FONT_XTINY,
+            Graphics.FONT_TINY,
             loopString,
             Graphics.TEXT_JUSTIFY_RIGHT);
     }
