@@ -1,5 +1,5 @@
 //**********************************************************************
-// DESCRIPTION : Header for Watch Faces for iAPS
+// DESCRIPTION : Header for Watch Faces for Trio
 // AUTHORS :
 //          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre

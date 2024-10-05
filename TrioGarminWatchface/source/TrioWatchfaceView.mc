@@ -1,5 +1,5 @@
 //**********************************************************************
-// DESCRIPTION : Watch Faces for iAPS
+// DESCRIPTION : Watch Faces for Trio
 // AUTHORS :
 //          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
@@ -16,7 +16,7 @@ import Toybox.ActivityMonitor;
 import Toybox.Activity;
 import Toybox.Time;
 
-class iAPSWatchfaceView extends WatchUi.WatchFace {
+class TrioWatchfaceView extends WatchUi.WatchFace {
     function initialize() {
         WatchFace.initialize();
     }

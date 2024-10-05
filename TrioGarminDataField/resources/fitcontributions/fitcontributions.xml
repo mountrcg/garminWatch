@@ -1,0 +1,27 @@
+<resources>
+       
+    <fitContributions>
+        <fitField id="0" displayInChart="true" sortOrder = "0" precision="1"
+        chartTitle="@Strings.bg_graph_label" dataLabel="@Strings.bg_label"
+        unitLabel="@Strings.bg_units" fillColor="#FF0000" />
+        <fitField id="1" displayInChart="true" sortOrder = "1" precision="0"
+        chartTitle="@Strings.basal_graph_label" dataLabel="@Strings.basal_label"
+        unitLabel="@Strings.basal_units" fillColor="#8BA7BB" />
+        <fitField id="2" displayInChart="true" sortOrder = "2" precision="2"
+        chartTitle="@Strings.iob_graph_label" dataLabel="@Strings.iob_label"
+        unitLabel="@Strings.iob_units" fillColor="#0000FF" />
+        <fitField id="3" displayInChart="true" sortOrder = "3" precision="0"
+        chartTitle="@Strings.cob_graph_label" dataLabel="@Strings.cob_label"
+        unitLabel="@Strings.cob_units" fillColor="#CD661D" />
+        <fitField id="4" displayInActivitySummary="true" sortOrder = "6" precision="0"
+    	dataLabel="@Strings.carbsconsumed_label" unitLabel="@Strings.carbsconsumed_units"  />
+    	<fitField id="5" displayInActivitySummary="true" sortOrder = "7" precision="2"
+    	dataLabel="@Strings.iobaverage_label" unitLabel="@Strings.iobaverage_units"  />
+    	<fitField id="6" displayInActivitySummary="true" sortOrder = "4" precision="1"
+    	dataLabel="@Strings.bgstart_label" unitLabel="@Strings.bgstart_units"  />
+    	<fitField id="7" displayInActivitySummary="true" sortOrder = "5" precision="1"
+    	dataLabel="@Strings.bgfinish_label" unitLabel="@Strings.bgfinish_units"  />
+    </fitContributions>
+    
+    
+</resources>    
