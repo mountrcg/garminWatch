@@ -1,10 +1,10 @@
 # Garmin Watch
 
-The repository gathers all watch faces and data fields for Garmin usable with iAPS system. 
+The repository gathers all watch faces and data fields for Garmin usable with Trio system. 
 
 # How to use 
 
-The easy solution is to download directly the watch faces and data fields for you garmin devices. The files are available here : https://github.com/Artificial-Pancreas/garminWatch/releases 
+The easy solution is to download directly the watch faces and data fields for you garmin devices. The files are available here : https://github.com/mountrcg/garminWatch/releases 
 
 To install the prg in your devices :
 - Install Garmin Express and configure with your account
@@ -17,7 +17,7 @@ Open your watch storage in Explorer or Finder, enter into folder GARMIN and then
 - Enter into watch settings and choose ConnectIQ watchface or enable/disable widget or work with that freshly installed app.
 
 
-You don't find your device/watch in release... ask to Discord in the channel : https://discord.com/channels/1020905149037813862/1096533285603123240 
+You don't find your device/watch in release... ask at [Trio Discord in the channel Garmin](https://discord.com/channels/1020905149037813862/1239983061618135040)
 
 
 # How to compile and adapt the code 
@@ -26,4 +26,4 @@ You need to install Monkey C and compile with the use of Visual Studio Code.
 All information are available here : https://developer.garmin.com/connect-iq/overview/ 
 
 
-(c) Copyright Artificial-Pancreas 2023
+(c) Copyright I guess Pierre & Ivan 2023
