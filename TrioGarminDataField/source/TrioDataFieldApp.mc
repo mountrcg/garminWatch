@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : Application for data field for iAPS
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : Application for data field for Trio
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Application;
@@ -15,7 +15,7 @@ import Toybox.System;
 import Toybox.Communications;
 
 (:background)
-class iAPSDataFieldApp extends Application.AppBase {
+class TrioDataFieldApp extends Application.AppBase {
 
     var inBackground=false;
 
@@ -35,13 +35,13 @@ class iAPSDataFieldApp extends Application.AppBase {
             } else {
                 System.println("****registerForPhoneAppMessageEvent is not available****");
             }
-            
+
         } else {
             System.println("****background not available on this device****");
         }
     }
 
-    function onBackgroundData(data) {  
+    function onBackgroundData(data) {
         if (data instanceof Number || data == null) {
                  System.println("Not a dictionary");
         } else {
@@ -52,9 +52,9 @@ class iAPSDataFieldApp extends Application.AppBase {
                     } else {
                         System.println("update status");
                         Application.Storage.setValue("status", data as Dictionary);
-                        Background.registerForTemporalEvent(new Time.Duration(5 * 60));    
+                        Background.registerForTemporalEvent(new Time.Duration(5 * 60));
                     }
-            } 
+            }
          System.println("requestUpdate");
          WatchUi.requestUpdate();
     }
@@ -68,17 +68,17 @@ class iAPSDataFieldApp extends Application.AppBase {
     }
 
     //! Return the initial view of your application here
-    function getInitialView() as Array<Views or InputDelegates>? {
-        return [ new iAPSDataFieldView() ] as Array<Views or InputDelegates>;
-    }
+        function getInitialView() as [Views] or [Views, InputDelegates] {
+        return [ new TrioDataFieldView() ] as [Views];
+        }
 
     function getServiceDelegate() {
         inBackground=true;
         System.println("start background");
-        return [new iAPSBGServiceDelegate()];
+        return [new TrioBGServiceDelegate()];
     }
 }
 
-function getApp() as iAPSDataFieldApp {
-    return Application.getApp() as iAPSDataFieldApp;
+function getApp() as TrioDataFieldApp {
+    return Application.getApp() as TrioDataFieldApp;
 }
