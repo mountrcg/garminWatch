@@ -1,0 +1,62 @@
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 9; ]
+import Toybox.Application;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 10; ]
+import Toybox.Graphics;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 11; ]
+import Toybox.Lang;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 12; ]
+import Toybox.WatchUi;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 14; ]
+class Background extends WatchUi.Drawable{
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 14; ]
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 14; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 16; ]
+    function initialize() as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceBackground_mc_16_26_22_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" 17 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceBackground_mc_16_26_22_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceBackground_mc_16_26_22_4_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "Background";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" 21 8 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceBackground_mc_16_26_22_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 24; ]
+    function draw(dc as Dc) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceBackground_mc_24_36_28_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" 26 8 ]
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = getm $.Toybox.Graphics;
+        %tmp.4 = getv %tmp.3 :COLOR_TRANSPARENT;
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :getApp;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = getv function %tmp.7 :getProperty;
+        %tmp.9 = "BackgroundColor";
+        %tmp.10 = invoke %tmp.7 %tmp.8(%tmp.9);
+        %tmp.11 = as %tmp.10 Number;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.11);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" 27 8 ]
+        %tmp.12 = lgetv %dc;
+        %tmp.13 = getv function %tmp.12 :clear;
+        invoke %tmp.12 %tmp.13();
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceBackground_mc_24_36_28_4_stop:
+    }
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc"; @line = 9; ]
+<init> {
+}

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="1" lineNum="18" parent="globals/TrioDataFieldApp" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="2" lineNum="13" parent="globals/CommsRelay" pc="268435469" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="3" lineNum="17" parent="globals/TrioBGServiceDelegate" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="27" parent="globals/TrioDataFieldApp" pc="268435493" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="29" parent="globals/TrioDataFieldApp" pc="268435495" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="31" parent="globals/TrioDataFieldApp" pc="268435513" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="32" parent="globals/TrioDataFieldApp" pc="268435551" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="33" parent="globals/TrioDataFieldApp" pc="268435566" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="34" parent="globals/TrioDataFieldApp" pc="268435577" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="36" parent="globals/TrioDataFieldApp" pc="268435596" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="4" lineNum="40" parent="globals/TrioDataFieldApp" pc="268435615" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="5" lineNum="75" parent="globals/TrioDataFieldApp" pc="268435634" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="5" lineNum="76" parent="globals/TrioDataFieldApp" pc="268435636" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="5" lineNum="77" parent="globals/TrioDataFieldApp" pc="268435644" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="5" lineNum="78" parent="globals/TrioDataFieldApp" pc="268435662" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="6" lineNum="71" parent="globals/TrioDataFieldApp" pc="268435692" symbol="getInitialView"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="6" lineNum="72" parent="globals/TrioDataFieldApp" pc="268435694" symbol="getInitialView"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="7" lineNum="22" parent="globals/TrioDataFieldApp" pc="268435724" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="7" lineNum="23" parent="globals/TrioDataFieldApp" pc="268435726" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="44" parent="globals/TrioDataFieldApp" pc="268435739" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="45" parent="globals/TrioDataFieldApp" pc="268435741" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="46" parent="globals/TrioDataFieldApp" pc="268435762" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="48" parent="globals/TrioDataFieldApp" pc="268435783" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="49" parent="globals/TrioDataFieldApp" pc="268435801" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="50" parent="globals/TrioDataFieldApp" pc="268435816" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="53" parent="globals/TrioDataFieldApp" pc="268435837" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="54" parent="globals/TrioDataFieldApp" pc="268435855" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="55" parent="globals/TrioDataFieldApp" pc="268435880" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="58" parent="globals/TrioDataFieldApp" pc="268435918" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="8" lineNum="59" parent="globals/TrioDataFieldApp" pc="268435936" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="9" lineNum="63" parent="globals/TrioDataFieldApp" pc="268435948" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="9" lineNum="64" parent="globals/TrioDataFieldApp" pc="268435950" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="9" lineNum="65" parent="globals/TrioDataFieldApp" pc="268435959" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="9" lineNum="66" parent="globals/TrioDataFieldApp" pc="268435977" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="10" lineNum="25" parent="globals/CommsRelay" pc="268435989" symbol="onError"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="10" lineNum="26" parent="globals/CommsRelay" pc="268435991" symbol="onError"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="11" lineNum="21" parent="globals/CommsRelay" pc="268436007" symbol="onComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="11" lineNum="22" parent="globals/CommsRelay" pc="268436009" symbol="onComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="12" lineNum="16" parent="globals/CommsRelay" pc="268436025" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="12" lineNum="17" parent="globals/CommsRelay" pc="268436027" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/CommsRealy.mc" id="12" lineNum="18" parent="globals/CommsRelay" pc="268436039" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="13" lineNum="32" parent="globals/TrioBGServiceDelegate" pc="268436049" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="13" lineNum="33" parent="globals/TrioBGServiceDelegate" pc="268436051" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="13" lineNum="34" parent="globals/TrioBGServiceDelegate" pc="268436069" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="13" lineNum="35" parent="globals/TrioBGServiceDelegate" pc="268436084" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="14" lineNum="44" parent="globals/TrioBGServiceDelegate" pc="268436104" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="14" lineNum="45" parent="globals/TrioBGServiceDelegate" pc="268436106" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="14" lineNum="46" parent="globals/TrioBGServiceDelegate" pc="268436124" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="14" lineNum="47" parent="globals/TrioBGServiceDelegate" pc="268436139" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="14" lineNum="48" parent="globals/TrioBGServiceDelegate" pc="268436168" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="15" lineNum="38" parent="globals/TrioBGServiceDelegate" pc="268436183" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="15" lineNum="39" parent="globals/TrioBGServiceDelegate" pc="268436185" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="15" lineNum="40" parent="globals/TrioBGServiceDelegate" pc="268436203" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="15" lineNum="41" parent="globals/TrioBGServiceDelegate" pc="268436257" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="16" lineNum="20" parent="globals/TrioBGServiceDelegate" pc="268436272" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="16" lineNum="21" parent="globals/TrioBGServiceDelegate" pc="268436274" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="16" lineNum="24" parent="globals/TrioBGServiceDelegate" pc="268436286" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="16" lineNum="27" parent="globals/TrioBGServiceDelegate" pc="268436302" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="16" lineNum="28" parent="globals/TrioBGServiceDelegate" pc="268436328" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="17" lineNum="51" parent="globals/TrioBGServiceDelegate" pc="268436347" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="17" lineNum="52" parent="globals/TrioBGServiceDelegate" pc="268436349" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="17" lineNum="53" parent="globals/TrioBGServiceDelegate" pc="268436354" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="17" lineNum="55" parent="globals/TrioBGServiceDelegate" pc="268436375" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioBGServiceDelegate.mc" id="17" lineNum="57" parent="globals/TrioBGServiceDelegate" pc="268436393" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="18" lineNum="82" parent="globals" pc="268436409" symbol="getApp"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldApp.mc" id="18" lineNum="83" parent="globals" pc="268436419" symbol="getApp"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="19" lineNum="13" parent="globals/Background" pc="268436430" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="20" lineNum="7" parent="globals/Rez" pc="268436442" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="21" lineNum="15" parent="globals/TrioDataFieldView" pc="268436462" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="22" lineNum="25" parent="globals/Background" pc="268436474" symbol="setColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="22" lineNum="26" parent="globals/Background" pc="268436476" symbol="setColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="23" lineNum="17" parent="globals/Background" pc="268436486" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="23" lineNum="18" parent="globals/Background" pc="268436489" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="23" lineNum="21" parent="globals/Background" pc="268436507" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="23" lineNum="22" parent="globals/Background" pc="268436523" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="24" lineNum="29" parent="globals/Background" pc="268436536" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="24" lineNum="30" parent="globals/Background" pc="268436538" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldBackground.mc" id="24" lineNum="31" parent="globals/Background" pc="268436558" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="224" parent="globals/TrioDataFieldView" pc="268436567" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="225" parent="globals/TrioDataFieldView" pc="268436570" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="226" parent="globals/TrioDataFieldView" pc="268436603" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="227" parent="globals/TrioDataFieldView" pc="268436618" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="228" parent="globals/TrioDataFieldView" pc="268436628" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="229" parent="globals/TrioDataFieldView" pc="268436634" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="232" parent="globals/TrioDataFieldView" pc="268436637" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="233" parent="globals/TrioDataFieldView" pc="268436639" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="236" parent="globals/TrioDataFieldView" pc="268436658" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="239" parent="globals/TrioDataFieldView" pc="268436677" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="242" parent="globals/TrioDataFieldView" pc="268436696" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="245" parent="globals/TrioDataFieldView" pc="268436715" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="248" parent="globals/TrioDataFieldView" pc="268436734" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="249" parent="globals/TrioDataFieldView" pc="268436753" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="252" parent="globals/TrioDataFieldView" pc="268436772" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="253" parent="globals/TrioDataFieldView" pc="268436791" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="256" parent="globals/TrioDataFieldView" pc="268436810" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="234" parent="globals/TrioDataFieldView" pc="268436813" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="235" parent="globals/TrioDataFieldView" pc="268436846" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="237" parent="globals/TrioDataFieldView" pc="268436849" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="238" parent="globals/TrioDataFieldView" pc="268436882" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="240" parent="globals/TrioDataFieldView" pc="268436885" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="241" parent="globals/TrioDataFieldView" pc="268436918" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="243" parent="globals/TrioDataFieldView" pc="268436921" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="244" parent="globals/TrioDataFieldView" pc="268436954" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="246" parent="globals/TrioDataFieldView" pc="268436957" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="247" parent="globals/TrioDataFieldView" pc="268436990" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="250" parent="globals/TrioDataFieldView" pc="268436993" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="251" parent="globals/TrioDataFieldView" pc="268437026" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="254" parent="globals/TrioDataFieldView" pc="268437029" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="255" parent="globals/TrioDataFieldView" pc="268437062" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="259" parent="globals/TrioDataFieldView" pc="268437066" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="26" lineNum="261" parent="globals/TrioDataFieldView" pc="268437069" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="23" parent="globals/TrioDataFieldView" pc="268437072" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="24" parent="globals/TrioDataFieldView" pc="268437075" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="27" parent="globals/TrioDataFieldView" pc="268437088" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="28" parent="globals/TrioDataFieldView" pc="268437096" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="31" parent="globals/TrioDataFieldView" pc="268437141" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="32" parent="globals/TrioDataFieldView" pc="268437149" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="35" parent="globals/TrioDataFieldView" pc="268437194" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="36" parent="globals/TrioDataFieldView" pc="268437202" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="39" parent="globals/TrioDataFieldView" pc="268437247" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="40" parent="globals/TrioDataFieldView" pc="268437255" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="44" parent="globals/TrioDataFieldView" pc="268437300" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="45" parent="globals/TrioDataFieldView" pc="268437342" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="46" parent="globals/TrioDataFieldView" pc="268437366" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="47" parent="globals/TrioDataFieldView" pc="268437383" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="48" parent="globals/TrioDataFieldView" pc="268437400" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="49" parent="globals/TrioDataFieldView" pc="268437424" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="50" parent="globals/TrioDataFieldView" pc="268437441" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="51" parent="globals/TrioDataFieldView" pc="268437458" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="52" parent="globals/TrioDataFieldView" pc="268437482" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="53" parent="globals/TrioDataFieldView" pc="268437499" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="54" parent="globals/TrioDataFieldView" pc="268437516" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="55" parent="globals/TrioDataFieldView" pc="268437540" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="56" parent="globals/TrioDataFieldView" pc="268437557" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="57" parent="globals/TrioDataFieldView" pc="268437574" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="58" parent="globals/TrioDataFieldView" pc="268437598" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="59" parent="globals/TrioDataFieldView" pc="268437615" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="27" lineNum="62" parent="globals/TrioDataFieldView" pc="268437632" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="182" parent="globals/TrioDataFieldView" pc="268437683" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="183" parent="globals/TrioDataFieldView" pc="268437686" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="184" parent="globals/TrioDataFieldView" pc="268437719" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="185" parent="globals/TrioDataFieldView" pc="268437734" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="186" parent="globals/TrioDataFieldView" pc="268437744" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="187" parent="globals/TrioDataFieldView" pc="268437750" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="190" parent="globals/TrioDataFieldView" pc="268437753" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="191" parent="globals/TrioDataFieldView" pc="268437755" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="194" parent="globals/TrioDataFieldView" pc="268437774" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="197" parent="globals/TrioDataFieldView" pc="268437793" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="200" parent="globals/TrioDataFieldView" pc="268437812" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="203" parent="globals/TrioDataFieldView" pc="268437831" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="206" parent="globals/TrioDataFieldView" pc="268437850" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="207" parent="globals/TrioDataFieldView" pc="268437869" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="210" parent="globals/TrioDataFieldView" pc="268437888" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="211" parent="globals/TrioDataFieldView" pc="268437907" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="214" parent="globals/TrioDataFieldView" pc="268437926" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="192" parent="globals/TrioDataFieldView" pc="268437929" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="193" parent="globals/TrioDataFieldView" pc="268437962" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="195" parent="globals/TrioDataFieldView" pc="268437965" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="196" parent="globals/TrioDataFieldView" pc="268437998" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="198" parent="globals/TrioDataFieldView" pc="268438001" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="199" parent="globals/TrioDataFieldView" pc="268438034" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="201" parent="globals/TrioDataFieldView" pc="268438037" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="202" parent="globals/TrioDataFieldView" pc="268438070" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="204" parent="globals/TrioDataFieldView" pc="268438073" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="205" parent="globals/TrioDataFieldView" pc="268438106" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="208" parent="globals/TrioDataFieldView" pc="268438109" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="209" parent="globals/TrioDataFieldView" pc="268438142" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="212" parent="globals/TrioDataFieldView" pc="268438145" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="213" parent="globals/TrioDataFieldView" pc="268438178" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="217" parent="globals/TrioDataFieldView" pc="268438182" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="28" lineNum="219" parent="globals/TrioDataFieldView" pc="268438185" symbol="getDirectionBlack"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="29" lineNum="17" parent="globals/TrioDataFieldView" pc="268438188" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="29" lineNum="18" parent="globals/TrioDataFieldView" pc="268438190" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="158" parent="globals/TrioDataFieldView" pc="268438203" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="159" parent="globals/TrioDataFieldView" pc="268438205" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="160" parent="globals/TrioDataFieldView" pc="268438212" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="161" parent="globals/TrioDataFieldView" pc="268438219" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="162" parent="globals/TrioDataFieldView" pc="268438227" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="163" parent="globals/TrioDataFieldView" pc="268438234" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="164" parent="globals/TrioDataFieldView" pc="268438242" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="30" lineNum="166" parent="globals/TrioDataFieldView" pc="268438248" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="74" parent="globals/TrioDataFieldView" pc="268438254" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="80" parent="globals/TrioDataFieldView" pc="268438257" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="82" parent="globals/TrioDataFieldView" pc="268438282" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="83" parent="globals/TrioDataFieldView" pc="268438288" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="84" parent="globals/TrioDataFieldView" pc="268438295" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="85" parent="globals/TrioDataFieldView" pc="268438307" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="86" parent="globals/TrioDataFieldView" pc="268438314" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="88" parent="globals/TrioDataFieldView" pc="268438324" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="89" parent="globals/TrioDataFieldView" pc="268438334" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="90" parent="globals/TrioDataFieldView" pc="268438352" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="91" parent="globals/TrioDataFieldView" pc="268438364" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="92" parent="globals/TrioDataFieldView" pc="268438376" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="93" parent="globals/TrioDataFieldView" pc="268438419" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="97" parent="globals/TrioDataFieldView" pc="268438431" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="100" parent="globals/TrioDataFieldView" pc="268438464" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="101" parent="globals/TrioDataFieldView" pc="268438488" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="102" parent="globals/TrioDataFieldView" pc="268438512" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="104" parent="globals/TrioDataFieldView" pc="268438536" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="105" parent="globals/TrioDataFieldView" pc="268438547" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="106" parent="globals/TrioDataFieldView" pc="268438562" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="107" parent="globals/TrioDataFieldView" pc="268438577" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="110" parent="globals/TrioDataFieldView" pc="268438595" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="111" parent="globals/TrioDataFieldView" pc="268438606" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="112" parent="globals/TrioDataFieldView" pc="268438617" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="117" parent="globals/TrioDataFieldView" pc="268438628" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="118" parent="globals/TrioDataFieldView" pc="268438640" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="119" parent="globals/TrioDataFieldView" pc="268438652" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="121" parent="globals/TrioDataFieldView" pc="268438664" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="122" parent="globals/TrioDataFieldView" pc="268438688" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="123" parent="globals/TrioDataFieldView" pc="268438699" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="126" parent="globals/TrioDataFieldView" pc="268438722" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="31" lineNum="131" parent="globals/TrioDataFieldView" pc="268438742" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="32" lineNum="170" parent="globals/TrioDataFieldView" pc="268438763" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="32" lineNum="172" parent="globals/TrioDataFieldView" pc="268438766" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="32" lineNum="173" parent="globals/TrioDataFieldView" pc="268438772" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="32" lineNum="175" parent="globals/TrioDataFieldView" pc="268438778" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="32" lineNum="177" parent="globals/TrioDataFieldView" pc="268438788" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="32" lineNum="179" parent="globals/TrioDataFieldView" pc="268438806" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="134" parent="globals/TrioDataFieldView" pc="268438809" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="137" parent="globals/TrioDataFieldView" pc="268438812" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="138" parent="globals/TrioDataFieldView" pc="268438818" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="140" parent="globals/TrioDataFieldView" pc="268438821" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="142" parent="globals/TrioDataFieldView" pc="268438831" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="143" parent="globals/TrioDataFieldView" pc="268438837" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="146" parent="globals/TrioDataFieldView" pc="268438840" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="149" parent="globals/TrioDataFieldView" pc="268438855" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="151" parent="globals/TrioDataFieldView" pc="268438874" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="152" parent="globals/TrioDataFieldView" pc="268438884" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" id="33" lineNum="154" parent="globals/TrioDataFieldView" pc="268438887" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="34" lineNum="87" parent="globals/Rez/Layouts" pc="268438890" symbol="BottomRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="34" lineNum="88" parent="globals/Rez/Layouts" pc="268438901" symbol="BottomRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="34" lineNum="90" parent="globals/Rez/Layouts" pc="268438925" symbol="BottomRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="34" lineNum="92" parent="globals/Rez/Layouts" pc="268439006" symbol="BottomRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="34" lineNum="94" parent="globals/Rez/Layouts" pc="268439089" symbol="BottomRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="34" lineNum="96" parent="globals/Rez/Layouts" pc="268439171" symbol="BottomRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="35" lineNum="63" parent="globals/Rez/Layouts" pc="268439196" symbol="TopRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="35" lineNum="64" parent="globals/Rez/Layouts" pc="268439207" symbol="TopRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="35" lineNum="66" parent="globals/Rez/Layouts" pc="268439231" symbol="TopRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="35" lineNum="68" parent="globals/Rez/Layouts" pc="268439312" symbol="TopRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="35" lineNum="70" parent="globals/Rez/Layouts" pc="268439395" symbol="TopRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="35" lineNum="72" parent="globals/Rez/Layouts" pc="268439477" symbol="TopRightLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="36" lineNum="75" parent="globals/Rez/Layouts" pc="268439502" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="36" lineNum="76" parent="globals/Rez/Layouts" pc="268439513" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="36" lineNum="78" parent="globals/Rez/Layouts" pc="268439537" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="36" lineNum="80" parent="globals/Rez/Layouts" pc="268439618" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="36" lineNum="82" parent="globals/Rez/Layouts" pc="268439700" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="36" lineNum="84" parent="globals/Rez/Layouts" pc="268439782" symbol="BottomLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="37" lineNum="51" parent="globals/Rez/Layouts" pc="268439807" symbol="TopLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="37" lineNum="52" parent="globals/Rez/Layouts" pc="268439818" symbol="TopLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="37" lineNum="54" parent="globals/Rez/Layouts" pc="268439842" symbol="TopLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="37" lineNum="56" parent="globals/Rez/Layouts" pc="268439922" symbol="TopLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="37" lineNum="58" parent="globals/Rez/Layouts" pc="268440004" symbol="TopLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="37" lineNum="60" parent="globals/Rez/Layouts" pc="268440085" symbol="TopLeftLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="30" parent="globals/Rez/Layouts" pc="268440110" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="31" parent="globals/Rez/Layouts" pc="268440121" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="33" parent="globals/Rez/Layouts" pc="268440130" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="35" parent="globals/Rez/Layouts" pc="268440139" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="37" parent="globals/Rez/Layouts" pc="268440163" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="39" parent="globals/Rez/Layouts" pc="268440269" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="41" parent="globals/Rez/Layouts" pc="268440376" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="43" parent="globals/Rez/Layouts" pc="268440483" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="45" parent="globals/Rez/Layouts" pc="268440590" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="46" parent="globals/Rez/Layouts" pc="268440677" symbol="MainLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/gen/006-B3943-00/source/Rez.mcgen" id="38" lineNum="48" parent="globals/Rez/Layouts" pc="268440717" symbol="MainLayout"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry field="true" id="32" symbol="SingleUpB"/>
+        <entry field="true" id="34" symbol="UnknownB"/>
+        <entry field="true" id="35" symbol="arrow"/>
+        <entry id="8391592" method="true" symbol="registerForPhoneAppMessageEvent"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="38" method="true" symbol="MainLayout"/>
+        <entry field="true" id="30" symbol="SingleDownB"/>
+        <entry field="true" id="22" symbol="Flat"/>
+        <entry field="true" id="11" symbol="mCallback"/>
+        <entry field="true" id="10" symbol="inBackground"/>
+        <entry id="6" object="true" symbol="CommsRelay"/>
+        <entry field="true" id="20" symbol="DoubleUp"/>
+        <entry field="true" id="31" symbol="SingleUp"/>
+        <entry id="8" object="true" symbol="TrioDataFieldApp"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="8390063" method="true" symbol="onTransmitComplete"/>
+        <entry field="true" id="41" symbol="AppName"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8389345" symbol="rezId"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8390147" object="true" symbol="ServiceDelegate"/>
+        <entry field="true" id="25" symbol="FortyFiveDownB"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="8389138" symbol="label"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8390148" method="true" symbol="onTemporalEvent"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="19" symbol="DoubleDownB"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8390169" method="true" symbol="getServiceDelegate"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="26" symbol="FortyFiveUp"/>
+        <entry id="7" object="true" symbol="TrioBGServiceDelegate"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="8389137" method="true" symbol="compute"/>
+        <entry id="8389119" method="true" symbol="getDirection"/>
+        <entry id="8389131" method="true" symbol="setColor"/>
+        <entry id="16" method="true" symbol="getLoopColor"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8390170" method="true" symbol="onBackgroundData"/>
+        <entry id="8388828" method="true" symbol="onError"/>
+        <entry id="39" method="true" symbol="TopLeftLayout"/>
+        <entry field="true" id="33" symbol="Unknown"/>
+        <entry id="17" method="true" symbol="getMinutes"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="9" object="true" symbol="TrioDataFieldView"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="36" method="true" symbol="BottomLeftLayout"/>
+        <entry field="true" id="29" symbol="SingleDown"/>
+        <entry id="37" method="true" symbol="BottomRightLayout"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="8389130" symbol="mColor"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="28" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="15" method="true" symbol="getDirectionBlack"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="14" method="true" symbol="getDeltaText"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8391507" method="true" symbol="onPhoneAppMessage"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="18" symbol="DoubleDown"/>
+        <entry field="true" id="21" symbol="DoubleUpB"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry field="true" id="23" symbol="FlatB"/>
+        <entry id="8388829" method="true" symbol="onComplete"/>
+        <entry id="13" module="true" symbol="Layouts"/>
+        <entry field="true" id="27" symbol="FortyFiveUpB"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="12" method="true" symbol="onReceiveMessage"/>
+        <entry id="40" method="true" symbol="TopRightLayout"/>
+        <entry field="true" id="24" symbol="FortyFiveDown"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435633" name="state" stackId="1" startPc="268435493"/>
+        <entry arg="true" endPc="268435947" name="data" stackId="1" startPc="268435739"/>
+        <entry arg="true" endPc="268435988" name="state" stackId="1" startPc="268435948"/>
+        <entry arg="true" endPc="268436048" name="callback" stackId="1" startPc="268436025"/>
+        <entry arg="true" endPc="268436103" name="msg" stackId="1" startPc="268436049"/>
+        <entry arg="true" endPc="268436182" name="msg" stackId="1" startPc="268436104"/>
+        <entry arg="true" endPc="268436408" name="isSuccess" stackId="1" startPc="268436347"/>
+        <entry arg="true" endPc="268436485" name="color" stackId="1" startPc="268436474"/>
+        <entry endPc="268436534" name="dictionary" stackId="1" startPc="268436489"/>
+        <entry arg="true" endPc="268436566" name="dc" stackId="1" startPc="268436536"/>
+        <entry arg="true" endPc="268437071" name="status" stackId="1" startPc="268436567"/>
+        <entry arg="true" endPc="268437682" name="dc" stackId="1" startPc="268437072"/>
+        <entry endPc="268437681" name="obscurityFlags" stackId="2" startPc="268437075"/>
+        <entry endPc="268437631" name="labelView" stackId="3" startPc="268437300"/>
+        <entry endPc="268437631" name="valueView" stackId="4" startPc="268437300"/>
+        <entry endPc="268437631" name="valueViewTime" stackId="5" startPc="268437300"/>
+        <entry endPc="268437631" name="valueViewDelta" stackId="6" startPc="268437300"/>
+        <entry endPc="268437631" name="valueViewArrow" stackId="7" startPc="268437300"/>
+        <entry arg="true" endPc="268438187" name="status" stackId="1" startPc="268437683"/>
+        <entry arg="true" endPc="268438253" name="min" stackId="1" startPc="268438203"/>
+        <entry arg="true" endPc="268438762" name="dc" stackId="1" startPc="268438254"/>
+        <entry endPc="268438761" name="bgString" stackId="2" startPc="268438257"/>
+        <entry endPc="268438761" name="loopColor" stackId="3" startPc="268438257"/>
+        <entry endPc="268438761" name="loopString" stackId="4" startPc="268438257"/>
+        <entry endPc="268438761" name="deltaString" stackId="5" startPc="268438257"/>
+        <entry endPc="268438761" name="status" stackId="6" startPc="268438257"/>
+        <entry endPc="268438430" name="bg" stackId="7" startPc="268438324"/>
+        <entry endPc="268438430" name="min" stackId="8" startPc="268438324"/>
+        <entry endPc="268438761" name="value" stackId="9" startPc="268438257"/>
+        <entry endPc="268438761" name="valueTime" stackId="10" startPc="268438257"/>
+        <entry endPc="268438761" name="valueDelta" stackId="11" startPc="268438257"/>
+        <entry endPc="268438761" name="arrowView" stackId="12" startPc="268438257"/>
+        <entry arg="true" endPc="268438808" name="status" stackId="1" startPc="268438763"/>
+        <entry arg="true" endPc="268438889" name="status" stackId="1" startPc="268438809"/>
+        <entry arg="true" endPc="268439195" name="dc" stackId="1" startPc="268438890"/>
+        <entry arg="true" endPc="268439501" name="dc" stackId="1" startPc="268439196"/>
+        <entry arg="true" endPc="268439806" name="dc" stackId="1" startPc="268439502"/>
+        <entry arg="true" endPc="268440109" name="dc" stackId="1" startPc="268439807"/>
+        <entry arg="true" endPc="268440751" name="dc" stackId="1" startPc="268440110"/>
+    </localVars>
+    <deviceInfo deviceVersion="fcbb2d71ec35a1d3f34d13093a6835d1c69522b8" partNumber="006-B3943-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onPhoneAppMessage"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FlatB"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FortyFiveDown"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="arrow"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="onStop"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="onComplete"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onTemporalEvent"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoubleDownB"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="inBackground"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoubleUp"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="mCallback"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="onError"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoubleDown"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SingleUpB"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SingleDown"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Unknown"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onReceiveMessage"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FortyFiveDownB"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FortyFiveUpB"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FortyFiveUp"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="onStart"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="UnknownB"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SingleDownB"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SingleUp"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Flat"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="getInitialView"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onTransmitComplete"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoubleUpB"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="onBackgroundData"/>
+        <annotationEntry annotation="background" class="TrioDataFieldApp" module="globals" symbol="getServiceDelegate"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="label"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/TrioDataFieldApp" offset="152" parentId="globals" symbolId="TrioDataFieldApp" type="class"/>
+        <dataEntry label="globals/CommsRelay" offset="250" parentId="globals" symbolId="CommsRelay" type="class"/>
+        <dataEntry label="globals/TrioBGServiceDelegate" offset="321" parentId="globals" symbolId="TrioBGServiceDelegate" type="class"/>
+        <dataEntry label="globals/Background" offset="895" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="966" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/TrioDataFieldView" offset="1019" parentId="globals" symbolId="TrioDataFieldView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1135" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1323" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1394" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="TrioDataFieldApp" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435480" name="&lt;init&gt;" parent="CommsRelay" startPc="268435469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="TrioBGServiceDelegate" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435633" name="onStart" parent="TrioDataFieldApp" startPc="268435493">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435691" name="getServiceDelegate" parent="TrioDataFieldApp" startPc="268435634">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435723" name="getInitialView" parent="TrioDataFieldApp" startPc="268435692">
+            <documentation>
+                <![CDATA[<div class="description"> Return the initial view of your application here<br/></div>]]>
+            </documentation>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435738" name="initialize" parent="TrioDataFieldApp" startPc="268435724">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435947" name="onBackgroundData" parent="TrioDataFieldApp" startPc="268435739">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435988" name="onStop" parent="TrioDataFieldApp" startPc="268435948">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436006" name="onError" parent="CommsRelay" startPc="268435989">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436024" name="onComplete" parent="CommsRelay" startPc="268436007">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436048" name="initialize" parent="CommsRelay" startPc="268436025">
+            <param id="callback"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436103" name="onReceiveMessage" parent="TrioBGServiceDelegate" startPc="268436049">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436182" name="onPhoneAppMessage" parent="TrioBGServiceDelegate" startPc="268436104">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436271" name="onTemporalEvent" parent="TrioBGServiceDelegate" startPc="268436183">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436346" name="initialize" parent="TrioBGServiceDelegate" startPc="268436272">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436408" name="onTransmitComplete" parent="TrioBGServiceDelegate" startPc="268436347">
+            <param id="isSuccess"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436429" name="getApp" startPc="268436409">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436441" name="&lt;init&gt;" parent="Background" startPc="268436430">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436461" name="&lt;init&gt;" parent="Rez" startPc="268436442">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436473" name="&lt;init&gt;" parent="TrioDataFieldView" startPc="268436462">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436485" name="setColor" parent="Background" startPc="268436474">
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436535" name="initialize" parent="Background" startPc="268436486">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436566" name="draw" parent="Background" startPc="268436536">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="compute" parent="TrioDataFieldView">
+            <param id="info"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437071" name="getDirection" parent="TrioDataFieldView" startPc="268436567">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437682" name="onLayout" parent="TrioDataFieldView" startPc="268437072">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438187" name="getDirectionBlack" parent="TrioDataFieldView" startPc="268437683">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438202" name="initialize" parent="TrioDataFieldView" startPc="268438188">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438253" name="getLoopColor" parent="TrioDataFieldView" startPc="268438203">
+            <param id="min"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438762" name="onUpdate" parent="TrioDataFieldView" startPc="268438254">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438808" name="getDeltaText" parent="TrioDataFieldView" startPc="268438763">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438889" name="getMinutes" parent="TrioDataFieldView" startPc="268438809">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439195" name="BottomRightLayout" parent="Layouts" startPc="268438890">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439501" name="TopRightLayout" parent="Layouts" startPc="268439196">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439806" name="BottomLeftLayout" parent="Layouts" startPc="268439502">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440109" name="TopLeftLayout" parent="Layouts" startPc="268439807">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440751" name="MainLayout" parent="Layouts" startPc="268440110">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

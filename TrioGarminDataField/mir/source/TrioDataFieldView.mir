@@ -1,0 +1,1155 @@
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 9; ]
+import Toybox.Activity;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 10; ]
+import Toybox.Graphics;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 11; ]
+import Toybox.Lang;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 12; ]
+import Toybox.WatchUi;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 15; ]
+class TrioDataFieldView extends WatchUi.DataField{
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 15; ]
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 15; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 17; ]
+    function initialize() as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_17_26_19_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 18 8 ]
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_17_26_19_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 23; ]
+    function onLayout(dc as Dc) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_23_40_63_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 24 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_23_40_63_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_23_40_63_4_stop" ]
+        %obscurityFlags.1 = local;
+        %tmp.2 = getv ? :DataField;
+        %tmp.3 = getv function %tmp.2 :getObscurityFlags;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %obscurityFlags.1 %tmp.4;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 27 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_8_60_8_if_stmt:
+        %tmp.6 = lgetv %obscurityFlags.1;
+        %tmp.8 = getv ? :OBSCURE_TOP;
+        %tmp.10 = getv ? :OBSCURE_LEFT;
+        %tmp.11 = bitor %tmp.8 %tmp.10;
+        %tmp.12 = eq %tmp.6 %tmp.11;
+        bf %tmp.12 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_8_60_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_8_60_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_60_31_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 28 12 ]
+        %tmp.14 = getv ? :View;
+        %tmp.15 = getv function %tmp.14 :setLayout;
+        %tmp.17 = getv ? :Rez;
+        %tmp.18 = getv %tmp.17 :Layouts;
+        %tmp.19 = getv function %tmp.18 :TopLeftLayout;
+        %tmp.21 = lgetv %dc;
+        %tmp.22 = invoke %tmp.18 %tmp.19(%tmp.21);
+        invoke %tmp.14 %tmp.15(%tmp.22);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_60_31_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_8_60_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_8_60_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 31 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_15_60_8_if_stmt:
+        %tmp.24 = lgetv %obscurityFlags.1;
+        %tmp.26 = getv ? :OBSCURE_TOP;
+        %tmp.28 = getv ? :OBSCURE_RIGHT;
+        %tmp.29 = bitor %tmp.26 %tmp.28;
+        %tmp.30 = eq %tmp.24 %tmp.29;
+        bf %tmp.30 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_15_60_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_15_60_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_68_35_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 32 12 ]
+        %tmp.32 = getv ? :View;
+        %tmp.33 = getv function %tmp.32 :setLayout;
+        %tmp.35 = getv ? :Rez;
+        %tmp.36 = getv %tmp.35 :Layouts;
+        %tmp.37 = getv function %tmp.36 :TopRightLayout;
+        %tmp.39 = lgetv %dc;
+        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.39);
+        invoke %tmp.32 %tmp.33(%tmp.40);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_68_35_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_15_60_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_15_60_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 35 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_15_60_8_if_stmt:
+        %tmp.42 = lgetv %obscurityFlags.1;
+        %tmp.44 = getv ? :OBSCURE_BOTTOM;
+        %tmp.46 = getv ? :OBSCURE_LEFT;
+        %tmp.47 = bitor %tmp.44 %tmp.46;
+        %tmp.48 = eq %tmp.42 %tmp.47;
+        bf %tmp.48 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_15_60_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_15_60_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_70_39_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 36 12 ]
+        %tmp.50 = getv ? :View;
+        %tmp.51 = getv function %tmp.50 :setLayout;
+        %tmp.53 = getv ? :Rez;
+        %tmp.54 = getv %tmp.53 :Layouts;
+        %tmp.55 = getv function %tmp.54 :BottomLeftLayout;
+        %tmp.57 = lgetv %dc;
+        %tmp.58 = invoke %tmp.54 %tmp.55(%tmp.57);
+        invoke %tmp.50 %tmp.51(%tmp.58);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_70_39_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_15_60_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_15_60_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 39 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_15_60_8_if_stmt:
+        %tmp.60 = lgetv %obscurityFlags.1;
+        %tmp.62 = getv ? :OBSCURE_BOTTOM;
+        %tmp.64 = getv ? :OBSCURE_RIGHT;
+        %tmp.65 = bitor %tmp.62 %tmp.64;
+        %tmp.66 = eq %tmp.60 %tmp.65;
+        bf %tmp.66 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_15_60_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_15_60_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_71_43_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 40 12 ]
+        %tmp.68 = getv ? :View;
+        %tmp.69 = getv function %tmp.68 :setLayout;
+        %tmp.71 = getv ? :Rez;
+        %tmp.72 = getv %tmp.71 :Layouts;
+        %tmp.73 = getv function %tmp.72 :BottomRightLayout;
+        %tmp.75 = lgetv %dc;
+        %tmp.76 = invoke %tmp.72 %tmp.73(%tmp.75);
+        invoke %tmp.68 %tmp.69(%tmp.76);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_71_43_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_15_60_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_15_60_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 44 12 ]
+        %tmp.78 = getv ? :View;
+        %tmp.79 = getv function %tmp.78 :setLayout;
+        %tmp.81 = getv ? :Rez;
+        %tmp.82 = getv %tmp.81 :Layouts;
+        %tmp.83 = getv function %tmp.82 :MainLayout;
+        %tmp.85 = lgetv %dc;
+        %tmp.86 = invoke %tmp.82 %tmp.83(%tmp.85);
+        invoke %tmp.78 %tmp.79(%tmp.86);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 45 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_stop" ]
+        %labelView.2 = local;
+        %tmp.88 = getv ? :View;
+        %tmp.89 = getv function %tmp.88 :findDrawableById;
+        %tmp.90 = "label";
+        %tmp.91 = invoke %tmp.88 %tmp.89(%tmp.90);
+        lputv %labelView.2 %tmp.91;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 46 12 ]
+        %tmp.92 = lgetv %labelView.2;
+        %tmp.93 = lgetv %labelView.2;
+        %tmp.94 = getv %tmp.93 :locX;
+        %tmp.95 = 40;
+        %tmp.96 = sub %tmp.94 %tmp.95;
+        putv %tmp.92 :locX %tmp.96;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 47 12 ]
+        %tmp.97 = lgetv %labelView.2;
+        %tmp.98 = lgetv %labelView.2;
+        %tmp.99 = getv %tmp.98 :locY;
+        %tmp.100 = 10;
+        %tmp.101 = sub %tmp.99 %tmp.100;
+        putv %tmp.97 :locY %tmp.101;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 48 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_stop" ]
+        %valueView.3 = local;
+        %tmp.103 = getv ? :View;
+        %tmp.104 = getv function %tmp.103 :findDrawableById;
+        %tmp.105 = "value";
+        %tmp.106 = invoke %tmp.103 %tmp.104(%tmp.105);
+        lputv %valueView.3 %tmp.106;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 49 13 ]
+        %tmp.107 = lgetv %valueView.3;
+        %tmp.108 = lgetv %valueView.3;
+        %tmp.109 = getv %tmp.108 :locX;
+        %tmp.110 = 5;
+        %tmp.111 = add %tmp.109 %tmp.110;
+        putv %tmp.107 :locX %tmp.111;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 50 12 ]
+        %tmp.112 = lgetv %valueView.3;
+        %tmp.113 = lgetv %valueView.3;
+        %tmp.114 = getv %tmp.113 :locY;
+        %tmp.115 = 10;
+        %tmp.116 = sub %tmp.114 %tmp.115;
+        putv %tmp.112 :locY %tmp.116;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 51 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_stop" ]
+        %valueViewTime.4 = local;
+        %tmp.118 = getv ? :View;
+        %tmp.119 = getv function %tmp.118 :findDrawableById;
+        %tmp.120 = "valueTime";
+        %tmp.121 = invoke %tmp.118 %tmp.119(%tmp.120);
+        lputv %valueViewTime.4 %tmp.121;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 52 12 ]
+        %tmp.122 = lgetv %valueViewTime.4;
+        %tmp.123 = lgetv %valueViewTime.4;
+        %tmp.124 = getv %tmp.123 :locX;
+        %tmp.125 = 10;
+        %tmp.126 = add %tmp.124 %tmp.125;
+        putv %tmp.122 :locX %tmp.126;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 53 12 ]
+        %tmp.127 = lgetv %valueViewTime.4;
+        %tmp.128 = lgetv %valueViewTime.4;
+        %tmp.129 = getv %tmp.128 :locY;
+        %tmp.130 = 20;
+        %tmp.131 = add %tmp.129 %tmp.130;
+        putv %tmp.127 :locY %tmp.131;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 54 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_stop" ]
+        %valueViewDelta.5 = local;
+        %tmp.133 = getv ? :View;
+        %tmp.134 = getv function %tmp.133 :findDrawableById;
+        %tmp.135 = "valueDelta";
+        %tmp.136 = invoke %tmp.133 %tmp.134(%tmp.135);
+        lputv %valueViewDelta.5 %tmp.136;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 55 12 ]
+        %tmp.137 = lgetv %valueViewDelta.5;
+        %tmp.138 = lgetv %valueViewDelta.5;
+        %tmp.139 = getv %tmp.138 :locX;
+        %tmp.140 = 40;
+        %tmp.141 = sub %tmp.139 %tmp.140;
+        putv %tmp.137 :locX %tmp.141;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 56 12 ]
+        %tmp.142 = lgetv %valueViewDelta.5;
+        %tmp.143 = lgetv %valueViewDelta.5;
+        %tmp.144 = getv %tmp.143 :locY;
+        %tmp.145 = 20;
+        %tmp.146 = add %tmp.144 %tmp.145;
+        putv %tmp.142 :locY %tmp.146;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 57 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_stop" ]
+        %valueViewArrow.6 = local;
+        %tmp.148 = getv ? :View;
+        %tmp.149 = getv function %tmp.148 :findDrawableById;
+        %tmp.150 = "arrow";
+        %tmp.151 = invoke %tmp.148 %tmp.149(%tmp.150);
+        lputv %valueViewArrow.6 %tmp.151;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 58 12 ]
+        %tmp.152 = lgetv %valueViewArrow.6;
+        %tmp.153 = lgetv %valueView.3;
+        %tmp.154 = getv %tmp.153 :locX;
+        %tmp.155 = 30;
+        %tmp.156 = add %tmp.154 %tmp.155;
+        putv %tmp.152 :locX %tmp.156;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 59 12 ]
+        %tmp.157 = lgetv %valueViewArrow.6;
+        %tmp.158 = lgetv %valueViewArrow.6;
+        %tmp.159 = getv %tmp.158 :locY;
+        %tmp.160 = 10;
+        %tmp.161 = sub %tmp.159 %tmp.160;
+        putv %tmp.157 :locY %tmp.161;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_43_15_60_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_39_15_60_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_35_15_60_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_31_15_60_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_27_8_60_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 62 8 ]
+        %tmp.163 = getv ? :View;
+        %tmp.164 = getv function %tmp.163 :findDrawableById;
+        %tmp.165 = "label";
+        %tmp.166 = invoke %tmp.163 %tmp.164(%tmp.165);
+        %tmp.167 = as %tmp.166 Text;
+        %tmp.168 = getv function %tmp.167 :setText;
+        %tmp.170 = getv ? :Rez;
+        %tmp.171 = getv %tmp.170 :Strings;
+        %tmp.172 = getv %tmp.171 :label;
+        invoke %tmp.167 %tmp.168(%tmp.172);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_23_40_63_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 69; ]
+    function compute(info) {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 74; ]
+    function onUpdate(dc as Dc) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 75 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %bgString.1 = local;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 76 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %loopColor.2 = local;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 77 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %loopString.3 = local;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 78 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %deltaString.4 = local;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 80 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %status.5 = local;
+        %tmp.2 = getv ? :Application;
+        %tmp.3 = getv %tmp.2 :Storage;
+        %tmp.4 = getv function %tmp.3 :getValue;
+        %tmp.5 = "status";
+        %tmp.6 = invoke %tmp.3 %tmp.4(%tmp.5);
+        %tmp.7 = as %tmp.6 Dictionary;
+        lputv %status.5 %tmp.7;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 82 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_8_94_8_if_stmt:
+        %tmp.9 = lgetv %status.5;
+        %tmp.10 = null;
+        %tmp.11 = eq %tmp.9 %tmp.10;
+        bf %tmp.11 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_8_94_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_8_94_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_28_87_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 83 12 ]
+        %tmp.12 = "---";
+        lputv %bgString.1 %tmp.12;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 84 12 ]
+        %tmp.13 = self;
+        %tmp.14 = getv function %tmp.13 :getLoopColor;
+        %tmp.15 = -1;
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        lputv %loopColor.2 %tmp.16;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 85 12 ]
+        %tmp.17 = "(xx)";
+        lputv %loopString.3 %tmp.17;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 86 12 ]
+        %tmp.18 = "??";
+        lputv %deltaString.4 %tmp.18;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_28_87_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_8_94_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_8_94_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_87_15_94_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 88 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_87_15_94_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_87_15_94_8_stop" ]
+        %bg.6 = local;
+        %tmp.20 = lgetv %status.5;
+        %tmp.21 = as %tmp.20 { (!Null) };
+        %tmp.22 = "glucose";
+        %tmp.23 = agetv %tmp.21 %tmp.22;
+        %tmp.24 = as %tmp.23 String;
+        lputv %bg.6 %tmp.24;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 89 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_begin:
+        %tmp.26 = lgetv %bg.6;
+        %tmp.27 = null;
+        %tmp.28 = eq %tmp.26 %tmp.27;
+        bf %tmp.28 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_true:
+        %tmp.29 = "--";
+        push %tmp.29;
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_false:
+        %tmp.31 = lgetv %bg.6;
+        %tmp.32 = as %tmp.31 { (!Null) };
+        %tmp.33 = as %tmp.32 String;
+        push %tmp.33;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_end:
+        %tmp.34 = phi [%tmp.28 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_begin] [%tmp.29 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_true] [%tmp.33 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_false] [%tmp.34 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_89_23_89_51_end];
+        lputv %bgString.1 %tmp.34;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 90 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_87_15_94_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_87_15_94_8_stop" ]
+        %min.7 = local;
+        %tmp.35 = self;
+        %tmp.36 = getv function %tmp.35 :getMinutes;
+        %tmp.38 = lgetv %status.5;
+        %tmp.39 = as %tmp.38 { (!Null) };
+        %tmp.40 = invoke %tmp.35 %tmp.36(%tmp.39);
+        lputv %min.7 %tmp.40;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 91 12 ]
+        %tmp.41 = self;
+        %tmp.42 = getv function %tmp.41 :getLoopColor;
+        %tmp.44 = lgetv %min.7;
+        %tmp.45 = invoke %tmp.41 %tmp.42(%tmp.44);
+        lputv %loopColor.2 %tmp.45;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 92 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_begin:
+        %tmp.47 = lgetv %min.7;
+        %tmp.48 = 0;
+        %tmp.49 = lt %tmp.47 %tmp.48;
+        bf %tmp.49 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_true:
+        %tmp.50 = "(--)";
+        push %tmp.50;
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_false:
+        %tmp.51 = "(";
+        %tmp.52 = lgetv %min.7;
+        %tmp.53 = getv function %tmp.52 :format;
+        %tmp.54 = "%d";
+        %tmp.55 = invoke %tmp.52 %tmp.53(%tmp.54);
+        %tmp.56 = add %tmp.51 %tmp.55;
+        push %tmp.56;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_end:
+        %tmp.57 = phi [%tmp.49 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_begin] [%tmp.50 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_true] [%tmp.56 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_false] [%tmp.57 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_92_26_92_66_end];
+        %tmp.58 = " mn)";
+        %tmp.59 = as %tmp.58 String;
+        %tmp.60 = add %tmp.57 %tmp.59;
+        lputv %loopString.3 %tmp.60;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 93 12 ]
+        %tmp.61 = self;
+        %tmp.62 = getv function %tmp.61 :getDeltaText;
+        %tmp.64 = lgetv %status.5;
+        %tmp.65 = as %tmp.64 { (!Null) };
+        %tmp.66 = invoke %tmp.61 %tmp.62(%tmp.65);
+        %tmp.67 = as %tmp.66 String;
+        lputv %deltaString.4 %tmp.67;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_87_15_94_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_82_8_94_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 97 8 ]
+        %tmp.69 = getv ? :View;
+        %tmp.70 = getv function %tmp.69 :findDrawableById;
+        %tmp.71 = "Background";
+        %tmp.72 = invoke %tmp.69 %tmp.70(%tmp.71);
+        %tmp.73 = as %tmp.72 Text;
+        %tmp.74 = getv function %tmp.73 :setColor;
+        %tmp.76 = lgetv %loopColor.2;
+        invoke %tmp.73 %tmp.74(%tmp.76);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 100 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %value.8 = local;
+        %tmp.78 = getv ? :View;
+        %tmp.79 = getv function %tmp.78 :findDrawableById;
+        %tmp.80 = "value";
+        %tmp.81 = invoke %tmp.78 %tmp.79(%tmp.80);
+        %tmp.82 = as %tmp.81 Text;
+        lputv %value.8 %tmp.82;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 101 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %valueTime.9 = local;
+        %tmp.84 = getv ? :View;
+        %tmp.85 = getv function %tmp.84 :findDrawableById;
+        %tmp.86 = "valueTime";
+        %tmp.87 = invoke %tmp.84 %tmp.85(%tmp.86);
+        %tmp.88 = as %tmp.87 Text;
+        lputv %valueTime.9 %tmp.88;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 102 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %valueDelta.10 = local;
+        %tmp.90 = getv ? :View;
+        %tmp.91 = getv function %tmp.90 :findDrawableById;
+        %tmp.92 = "valueDelta";
+        %tmp.93 = invoke %tmp.90 %tmp.91(%tmp.92);
+        %tmp.94 = as %tmp.93 Text;
+        lputv %valueDelta.10 %tmp.94;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 104 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_8_114_8_if_stmt:
+        %tmp.95 = self;
+        %tmp.96 = getv function %tmp.95 :getBackgroundColor;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        %tmp.98 = getm $.Toybox.Graphics;
+        %tmp.99 = getv %tmp.98 :COLOR_BLACK;
+        %tmp.100 = eq %tmp.97 %tmp.99;
+        bf %tmp.100 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_8_114_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_8_114_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_58_109_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 105 12 ]
+        %tmp.101 = lgetv %value.8;
+        %tmp.102 = getv function %tmp.101 :setColor;
+        %tmp.103 = getm $.Toybox.Graphics;
+        %tmp.104 = getv %tmp.103 :COLOR_WHITE;
+        invoke %tmp.101 %tmp.102(%tmp.104);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 106 12 ]
+        %tmp.105 = lgetv %valueTime.9;
+        %tmp.106 = getv function %tmp.105 :setColor;
+        %tmp.107 = getm $.Toybox.Graphics;
+        %tmp.108 = getv %tmp.107 :COLOR_WHITE;
+        invoke %tmp.105 %tmp.106(%tmp.108);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 107 12 ]
+        %tmp.109 = lgetv %valueDelta.10;
+        %tmp.110 = getv function %tmp.109 :setColor;
+        %tmp.111 = getm $.Toybox.Graphics;
+        %tmp.112 = getv %tmp.111 :COLOR_WHITE;
+        invoke %tmp.109 %tmp.110(%tmp.112);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_58_109_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_8_114_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_8_114_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_109_15_114_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 110 12 ]
+        %tmp.113 = lgetv %value.8;
+        %tmp.114 = getv function %tmp.113 :setColor;
+        %tmp.115 = getm $.Toybox.Graphics;
+        %tmp.116 = getv %tmp.115 :COLOR_BLACK;
+        invoke %tmp.113 %tmp.114(%tmp.116);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 111 12 ]
+        %tmp.117 = lgetv %valueTime.9;
+        %tmp.118 = getv function %tmp.117 :setColor;
+        %tmp.119 = getm $.Toybox.Graphics;
+        %tmp.120 = getv %tmp.119 :COLOR_BLACK;
+        invoke %tmp.117 %tmp.118(%tmp.120);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 112 12 ]
+        %tmp.121 = lgetv %valueDelta.10;
+        %tmp.122 = getv function %tmp.121 :setColor;
+        %tmp.123 = getm $.Toybox.Graphics;
+        %tmp.124 = getv %tmp.123 :COLOR_BLACK;
+        invoke %tmp.121 %tmp.122(%tmp.124);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_109_15_114_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_104_8_114_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 117 8 ]
+        %tmp.125 = lgetv %value.8;
+        %tmp.126 = getv function %tmp.125 :setText;
+        %tmp.128 = lgetv %bgString.1;
+        invoke %tmp.125 %tmp.126(%tmp.128);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 118 8 ]
+        %tmp.129 = lgetv %valueDelta.10;
+        %tmp.130 = getv function %tmp.129 :setText;
+        %tmp.132 = lgetv %deltaString.4;
+        invoke %tmp.129 %tmp.130(%tmp.132);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 119 8 ]
+        %tmp.133 = lgetv %valueTime.9;
+        %tmp.134 = getv function %tmp.133 :setText;
+        %tmp.136 = lgetv %loopString.3;
+        invoke %tmp.133 %tmp.134(%tmp.136);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 121 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop" ]
+        %arrowView.11 = local;
+        %tmp.138 = getv ? :View;
+        %tmp.139 = getv function %tmp.138 :findDrawableById;
+        %tmp.140 = "arrow";
+        %tmp.141 = invoke %tmp.138 %tmp.139(%tmp.140);
+        %tmp.142 = as %tmp.141 Bitmap;
+        lputv %arrowView.11 %tmp.142;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 122 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_8_127_8_if_stmt:
+        %tmp.143 = self;
+        %tmp.144 = getv function %tmp.143 :getBackgroundColor;
+        %tmp.145 = invoke %tmp.143 %tmp.144();
+        %tmp.146 = getm $.Toybox.Graphics;
+        %tmp.147 = getv %tmp.146 :COLOR_BLACK;
+        %tmp.148 = eq %tmp.145 %tmp.147;
+        bf %tmp.148 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_8_127_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_8_127_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_58_124_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 123 13 ]
+        %tmp.149 = lgetv %arrowView.11;
+        %tmp.150 = getv function %tmp.149 :setBitmap;
+        %tmp.151 = self;
+        %tmp.152 = getv function %tmp.151 :getDirection;
+        %tmp.154 = lgetv %status.5;
+        %tmp.155 = invoke %tmp.151 %tmp.152(%tmp.154);
+        invoke %tmp.149 %tmp.150(%tmp.155);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_58_124_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_8_127_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_8_127_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_125_13_127_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 126 12 ]
+        %tmp.156 = lgetv %arrowView.11;
+        %tmp.157 = getv function %tmp.156 :setBitmap;
+        %tmp.158 = self;
+        %tmp.159 = getv function %tmp.158 :getDirectionBlack;
+        %tmp.161 = lgetv %status.5;
+        %tmp.162 = invoke %tmp.158 %tmp.159(%tmp.161);
+        invoke %tmp.156 %tmp.157(%tmp.162);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_125_13_127_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_122_8_127_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 131 8 ]
+        %tmp.164 = getv ? :View;
+        %tmp.165 = getv function %tmp.164 :onUpdate;
+        %tmp.167 = lgetv %dc;
+        invoke %tmp.164 %tmp.165(%tmp.167);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_74_40_132_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 134; ]
+    function getMinutes(status as Dictionary) as Number {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_134_56_156_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 137 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_8_139_8_if_stmt:
+        %tmp.2 = lgetv %status;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_8_139_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_8_139_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_28_139_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 138 12 ]
+        %tmp.5 = -1;
+        ret %tmp.5;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_28_139_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_8_139_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_137_8_139_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 140 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_134_56_156_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_134_56_156_4_stop" ]
+        %lastLoopDate.1 = local;
+        %tmp.7 = lgetv %status;
+        %tmp.8 = "lastLoopDateInterval";
+        %tmp.9 = agetv %tmp.7 %tmp.8;
+        %tmp.10 = as %tmp.9 Number;
+        lputv %lastLoopDate.1 %tmp.10;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 142 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_8_144_8_if_stmt:
+        %tmp.12 = lgetv %lastLoopDate.1;
+        %tmp.13 = null;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_8_144_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_8_144_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_34_144_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 143 12 ]
+        %tmp.15 = -1;
+        ret %tmp.15;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_34_144_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_8_144_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_142_8_144_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 146 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_8_155_8_if_stmt:
+        %tmp.17 = lgetv %lastLoopDate.1;
+        %tmp.19 = getv ? :Number;
+        %tmp.20 = isa %tmp.17 %tmp.19;
+        bf %tmp.20 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_8_155_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_8_155_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_44_153_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 149 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_44_153_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_44_153_8_stop" ]
+        %now.2 = local;
+        %tmp.22 = getv ? :Time;
+        %tmp.23 = getv function %tmp.22 :now;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = getv function %tmp.24 :value;
+        %tmp.26 = invoke %tmp.24 %tmp.25();
+        %tmp.27 = as %tmp.26 Number;
+        lputv %now.2 %tmp.27;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 151 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_44_153_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_44_153_8_stop" ]
+        %min.3 = local;
+        %tmp.29 = lgetv %now.2;
+        %tmp.31 = lgetv %lastLoopDate.1;
+        %tmp.32 = as %tmp.31 { (Number) };
+        %tmp.33 = sub %tmp.29 %tmp.32;
+        %tmp.34 = 60;
+        %tmp.35 = div %tmp.33 %tmp.34;
+        lputv %min.3 %tmp.35;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 152 12 ]
+        %tmp.37 = lgetv %min.3;
+        ret %tmp.37;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_44_153_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_8_155_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_8_155_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_153_15_155_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 154 12 ]
+        %tmp.38 = -1;
+        ret %tmp.38;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_153_15_155_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_146_8_155_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_134_56_156_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 158; ]
+    function getLoopColor(min as Number) as Number {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_158_51_168_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 159 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_8_167_8_if_stmt:
+        %tmp.2 = lgetv %min;
+        %tmp.3 = 0;
+        %tmp.4 = lt %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_8_167_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_8_167_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_21_161_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 160 12 ]
+        %tmp.5 = self;
+        %tmp.6 = getv function %tmp.5 :getBackgroundColor;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = as %tmp.7 Number;
+        ret %tmp.8;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_21_161_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_8_167_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_8_167_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 161 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_15_167_8_if_stmt:
+        %tmp.10 = lgetv %min;
+        %tmp.11 = 5;
+        %tmp.12 = lte %tmp.10 %tmp.11;
+        bf %tmp.12 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_15_167_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_15_167_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_29_163_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 162 12 ]
+        %tmp.13 = self;
+        %tmp.14 = getv function %tmp.13 :getBackgroundColor;
+        %tmp.15 = invoke %tmp.13 %tmp.14();
+        %tmp.16 = as %tmp.15 Number;
+        ret %tmp.16;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_29_163_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_15_167_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_15_167_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 163 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_15_167_8_if_stmt:
+        %tmp.18 = lgetv %min;
+        %tmp.19 = 10;
+        %tmp.20 = lte %tmp.18 %tmp.19;
+        bf %tmp.20 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_15_167_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_15_167_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_30_165_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 164 12 ]
+        %tmp.21 = getm $.Toybox.Graphics;
+        %tmp.22 = getv %tmp.21 :COLOR_YELLOW;
+        %tmp.23 = as %tmp.22 Number;
+        ret %tmp.23;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_30_165_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_15_167_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_15_167_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_165_15_167_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 166 12 ]
+        %tmp.24 = getm $.Toybox.Graphics;
+        %tmp.25 = getv %tmp.24 :COLOR_RED;
+        %tmp.26 = as %tmp.25 Number;
+        ret %tmp.26;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_165_15_167_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_163_15_167_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_161_15_167_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_159_8_167_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_158_51_168_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 170; ]
+    function getDeltaText(status as Dictionary) as String {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_170_58_180_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 172 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_8_174_8_if_stmt:
+        %tmp.2 = lgetv %status;
+        %tmp.3 = null;
+        %tmp.4 = eq %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_8_174_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_8_174_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_28_174_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 173 12 ]
+        %tmp.5 = "--";
+        ret %tmp.5;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_28_174_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_8_174_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_172_8_174_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 175 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_170_58_180_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_170_58_180_4_stop" ]
+        %delta.1 = local;
+        %tmp.7 = lgetv %status;
+        %tmp.8 = "delta";
+        %tmp.9 = agetv %tmp.7 %tmp.8;
+        %tmp.10 = as %tmp.9 String;
+        lputv %delta.1 %tmp.10;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 177 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_170_58_180_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_170_58_180_4_stop" ]
+        %deltaString.2 = local;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_begin:
+        %tmp.12 = lgetv %delta.1;
+        %tmp.13 = null;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_true:
+        %tmp.15 = "--";
+        push %tmp.15;
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_false:
+        %tmp.17 = lgetv %delta.1;
+        %tmp.18 = as %tmp.17 { (!Null) };
+        push %tmp.18;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_end:
+        %tmp.19 = phi [%tmp.14 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_begin] [%tmp.15 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_true] [%tmp.18 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_false] [%tmp.19 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_177_26_177_51_end];
+        lputv %deltaString.2 %tmp.19;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 179 8 ]
+        %tmp.21 = lgetv %deltaString.2;
+        ret %tmp.21;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_170_58_180_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 182; ]
+    function getDirectionBlack(status) as BitmapType {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_182_53_222_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 183 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_182_53_222_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_182_53_222_4_stop" ]
+        %bitmap.1 = local;
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Drawables;
+        %tmp.6 = getv %tmp.5 :UnknownB;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        lputv %bitmap.1 %tmp.7;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 184 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_8_220_8_if_stmt:
+        %tmp.9 = lgetv %status;
+        %tmp.11 = getv ? :Dictionary;
+        %tmp.12 = isa %tmp.9 %tmp.11;
+        bf %tmp.12 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_8_220_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_8_220_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_43_218_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 185 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_43_218_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_43_218_8_stop" ]
+        %trend.2 = local;
+        %tmp.14 = lgetv %status;
+        %tmp.15 = as %tmp.14 { (Dictionary) };
+        %tmp.16 = "trendRaw";
+        %tmp.17 = agetv %tmp.15 %tmp.16;
+        %tmp.18 = as %tmp.17 String;
+        lputv %trend.2 %tmp.18;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 186 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_12_188_12_if_stmt:
+        %tmp.20 = lgetv %trend.2;
+        %tmp.21 = null;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_12_188_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_12_188_12_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_31_188_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 187 16 ]
+        %tmp.24 = lgetv %bitmap.1;
+        ret %tmp.24;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_31_188_12_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_12_188_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_186_12_188_12_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 190 12 ]
+        %tmp.26 = lgetv %trend.2;
+        push %tmp.26;
+        switch %tmp.26 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtBegin:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 191 16 ]
+        %tmp.27 = dup %tmp.26;
+        %tmp.28 = "Flat";
+        %tmp.29 = getv function %tmp.27 :equals;
+        %tmp.30 = invoke %tmp.27 %tmp.29 (%tmp.28);
+        bt %tmp.30 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_191_16_193_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 194 16 ]
+        %tmp.31 = dup %tmp.26;
+        %tmp.32 = "SingleUp";
+        %tmp.33 = getv function %tmp.31 :equals;
+        %tmp.34 = invoke %tmp.31 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_194_16_196_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 197 16 ]
+        %tmp.35 = dup %tmp.26;
+        %tmp.36 = "SingleDown";
+        %tmp.37 = getv function %tmp.35 :equals;
+        %tmp.38 = invoke %tmp.35 %tmp.37 (%tmp.36);
+        bt %tmp.38 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_197_16_199_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 200 16 ]
+        %tmp.39 = dup %tmp.26;
+        %tmp.40 = "FortyFiveUp";
+        %tmp.41 = getv function %tmp.39 :equals;
+        %tmp.42 = invoke %tmp.39 %tmp.41 (%tmp.40);
+        bt %tmp.42 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_200_16_202_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 203 16 ]
+        %tmp.43 = dup %tmp.26;
+        %tmp.44 = "FortyFiveDown";
+        %tmp.45 = getv function %tmp.43 :equals;
+        %tmp.46 = invoke %tmp.43 %tmp.45 (%tmp.44);
+        bt %tmp.46 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_203_16_205_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 206 16 ]
+        %tmp.47 = dup %tmp.26;
+        %tmp.48 = "DoubleUp";
+        %tmp.49 = getv function %tmp.47 :equals;
+        %tmp.50 = invoke %tmp.47 %tmp.49 (%tmp.48);
+        bt %tmp.50 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_206_16_206_31_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 207 16 ]
+        %tmp.51 = dup %tmp.26;
+        %tmp.52 = "TripleUp";
+        %tmp.53 = getv function %tmp.51 :equals;
+        %tmp.54 = invoke %tmp.51 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_207_16_209_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 210 16 ]
+        %tmp.55 = dup %tmp.26;
+        %tmp.56 = "DoubleDown";
+        %tmp.57 = getv function %tmp.55 :equals;
+        %tmp.58 = invoke %tmp.55 %tmp.57 (%tmp.56);
+        bt %tmp.58 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_210_16_210_33_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 211 16 ]
+        %tmp.59 = dup %tmp.26;
+        %tmp.60 = "TripleDown";
+        %tmp.61 = getv function %tmp.59 :equals;
+        %tmp.62 = invoke %tmp.59 %tmp.61 (%tmp.60);
+        bt %tmp.62 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_211_16_213_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 214 16 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtDefault:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_defaultCodeBegin;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_191_16_193_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 192 20 ]
+        %tmp.63 = getm $.Toybox.WatchUi;
+        %tmp.64 = getv function %tmp.63 :loadResource;
+        %tmp.66 = getv ? :Rez;
+        %tmp.67 = getv %tmp.66 :Drawables;
+        %tmp.68 = getv %tmp.67 :FlatB;
+        %tmp.69 = invoke %tmp.63 %tmp.64(%tmp.68);
+        lputv %bitmap.1 %tmp.69;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 193 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_194_16_196_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 195 20 ]
+        %tmp.70 = getm $.Toybox.WatchUi;
+        %tmp.71 = getv function %tmp.70 :loadResource;
+        %tmp.73 = getv ? :Rez;
+        %tmp.74 = getv %tmp.73 :Drawables;
+        %tmp.75 = getv %tmp.74 :SingleUpB;
+        %tmp.76 = invoke %tmp.70 %tmp.71(%tmp.75);
+        lputv %bitmap.1 %tmp.76;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 196 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_197_16_199_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 198 20 ]
+        %tmp.77 = getm $.Toybox.WatchUi;
+        %tmp.78 = getv function %tmp.77 :loadResource;
+        %tmp.80 = getv ? :Rez;
+        %tmp.81 = getv %tmp.80 :Drawables;
+        %tmp.82 = getv %tmp.81 :SingleDownB;
+        %tmp.83 = invoke %tmp.77 %tmp.78(%tmp.82);
+        lputv %bitmap.1 %tmp.83;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 199 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_200_16_202_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 201 20 ]
+        %tmp.84 = getm $.Toybox.WatchUi;
+        %tmp.85 = getv function %tmp.84 :loadResource;
+        %tmp.87 = getv ? :Rez;
+        %tmp.88 = getv %tmp.87 :Drawables;
+        %tmp.89 = getv %tmp.88 :FortyFiveUpB;
+        %tmp.90 = invoke %tmp.84 %tmp.85(%tmp.89);
+        lputv %bitmap.1 %tmp.90;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 202 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_203_16_205_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 204 20 ]
+        %tmp.91 = getm $.Toybox.WatchUi;
+        %tmp.92 = getv function %tmp.91 :loadResource;
+        %tmp.94 = getv ? :Rez;
+        %tmp.95 = getv %tmp.94 :Drawables;
+        %tmp.96 = getv %tmp.95 :FortyFiveDownB;
+        %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.96);
+        lputv %bitmap.1 %tmp.97;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 205 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_206_16_206_31_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_207_16_209_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 208 20 ]
+        %tmp.98 = getm $.Toybox.WatchUi;
+        %tmp.99 = getv function %tmp.98 :loadResource;
+        %tmp.101 = getv ? :Rez;
+        %tmp.102 = getv %tmp.101 :Drawables;
+        %tmp.103 = getv %tmp.102 :DoubleUpB;
+        %tmp.104 = invoke %tmp.98 %tmp.99(%tmp.103);
+        lputv %bitmap.1 %tmp.104;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 209 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_210_16_210_33_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_211_16_213_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 212 20 ]
+        %tmp.105 = getm $.Toybox.WatchUi;
+        %tmp.106 = getv function %tmp.105 :loadResource;
+        %tmp.108 = getv ? :Rez;
+        %tmp.109 = getv %tmp.108 :Drawables;
+        %tmp.110 = getv %tmp.109 :DoubleDownB;
+        %tmp.111 = invoke %tmp.105 %tmp.106(%tmp.110);
+        lputv %bitmap.1 %tmp.111;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 213 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_214_16_214_30_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_defaultCodeBegin:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 214 25 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_190_12_215_12_switchStmtEnd:
+        pop;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 217 12 ]
+        %tmp.113 = lgetv %bitmap.1;
+        ret %tmp.113;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_43_218_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_8_220_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_8_220_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_218_15_220_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 219 12 ]
+        %tmp.115 = lgetv %bitmap.1;
+        ret %tmp.115;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_218_15_220_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_184_8_220_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_182_53_222_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 224; ]
+    function getDirection(status) as BitmapType {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_224_48_264_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 225 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_224_48_264_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_224_48_264_4_stop" ]
+        %bitmap.1 = local;
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Drawables;
+        %tmp.6 = getv %tmp.5 :Unknown;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        lputv %bitmap.1 %tmp.7;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 226 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_8_262_8_if_stmt:
+        %tmp.9 = lgetv %status;
+        %tmp.11 = getv ? :Dictionary;
+        %tmp.12 = isa %tmp.9 %tmp.11;
+        bf %tmp.12 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_8_262_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_8_262_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_43_260_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 227 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_43_260_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_43_260_8_stop" ]
+        %trend.2 = local;
+        %tmp.14 = lgetv %status;
+        %tmp.15 = as %tmp.14 { (Dictionary) };
+        %tmp.16 = "trendRaw";
+        %tmp.17 = agetv %tmp.15 %tmp.16;
+        %tmp.18 = as %tmp.17 String;
+        lputv %trend.2 %tmp.18;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 228 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_12_230_12_if_stmt:
+        %tmp.20 = lgetv %trend.2;
+        %tmp.21 = null;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_12_230_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_12_230_12_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_31_230_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 229 16 ]
+        %tmp.24 = lgetv %bitmap.1;
+        ret %tmp.24;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_31_230_12_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_12_230_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_228_12_230_12_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 232 12 ]
+        %tmp.26 = lgetv %trend.2;
+        push %tmp.26;
+        switch %tmp.26 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtBegin:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 233 16 ]
+        %tmp.27 = dup %tmp.26;
+        %tmp.28 = "Flat";
+        %tmp.29 = getv function %tmp.27 :equals;
+        %tmp.30 = invoke %tmp.27 %tmp.29 (%tmp.28);
+        bt %tmp.30 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_233_16_235_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 236 16 ]
+        %tmp.31 = dup %tmp.26;
+        %tmp.32 = "SingleUp";
+        %tmp.33 = getv function %tmp.31 :equals;
+        %tmp.34 = invoke %tmp.31 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_236_16_238_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 239 16 ]
+        %tmp.35 = dup %tmp.26;
+        %tmp.36 = "SingleDown";
+        %tmp.37 = getv function %tmp.35 :equals;
+        %tmp.38 = invoke %tmp.35 %tmp.37 (%tmp.36);
+        bt %tmp.38 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_239_16_241_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 242 16 ]
+        %tmp.39 = dup %tmp.26;
+        %tmp.40 = "FortyFiveUp";
+        %tmp.41 = getv function %tmp.39 :equals;
+        %tmp.42 = invoke %tmp.39 %tmp.41 (%tmp.40);
+        bt %tmp.42 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_242_16_244_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 245 16 ]
+        %tmp.43 = dup %tmp.26;
+        %tmp.44 = "FortyFiveDown";
+        %tmp.45 = getv function %tmp.43 :equals;
+        %tmp.46 = invoke %tmp.43 %tmp.45 (%tmp.44);
+        bt %tmp.46 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_245_16_247_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 248 16 ]
+        %tmp.47 = dup %tmp.26;
+        %tmp.48 = "DoubleUp";
+        %tmp.49 = getv function %tmp.47 :equals;
+        %tmp.50 = invoke %tmp.47 %tmp.49 (%tmp.48);
+        bt %tmp.50 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_248_16_248_31_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 249 16 ]
+        %tmp.51 = dup %tmp.26;
+        %tmp.52 = "TripleUp";
+        %tmp.53 = getv function %tmp.51 :equals;
+        %tmp.54 = invoke %tmp.51 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_249_16_251_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 252 16 ]
+        %tmp.55 = dup %tmp.26;
+        %tmp.56 = "DoubleDown";
+        %tmp.57 = getv function %tmp.55 :equals;
+        %tmp.58 = invoke %tmp.55 %tmp.57 (%tmp.56);
+        bt %tmp.58 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_252_16_252_33_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 253 16 ]
+        %tmp.59 = dup %tmp.26;
+        %tmp.60 = "TripleDown";
+        %tmp.61 = getv function %tmp.59 :equals;
+        %tmp.62 = invoke %tmp.59 %tmp.61 (%tmp.60);
+        bt %tmp.62 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_253_16_255_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 256 16 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtDefault:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_defaultCodeBegin;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_233_16_235_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 234 20 ]
+        %tmp.63 = getm $.Toybox.WatchUi;
+        %tmp.64 = getv function %tmp.63 :loadResource;
+        %tmp.66 = getv ? :Rez;
+        %tmp.67 = getv %tmp.66 :Drawables;
+        %tmp.68 = getv %tmp.67 :Flat;
+        %tmp.69 = invoke %tmp.63 %tmp.64(%tmp.68);
+        lputv %bitmap.1 %tmp.69;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 235 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_236_16_238_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 237 20 ]
+        %tmp.70 = getm $.Toybox.WatchUi;
+        %tmp.71 = getv function %tmp.70 :loadResource;
+        %tmp.73 = getv ? :Rez;
+        %tmp.74 = getv %tmp.73 :Drawables;
+        %tmp.75 = getv %tmp.74 :SingleUp;
+        %tmp.76 = invoke %tmp.70 %tmp.71(%tmp.75);
+        lputv %bitmap.1 %tmp.76;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 238 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_239_16_241_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 240 20 ]
+        %tmp.77 = getm $.Toybox.WatchUi;
+        %tmp.78 = getv function %tmp.77 :loadResource;
+        %tmp.80 = getv ? :Rez;
+        %tmp.81 = getv %tmp.80 :Drawables;
+        %tmp.82 = getv %tmp.81 :SingleDown;
+        %tmp.83 = invoke %tmp.77 %tmp.78(%tmp.82);
+        lputv %bitmap.1 %tmp.83;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 241 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_242_16_244_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 243 20 ]
+        %tmp.84 = getm $.Toybox.WatchUi;
+        %tmp.85 = getv function %tmp.84 :loadResource;
+        %tmp.87 = getv ? :Rez;
+        %tmp.88 = getv %tmp.87 :Drawables;
+        %tmp.89 = getv %tmp.88 :FortyFiveUp;
+        %tmp.90 = invoke %tmp.84 %tmp.85(%tmp.89);
+        lputv %bitmap.1 %tmp.90;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 244 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_245_16_247_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 246 20 ]
+        %tmp.91 = getm $.Toybox.WatchUi;
+        %tmp.92 = getv function %tmp.91 :loadResource;
+        %tmp.94 = getv ? :Rez;
+        %tmp.95 = getv %tmp.94 :Drawables;
+        %tmp.96 = getv %tmp.95 :FortyFiveDown;
+        %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.96);
+        lputv %bitmap.1 %tmp.97;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 247 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_248_16_248_31_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_249_16_251_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 250 20 ]
+        %tmp.98 = getm $.Toybox.WatchUi;
+        %tmp.99 = getv function %tmp.98 :loadResource;
+        %tmp.101 = getv ? :Rez;
+        %tmp.102 = getv %tmp.101 :Drawables;
+        %tmp.103 = getv %tmp.102 :DoubleUp;
+        %tmp.104 = invoke %tmp.98 %tmp.99(%tmp.103);
+        lputv %bitmap.1 %tmp.104;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 251 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_252_16_252_33_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_253_16_255_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 254 20 ]
+        %tmp.105 = getm $.Toybox.WatchUi;
+        %tmp.106 = getv function %tmp.105 :loadResource;
+        %tmp.108 = getv ? :Rez;
+        %tmp.109 = getv %tmp.108 :Drawables;
+        %tmp.110 = getv %tmp.109 :DoubleDown;
+        %tmp.111 = invoke %tmp.105 %tmp.106(%tmp.110);
+        lputv %bitmap.1 %tmp.111;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 255 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_256_16_256_30_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_defaultCodeBegin:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 256 25 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_232_12_257_12_switchStmtEnd:
+        pop;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 259 12 ]
+        %tmp.113 = lgetv %bitmap.1;
+        ret %tmp.113;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_43_260_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_8_262_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_8_262_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_260_15_262_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc" 261 12 ]
+        %tmp.115 = lgetv %bitmap.1;
+        ret %tmp.115;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_260_15_262_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_226_8_262_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminDataField_source_TrioDataFieldView_mc_224_48_264_4_stop:
+    }
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminDataField/source/TrioDataFieldView.mc"; @line = 9; ]
+<init> {
+}

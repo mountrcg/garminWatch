@@ -1,0 +1,786 @@
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 9; ]
+import Toybox.Lang;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 10; ]
+import Toybox.Graphics;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 11; ]
+import Toybox.WatchUi;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 12; ]
+import Toybox.Application;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 13; ]
+import Toybox.Time;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 15; ]
+class HeaderDrawable extends WatchUi.Drawable{
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 15; ]
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 15; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 16; ]
+    function initialize() as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_16_26_22_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 17 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_16_26_22_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_16_26_22_4_stop" ]
+        %dictionary.1 = local;
+        %tmp.1 = newd 1;
+        %tmp.3 = const :identifier;
+        %tmp.4 = "HeaderDrawable";
+        %tmp.5 = dup %tmp.1;
+        %tmp.6 = aputv %tmp.5 %tmp.3 %tmp.4;
+        lputv %dictionary.1 %tmp.6;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 21 8 ]
+        %tmp.8 = getv ? :Drawable;
+        %tmp.9 = getv function %tmp.8 :initialize;
+        %tmp.11 = lgetv %dictionary.1;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_16_26_22_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 24; ]
+    function draw(dc as Dc) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 25 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_8_27_8_if_stmt:
+        %tmp.2 = lgetv %dc;
+        %tmp.4 = const :setAntiAlias;
+        %tmp.5 = canhazplz %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_8_27_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_8_27_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_33_27_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 26 12 ]
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = as %tmp.6 { (interface { var setAntiAlias; }) };
+        %tmp.8 = getv function %tmp.7 :setAntiAlias;
+        %tmp.9 = true;
+        invoke %tmp.7 %tmp.8(%tmp.9);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_33_27_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_8_27_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_25_8_27_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 28 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %width.1 = local;
+        %tmp.10 = lgetv %dc;
+        %tmp.11 = getv function %tmp.10 :getWidth;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = as %tmp.12 Number;
+        lputv %width.1 %tmp.13;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 29 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %height.2 = local;
+        %tmp.14 = lgetv %dc;
+        %tmp.15 = getv function %tmp.14 :getHeight;
+        %tmp.16 = invoke %tmp.14 %tmp.15();
+        %tmp.17 = as %tmp.16 Number;
+        lputv %height.2 %tmp.17;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 30 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %primaryColor.3 = local;
+        %tmp.18 = self;
+        %tmp.19 = getv function %tmp.18 :getApp;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        %tmp.21 = getv function %tmp.20 :getProperty;
+        %tmp.22 = "PrimaryColor";
+        %tmp.23 = invoke %tmp.20 %tmp.21(%tmp.22);
+        %tmp.24 = as %tmp.23 Number;
+        lputv %primaryColor.3 %tmp.24;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 31 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %status.4 = local;
+        %tmp.25 = getm $.Toybox.Application;
+        %tmp.26 = getv %tmp.25 :Storage;
+        %tmp.27 = getv function %tmp.26 :getValue;
+        %tmp.28 = "status";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        %tmp.30 = as %tmp.29 Dictionary;
+        lputv %status.4 %tmp.30;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 32 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %glucoseText.5 = local;
+        %tmp.31 = self;
+        %tmp.32 = getv function %tmp.31 :getGlucoseText;
+        %tmp.34 = lgetv %status.4;
+        %tmp.35 = invoke %tmp.31 %tmp.32(%tmp.34);
+        lputv %glucoseText.5 %tmp.35;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 33 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %deltaText.6 = local;
+        %tmp.36 = self;
+        %tmp.37 = getv function %tmp.36 :getDeltaText;
+        %tmp.39 = lgetv %status.4;
+        %tmp.40 = invoke %tmp.36 %tmp.37(%tmp.39);
+        lputv %deltaText.6 %tmp.40;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 34 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %glucoseWidth.7 = local;
+        %tmp.41 = lgetv %dc;
+        %tmp.42 = getv function %tmp.41 :getTextWidthInPixels;
+        %tmp.44 = lgetv %glucoseText.5;
+        %tmp.45 = getm $.Toybox.Graphics;
+        %tmp.46 = getv %tmp.45 :FONT_NUMBER_MILD;
+        %tmp.47 = invoke %tmp.41 %tmp.42(%tmp.44, %tmp.46);
+        %tmp.48 = as %tmp.47 Number;
+        lputv %glucoseWidth.7 %tmp.48;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 35 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %glucoseHeight.8 = local;
+        %tmp.49 = lgetv %dc;
+        %tmp.50 = getv function %tmp.49 :getFontHeight;
+        %tmp.51 = getm $.Toybox.Graphics;
+        %tmp.52 = getv %tmp.51 :FONT_NUMBER_MILD;
+        %tmp.53 = invoke %tmp.49 %tmp.50(%tmp.52);
+        %tmp.54 = as %tmp.53 Number;
+        lputv %glucoseHeight.8 %tmp.54;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 36 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %deltaHeight.9 = local;
+        %tmp.55 = lgetv %dc;
+        %tmp.56 = getv function %tmp.55 :getFontHeight;
+        %tmp.57 = getm $.Toybox.Graphics;
+        %tmp.58 = getv %tmp.57 :FONT_TINY;
+        %tmp.59 = invoke %tmp.55 %tmp.56(%tmp.58);
+        %tmp.60 = as %tmp.59 Number;
+        lputv %deltaHeight.9 %tmp.60;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 37 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %deltaWidth.10 = local;
+        %tmp.61 = lgetv %dc;
+        %tmp.62 = getv function %tmp.61 :getTextWidthInPixels;
+        %tmp.64 = lgetv %deltaText.6;
+        %tmp.65 = getm $.Toybox.Graphics;
+        %tmp.66 = getv %tmp.65 :FONT_TINY;
+        %tmp.67 = invoke %tmp.61 %tmp.62(%tmp.64, %tmp.66);
+        %tmp.68 = as %tmp.67 Number;
+        lputv %deltaWidth.10 %tmp.68;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 39 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %glucoseX.11 = local;
+        %tmp.70 = lgetv %width.1;
+        %tmp.71 = 0.07;
+        %tmp.72 = mul %tmp.70 %tmp.71;
+        lputv %glucoseX.11 %tmp.72;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 40 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %glucoseY.12 = local;
+        %tmp.74 = lgetv %height.2;
+        %tmp.75 = 0.22;
+        %tmp.76 = mul %tmp.74 %tmp.75;
+        lputv %glucoseY.12 %tmp.76;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 42 8 ]
+        %tmp.77 = lgetv %dc;
+        %tmp.78 = getv function %tmp.77 :setColor;
+        %tmp.80 = lgetv %primaryColor.3;
+        %tmp.81 = getm $.Toybox.Graphics;
+        %tmp.82 = getv %tmp.81 :COLOR_TRANSPARENT;
+        invoke %tmp.77 %tmp.78(%tmp.80, %tmp.82);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 44 8 ]
+        %tmp.83 = lgetv %dc;
+        %tmp.84 = getv function %tmp.83 :drawText;
+        %tmp.86 = lgetv %glucoseX.11;
+        %tmp.88 = lgetv %glucoseY.12;
+        %tmp.89 = getm $.Toybox.Graphics;
+        %tmp.90 = getv %tmp.89 :FONT_NUMBER_MILD;
+        %tmp.92 = lgetv %glucoseText.5;
+        %tmp.93 = getm $.Toybox.Graphics;
+        %tmp.94 = getv %tmp.93 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.83 %tmp.84(%tmp.86, %tmp.88, %tmp.90, %tmp.92, %tmp.94);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 46 8 ]
+        %tmp.95 = lgetv %dc;
+        %tmp.96 = getv function %tmp.95 :setColor;
+        %tmp.97 = getm $.Toybox.Graphics;
+        %tmp.98 = getv %tmp.97 :COLOR_LT_GRAY;
+        %tmp.99 = getm $.Toybox.Graphics;
+        %tmp.100 = getv %tmp.99 :COLOR_TRANSPARENT;
+        invoke %tmp.95 %tmp.96(%tmp.98, %tmp.100);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 48 8 ]
+        %tmp.101 = lgetv %dc;
+        %tmp.102 = getv function %tmp.101 :drawText;
+        %tmp.104 = lgetv %glucoseX.11;
+        %tmp.106 = lgetv %glucoseWidth.7;
+        %tmp.107 = add %tmp.104 %tmp.106;
+        %tmp.109 = lgetv %width.1;
+        %tmp.110 = 0.02;
+        %tmp.111 = mul %tmp.109 %tmp.110;
+        %tmp.112 = add %tmp.107 %tmp.111;
+        %tmp.114 = lgetv %glucoseY.12;
+        %tmp.116 = lgetv %glucoseHeight.8;
+        %tmp.118 = lgetv %deltaHeight.9;
+        %tmp.119 = sub %tmp.116 %tmp.118;
+        %tmp.120 = 0.5;
+        %tmp.121 = mul %tmp.119 %tmp.120;
+        %tmp.122 = add %tmp.114 %tmp.121;
+        %tmp.123 = getm $.Toybox.Graphics;
+        %tmp.124 = getv %tmp.123 :FONT_SYSTEM_TINY;
+        %tmp.126 = lgetv %deltaText.6;
+        %tmp.127 = getm $.Toybox.Graphics;
+        %tmp.128 = getv %tmp.127 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.101 %tmp.102(%tmp.112, %tmp.122, %tmp.124, %tmp.126, %tmp.128);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 56 8 ]
+        %tmp.129 = lgetv %dc;
+        %tmp.130 = getv function %tmp.129 :drawBitmap;
+        %tmp.132 = lgetv %glucoseX.11;
+        %tmp.134 = lgetv %glucoseWidth.7;
+        %tmp.135 = add %tmp.132 %tmp.134;
+        %tmp.137 = lgetv %deltaWidth.10;
+        %tmp.138 = add %tmp.135 %tmp.137;
+        %tmp.140 = lgetv %width.1;
+        %tmp.141 = 0.06;
+        %tmp.142 = mul %tmp.140 %tmp.141;
+        %tmp.143 = add %tmp.138 %tmp.142;
+        %tmp.145 = lgetv %glucoseY.12;
+        %tmp.147 = lgetv %glucoseHeight.8;
+        %tmp.148 = 3;
+        %tmp.149 = div %tmp.147 %tmp.148;
+        %tmp.150 = add %tmp.145 %tmp.149;
+        %tmp.151 = self;
+        %tmp.152 = getv function %tmp.151 :getDirection;
+        %tmp.154 = lgetv %status.4;
+        %tmp.155 = invoke %tmp.151 %tmp.152(%tmp.154);
+        invoke %tmp.129 %tmp.130(%tmp.143, %tmp.150, %tmp.155);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 58 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %min.13 = local;
+        %tmp.156 = self;
+        %tmp.157 = getv function %tmp.156 :getMinutes;
+        %tmp.159 = lgetv %status.4;
+        %tmp.160 = invoke %tmp.156 %tmp.157(%tmp.159);
+        lputv %min.13 %tmp.160;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 59 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %loopColor.14 = local;
+        %tmp.161 = self;
+        %tmp.162 = getv function %tmp.161 :getLoopColor;
+        %tmp.164 = lgetv %min.13;
+        %tmp.165 = invoke %tmp.161 %tmp.162(%tmp.164);
+        lputv %loopColor.14 %tmp.165;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 61 8 ]
+        %tmp.166 = lgetv %dc;
+        %tmp.167 = getv function %tmp.166 :setColor;
+        %tmp.169 = lgetv %loopColor.14;
+        %tmp.170 = getm $.Toybox.Graphics;
+        %tmp.171 = getv %tmp.170 :COLOR_TRANSPARENT;
+        invoke %tmp.166 %tmp.167(%tmp.169, %tmp.171);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 62 8 ]
+        %tmp.172 = lgetv %dc;
+        %tmp.173 = getv function %tmp.172 :setPenWidth;
+        %tmp.174 = 6;
+        invoke %tmp.172 %tmp.173(%tmp.174);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 64 8 ]
+        %tmp.175 = lgetv %dc;
+        %tmp.176 = getv function %tmp.175 :drawCircle;
+        %tmp.178 = lgetv %width.1;
+        %tmp.179 = 0.78;
+        %tmp.180 = mul %tmp.178 %tmp.179;
+        %tmp.182 = lgetv %glucoseHeight.8;
+        %tmp.183 = 0.3;
+        %tmp.184 = mul %tmp.182 %tmp.183;
+        %tmp.185 = add %tmp.180 %tmp.184;
+        %tmp.187 = lgetv %glucoseY.12;
+        %tmp.189 = lgetv %glucoseHeight.8;
+        %tmp.190 = 2;
+        %tmp.191 = div %tmp.189 %tmp.190;
+        %tmp.192 = add %tmp.187 %tmp.191;
+        %tmp.193 = 0.03;
+        %tmp.195 = lgetv %height.2;
+        %tmp.196 = mul %tmp.193 %tmp.195;
+        %tmp.197 = sub %tmp.192 %tmp.196;
+        %tmp.199 = lgetv %glucoseHeight.8;
+        %tmp.200 = 0.3;
+        %tmp.201 = mul %tmp.199 %tmp.200;
+        invoke %tmp.175 %tmp.176(%tmp.185, %tmp.197, %tmp.201);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 66 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop" ]
+        %loopString.15 = local;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_begin:
+        %tmp.203 = lgetv %min.13;
+        %tmp.204 = 0;
+        %tmp.205 = lt %tmp.203 %tmp.204;
+        bf %tmp.205 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_true:
+        %tmp.206 = "--";
+        push %tmp.206;
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_false:
+        %tmp.207 = lgetv %min.13;
+        %tmp.208 = getv function %tmp.207 :format;
+        %tmp.209 = "%d";
+        %tmp.210 = invoke %tmp.207 %tmp.208(%tmp.209);
+        push %tmp.210;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_end:
+        %tmp.211 = phi [%tmp.205 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_begin] [%tmp.206 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_true] [%tmp.210 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_false] [%tmp.211 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_66_26_66_58_end];
+        %tmp.212 = "m";
+        %tmp.213 = add %tmp.211 %tmp.212;
+        lputv %loopString.15 %tmp.213;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 67 8 ]
+        %tmp.214 = lgetv %dc;
+        %tmp.215 = getv function %tmp.214 :setColor;
+        %tmp.216 = getm $.Toybox.Graphics;
+        %tmp.217 = getv %tmp.216 :COLOR_LT_GRAY;
+        %tmp.218 = getm $.Toybox.Graphics;
+        %tmp.219 = getv %tmp.218 :COLOR_TRANSPARENT;
+        invoke %tmp.214 %tmp.215(%tmp.217, %tmp.219);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 70 8 ]
+        %tmp.220 = lgetv %dc;
+        %tmp.221 = getv function %tmp.220 :drawText;
+        %tmp.223 = lgetv %width.1;
+        %tmp.224 = 0.75;
+        %tmp.225 = mul %tmp.223 %tmp.224;
+        %tmp.227 = lgetv %glucoseY.12;
+        %tmp.229 = lgetv %glucoseHeight.8;
+        %tmp.231 = lgetv %deltaHeight.9;
+        %tmp.232 = sub %tmp.229 %tmp.231;
+        %tmp.233 = 0.5;
+        %tmp.234 = mul %tmp.232 %tmp.233;
+        %tmp.235 = add %tmp.227 %tmp.234;
+        %tmp.236 = getm $.Toybox.Graphics;
+        %tmp.237 = getv %tmp.236 :FONT_TINY;
+        %tmp.239 = lgetv %loopString.15;
+        %tmp.240 = getm $.Toybox.Graphics;
+        %tmp.241 = getv %tmp.240 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.220 %tmp.221(%tmp.225, %tmp.235, %tmp.237, %tmp.239, %tmp.241);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_24_36_75_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 77; ]
+    function getGlucoseText(status) as String {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_77_46_88_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 79 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_8_86_8_if_stmt:
+        %tmp.2 = lgetv %status;
+        %tmp.4 = getv ? :Dictionary;
+        %tmp.5 = isa %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_8_86_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_8_86_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_43_84_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 80 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_43_84_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_43_84_8_stop" ]
+        %bg.1 = local;
+        %tmp.7 = lgetv %status;
+        %tmp.8 = as %tmp.7 { (Dictionary) };
+        %tmp.9 = "glucose";
+        %tmp.10 = agetv %tmp.8 %tmp.9;
+        %tmp.11 = as %tmp.10 String;
+        lputv %bg.1 %tmp.11;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 81 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_43_84_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_43_84_8_stop" ]
+        %bgString.2 = local;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_begin:
+        %tmp.13 = lgetv %bg.1;
+        %tmp.14 = null;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_true:
+        %tmp.16 = "--";
+        push %tmp.16;
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_false:
+        %tmp.18 = lgetv %bg.1;
+        %tmp.19 = as %tmp.18 { (!Null) };
+        push %tmp.19;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_end:
+        %tmp.20 = phi [%tmp.15 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_begin] [%tmp.16 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_true] [%tmp.19 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_false] [%tmp.20 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_81_27_81_49_end];
+        lputv %bgString.2 %tmp.20;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 82 12 ]
+        %tmp.22 = lgetv %bgString.2;
+        ret %tmp.22;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_43_84_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_8_86_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_8_86_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_84_15_86_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 85 14 ]
+        %tmp.23 = "--";
+        ret %tmp.23;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_84_15_86_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_79_8_86_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_77_46_88_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 90; ]
+    function getDeltaText(status) as String {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_90_44_101_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 92 7 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_7_99_8_if_stmt:
+        %tmp.2 = lgetv %status;
+        %tmp.4 = getv ? :Dictionary;
+        %tmp.5 = isa %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_7_99_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_7_99_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_42_97_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 93 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_42_97_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_42_97_8_stop" ]
+        %delta.1 = local;
+        %tmp.7 = lgetv %status;
+        %tmp.8 = as %tmp.7 { (Dictionary) };
+        %tmp.9 = "delta";
+        %tmp.10 = agetv %tmp.8 %tmp.9;
+        %tmp.11 = as %tmp.10 String;
+        lputv %delta.1 %tmp.11;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 94 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_42_97_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_42_97_8_stop" ]
+        %deltaString.2 = local;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_begin:
+        %tmp.13 = lgetv %delta.1;
+        %tmp.14 = null;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_true:
+        %tmp.16 = "--";
+        push %tmp.16;
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_false:
+        %tmp.18 = lgetv %delta.1;
+        %tmp.19 = as %tmp.18 { (!Null) };
+        push %tmp.19;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_end:
+        %tmp.20 = phi [%tmp.15 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_begin] [%tmp.16 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_true] [%tmp.19 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_false] [%tmp.20 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_94_30_94_55_end];
+        lputv %deltaString.2 %tmp.20;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 95 12 ]
+        %tmp.22 = lgetv %deltaString.2;
+        ret %tmp.22;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_42_97_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_7_99_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_7_99_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_97_15_99_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 98 13 ]
+        %tmp.23 = "--";
+        ret %tmp.23;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_97_15_99_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_92_7_99_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_90_44_101_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 103; ]
+    function getDirection(status) as BitmapType {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_103_48_143_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 104 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_103_48_143_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_103_48_143_4_stop" ]
+        %bitmap.1 = local;
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        %tmp.4 = getv ? :Rez;
+        %tmp.5 = getv %tmp.4 :Drawables;
+        %tmp.6 = getv %tmp.5 :Unknown;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        lputv %bitmap.1 %tmp.7;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 105 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_8_141_8_if_stmt:
+        %tmp.9 = lgetv %status;
+        %tmp.11 = getv ? :Dictionary;
+        %tmp.12 = isa %tmp.9 %tmp.11;
+        bf %tmp.12 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_8_141_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_8_141_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_43_139_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 106 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_43_139_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_43_139_8_stop" ]
+        %trend.2 = local;
+        %tmp.14 = lgetv %status;
+        %tmp.15 = as %tmp.14 { (Dictionary) };
+        %tmp.16 = "trendRaw";
+        %tmp.17 = agetv %tmp.15 %tmp.16;
+        %tmp.18 = as %tmp.17 String;
+        lputv %trend.2 %tmp.18;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 107 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_12_109_12_if_stmt:
+        %tmp.20 = lgetv %trend.2;
+        %tmp.21 = null;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_12_109_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_12_109_12_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_31_109_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 108 16 ]
+        %tmp.24 = lgetv %bitmap.1;
+        ret %tmp.24;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_31_109_12_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_12_109_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_107_12_109_12_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 111 12 ]
+        %tmp.26 = lgetv %trend.2;
+        push %tmp.26;
+        switch %tmp.26 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtBegin:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 112 16 ]
+        %tmp.27 = dup %tmp.26;
+        %tmp.28 = "Flat";
+        %tmp.29 = getv function %tmp.27 :equals;
+        %tmp.30 = invoke %tmp.27 %tmp.29 (%tmp.28);
+        bt %tmp.30 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_112_16_114_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 115 16 ]
+        %tmp.31 = dup %tmp.26;
+        %tmp.32 = "SingleUp";
+        %tmp.33 = getv function %tmp.31 :equals;
+        %tmp.34 = invoke %tmp.31 %tmp.33 (%tmp.32);
+        bt %tmp.34 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_115_16_117_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 118 16 ]
+        %tmp.35 = dup %tmp.26;
+        %tmp.36 = "SingleDown";
+        %tmp.37 = getv function %tmp.35 :equals;
+        %tmp.38 = invoke %tmp.35 %tmp.37 (%tmp.36);
+        bt %tmp.38 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_118_16_120_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 121 16 ]
+        %tmp.39 = dup %tmp.26;
+        %tmp.40 = "FortyFiveUp";
+        %tmp.41 = getv function %tmp.39 :equals;
+        %tmp.42 = invoke %tmp.39 %tmp.41 (%tmp.40);
+        bt %tmp.42 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_121_16_123_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 124 16 ]
+        %tmp.43 = dup %tmp.26;
+        %tmp.44 = "FortyFiveDown";
+        %tmp.45 = getv function %tmp.43 :equals;
+        %tmp.46 = invoke %tmp.43 %tmp.45 (%tmp.44);
+        bt %tmp.46 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_124_16_126_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 127 16 ]
+        %tmp.47 = dup %tmp.26;
+        %tmp.48 = "DoubleUp";
+        %tmp.49 = getv function %tmp.47 :equals;
+        %tmp.50 = invoke %tmp.47 %tmp.49 (%tmp.48);
+        bt %tmp.50 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_127_16_127_31_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 128 16 ]
+        %tmp.51 = dup %tmp.26;
+        %tmp.52 = "TripleUp";
+        %tmp.53 = getv function %tmp.51 :equals;
+        %tmp.54 = invoke %tmp.51 %tmp.53 (%tmp.52);
+        bt %tmp.54 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_128_16_130_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 131 16 ]
+        %tmp.55 = dup %tmp.26;
+        %tmp.56 = "DoubleDown";
+        %tmp.57 = getv function %tmp.55 :equals;
+        %tmp.58 = invoke %tmp.55 %tmp.57 (%tmp.56);
+        bt %tmp.58 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_131_16_131_33_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 132 16 ]
+        %tmp.59 = dup %tmp.26;
+        %tmp.60 = "TripleDown";
+        %tmp.61 = getv function %tmp.59 :equals;
+        %tmp.62 = invoke %tmp.59 %tmp.61 (%tmp.60);
+        bt %tmp.62 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_132_16_134_25_switchCase;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 135 16 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtDefault:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_defaultCodeBegin;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_112_16_114_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 113 20 ]
+        %tmp.63 = getm $.Toybox.WatchUi;
+        %tmp.64 = getv function %tmp.63 :loadResource;
+        %tmp.66 = getv ? :Rez;
+        %tmp.67 = getv %tmp.66 :Drawables;
+        %tmp.68 = getv %tmp.67 :Flat;
+        %tmp.69 = invoke %tmp.63 %tmp.64(%tmp.68);
+        lputv %bitmap.1 %tmp.69;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 114 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_115_16_117_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 116 20 ]
+        %tmp.70 = getm $.Toybox.WatchUi;
+        %tmp.71 = getv function %tmp.70 :loadResource;
+        %tmp.73 = getv ? :Rez;
+        %tmp.74 = getv %tmp.73 :Drawables;
+        %tmp.75 = getv %tmp.74 :SingleUp;
+        %tmp.76 = invoke %tmp.70 %tmp.71(%tmp.75);
+        lputv %bitmap.1 %tmp.76;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 117 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_118_16_120_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 119 20 ]
+        %tmp.77 = getm $.Toybox.WatchUi;
+        %tmp.78 = getv function %tmp.77 :loadResource;
+        %tmp.80 = getv ? :Rez;
+        %tmp.81 = getv %tmp.80 :Drawables;
+        %tmp.82 = getv %tmp.81 :SingleDown;
+        %tmp.83 = invoke %tmp.77 %tmp.78(%tmp.82);
+        lputv %bitmap.1 %tmp.83;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 120 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_121_16_123_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 122 20 ]
+        %tmp.84 = getm $.Toybox.WatchUi;
+        %tmp.85 = getv function %tmp.84 :loadResource;
+        %tmp.87 = getv ? :Rez;
+        %tmp.88 = getv %tmp.87 :Drawables;
+        %tmp.89 = getv %tmp.88 :FortyFiveUp;
+        %tmp.90 = invoke %tmp.84 %tmp.85(%tmp.89);
+        lputv %bitmap.1 %tmp.90;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 123 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_124_16_126_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 125 20 ]
+        %tmp.91 = getm $.Toybox.WatchUi;
+        %tmp.92 = getv function %tmp.91 :loadResource;
+        %tmp.94 = getv ? :Rez;
+        %tmp.95 = getv %tmp.94 :Drawables;
+        %tmp.96 = getv %tmp.95 :FortyFiveDown;
+        %tmp.97 = invoke %tmp.91 %tmp.92(%tmp.96);
+        lputv %bitmap.1 %tmp.97;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 126 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_127_16_127_31_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_128_16_130_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 129 20 ]
+        %tmp.98 = getm $.Toybox.WatchUi;
+        %tmp.99 = getv function %tmp.98 :loadResource;
+        %tmp.101 = getv ? :Rez;
+        %tmp.102 = getv %tmp.101 :Drawables;
+        %tmp.103 = getv %tmp.102 :DoubleUp;
+        %tmp.104 = invoke %tmp.98 %tmp.99(%tmp.103);
+        lputv %bitmap.1 %tmp.104;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 130 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_131_16_131_33_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_132_16_134_25_switchCase:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 133 20 ]
+        %tmp.105 = getm $.Toybox.WatchUi;
+        %tmp.106 = getv function %tmp.105 :loadResource;
+        %tmp.108 = getv ? :Rez;
+        %tmp.109 = getv %tmp.108 :Drawables;
+        %tmp.110 = getv %tmp.109 :DoubleDown;
+        %tmp.111 = invoke %tmp.105 %tmp.106(%tmp.110);
+        lputv %bitmap.1 %tmp.111;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 134 20 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_135_16_135_30_switchCase:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_defaultCodeBegin:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 135 25 ]
+        goto break @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_111_12_136_12_switchStmtEnd:
+        pop;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 138 12 ]
+        %tmp.113 = lgetv %bitmap.1;
+        ret %tmp.113;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_43_139_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_8_141_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_8_141_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_139_15_141_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 140 12 ]
+        %tmp.115 = lgetv %bitmap.1;
+        ret %tmp.115;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_139_15_141_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_105_8_141_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_103_48_143_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 145; ]
+    function getMinutes(status) as Number {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_145_42_162_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 147 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_8_160_8_if_stmt:
+        %tmp.2 = lgetv %status;
+        %tmp.4 = getv ? :Dictionary;
+        %tmp.5 = isa %tmp.2 %tmp.4;
+        bf %tmp.5 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_8_160_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_8_160_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 148 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_stop" ]
+        %lastLoopDate.1 = local;
+        %tmp.7 = lgetv %status;
+        %tmp.8 = as %tmp.7 { (Dictionary) };
+        %tmp.9 = "lastLoopDateInterval";
+        %tmp.10 = agetv %tmp.8 %tmp.9;
+        %tmp.11 = as %tmp.10 Number;
+        lputv %lastLoopDate.1 %tmp.11;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 149 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_12_151_12_if_stmt:
+        %tmp.13 = lgetv %lastLoopDate.1;
+        %tmp.14 = null;
+        %tmp.15 = eq %tmp.13 %tmp.14;
+        bf %tmp.15 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_12_151_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_12_151_12_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_38_151_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 150 16 ]
+        %tmp.16 = -1;
+        ret %tmp.16;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_38_151_12_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_12_151_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_149_12_151_12_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 153 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_stop" ]
+        %now.2 = local;
+        %tmp.17 = getm $.Toybox.Time;
+        %tmp.18 = getv function %tmp.17 :now;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = getv function %tmp.19 :value;
+        %tmp.21 = invoke %tmp.19 %tmp.20();
+        %tmp.22 = as %tmp.21 Number;
+        lputv %now.2 %tmp.22;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 155 12 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_stop" ]
+        %min.3 = local;
+        %tmp.24 = lgetv %now.2;
+        %tmp.26 = lgetv %lastLoopDate.1;
+        %tmp.27 = sub %tmp.24 %tmp.26;
+        %tmp.28 = 60;
+        %tmp.29 = div %tmp.27 %tmp.28;
+        lputv %min.3 %tmp.29;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 157 12 ]
+        %tmp.31 = lgetv %min.3;
+        ret %tmp.31;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_43_158_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_8_160_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_8_160_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_158_15_160_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 159 12 ]
+        %tmp.32 = -1;
+        ret %tmp.32;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_158_15_160_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_147_8_160_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_145_42_162_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 164; ]
+    function getLoopColor(min as Number) as Number {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_164_51_174_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 165 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_8_173_8_if_stmt:
+        %tmp.2 = lgetv %min;
+        %tmp.3 = 0;
+        %tmp.4 = lt %tmp.2 %tmp.3;
+        bf %tmp.4 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_8_173_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_8_173_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_21_167_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 166 12 ]
+        %tmp.5 = getm $.Toybox.Graphics;
+        %tmp.6 = getv %tmp.5 :COLOR_LT_GRAY;
+        %tmp.7 = as %tmp.6 Number;
+        ret %tmp.7;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_21_167_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_8_173_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_8_173_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 167 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_15_173_8_if_stmt:
+        %tmp.9 = lgetv %min;
+        %tmp.10 = 7;
+        %tmp.11 = lte %tmp.9 %tmp.10;
+        bf %tmp.11 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_15_173_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_15_173_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_29_169_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 168 12 ]
+        %tmp.12 = getm $.Toybox.Graphics;
+        %tmp.13 = getv %tmp.12 :COLOR_GREEN;
+        %tmp.14 = as %tmp.13 Number;
+        ret %tmp.14;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_29_169_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_15_173_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_15_173_8_if_false:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 169 15 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_15_173_8_if_stmt:
+        %tmp.16 = lgetv %min;
+        %tmp.17 = 12;
+        %tmp.18 = lte %tmp.16 %tmp.17;
+        bf %tmp.18 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_15_173_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_15_173_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_30_171_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 170 12 ]
+        %tmp.19 = getm $.Toybox.Graphics;
+        %tmp.20 = getv %tmp.19 :COLOR_YELLOW;
+        %tmp.21 = as %tmp.20 Number;
+        ret %tmp.21;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_30_171_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_15_173_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_15_173_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_171_15_173_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" 172 12 ]
+        %tmp.22 = getm $.Toybox.Graphics;
+        %tmp.23 = getv %tmp.22 :COLOR_RED;
+        %tmp.24 = as %tmp.23 Number;
+        ret %tmp.24;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_171_15_173_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_169_15_173_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_167_15_173_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_165_8_173_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_drawables_Header_mc_164_51_174_4_stop:
+    }
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc"; @line = 9; ]
+<init> {
+}

@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="1" lineNum="18" parent="globals/TrioWatchfaceApp" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="2" lineNum="13" parent="globals/CommsRelay" pc="268435469" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="3" lineNum="17" parent="globals/TrioBGServiceDelegate" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="27" parent="globals/TrioWatchfaceApp" pc="268435493" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="29" parent="globals/TrioWatchfaceApp" pc="268435496" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="31" parent="globals/TrioWatchfaceApp" pc="268435514" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="32" parent="globals/TrioWatchfaceApp" pc="268435552" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="33" parent="globals/TrioWatchfaceApp" pc="268435567" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="34" parent="globals/TrioWatchfaceApp" pc="268435578" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="36" parent="globals/TrioWatchfaceApp" pc="268435599" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="40" parent="globals/TrioWatchfaceApp" pc="268435620" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="44" parent="globals/TrioWatchfaceApp" pc="268435638" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="47" parent="globals/TrioWatchfaceApp" pc="268435656" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="4" lineNum="50" parent="globals/TrioWatchfaceApp" pc="268435664" symbol="onStart"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="5" lineNum="97" parent="globals/TrioWatchfaceApp" pc="268435682" symbol="onSettingsChanged"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="5" lineNum="98" parent="globals/TrioWatchfaceApp" pc="268435684" symbol="onSettingsChanged"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="6" lineNum="101" parent="globals/TrioWatchfaceApp" pc="268435696" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="6" lineNum="102" parent="globals/TrioWatchfaceApp" pc="268435698" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="6" lineNum="103" parent="globals/TrioWatchfaceApp" pc="268435706" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="6" lineNum="104" parent="globals/TrioWatchfaceApp" pc="268435724" symbol="getServiceDelegate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="7" lineNum="92" parent="globals/TrioWatchfaceApp" pc="268435754" symbol="getInitialView"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="7" lineNum="93" parent="globals/TrioWatchfaceApp" pc="268435756" symbol="getInitialView"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="8" lineNum="22" parent="globals/TrioWatchfaceApp" pc="268435786" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="8" lineNum="23" parent="globals/TrioWatchfaceApp" pc="268435788" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="65" parent="globals/TrioWatchfaceApp" pc="268435801" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="66" parent="globals/TrioWatchfaceApp" pc="268435803" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="67" parent="globals/TrioWatchfaceApp" pc="268435824" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="69" parent="globals/TrioWatchfaceApp" pc="268435845" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="70" parent="globals/TrioWatchfaceApp" pc="268435863" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="71" parent="globals/TrioWatchfaceApp" pc="268435878" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="74" parent="globals/TrioWatchfaceApp" pc="268435899" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="75" parent="globals/TrioWatchfaceApp" pc="268435917" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="76" parent="globals/TrioWatchfaceApp" pc="268435942" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="79" parent="globals/TrioWatchfaceApp" pc="268435980" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="9" lineNum="80" parent="globals/TrioWatchfaceApp" pc="268435998" symbol="onBackgroundData"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="10" lineNum="84" parent="globals/TrioWatchfaceApp" pc="268436010" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="10" lineNum="85" parent="globals/TrioWatchfaceApp" pc="268436012" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="10" lineNum="86" parent="globals/TrioWatchfaceApp" pc="268436021" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="10" lineNum="87" parent="globals/TrioWatchfaceApp" pc="268436039" symbol="onStop"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="11" lineNum="25" parent="globals/CommsRelay" pc="268436051" symbol="onError"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="11" lineNum="26" parent="globals/CommsRelay" pc="268436053" symbol="onError"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="12" lineNum="21" parent="globals/CommsRelay" pc="268436069" symbol="onComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="12" lineNum="22" parent="globals/CommsRelay" pc="268436071" symbol="onComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="13" lineNum="16" parent="globals/CommsRelay" pc="268436087" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="13" lineNum="17" parent="globals/CommsRelay" pc="268436089" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" id="13" lineNum="18" parent="globals/CommsRelay" pc="268436101" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="14" lineNum="32" parent="globals/TrioBGServiceDelegate" pc="268436111" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="14" lineNum="34" parent="globals/TrioBGServiceDelegate" pc="268436113" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="14" lineNum="35" parent="globals/TrioBGServiceDelegate" pc="268436131" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="14" lineNum="36" parent="globals/TrioBGServiceDelegate" pc="268436146" symbol="onReceiveMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="15" lineNum="45" parent="globals/TrioBGServiceDelegate" pc="268436166" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="15" lineNum="46" parent="globals/TrioBGServiceDelegate" pc="268436168" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="15" lineNum="47" parent="globals/TrioBGServiceDelegate" pc="268436186" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="15" lineNum="48" parent="globals/TrioBGServiceDelegate" pc="268436201" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="15" lineNum="49" parent="globals/TrioBGServiceDelegate" pc="268436230" symbol="onPhoneAppMessage"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="16" lineNum="39" parent="globals/TrioBGServiceDelegate" pc="268436245" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="16" lineNum="40" parent="globals/TrioBGServiceDelegate" pc="268436247" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="16" lineNum="41" parent="globals/TrioBGServiceDelegate" pc="268436265" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="16" lineNum="42" parent="globals/TrioBGServiceDelegate" pc="268436319" symbol="onTemporalEvent"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="17" lineNum="20" parent="globals/TrioBGServiceDelegate" pc="268436334" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="17" lineNum="21" parent="globals/TrioBGServiceDelegate" pc="268436336" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="17" lineNum="24" parent="globals/TrioBGServiceDelegate" pc="268436348" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="17" lineNum="27" parent="globals/TrioBGServiceDelegate" pc="268436364" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="17" lineNum="28" parent="globals/TrioBGServiceDelegate" pc="268436390" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="18" lineNum="52" parent="globals/TrioBGServiceDelegate" pc="268436409" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="18" lineNum="53" parent="globals/TrioBGServiceDelegate" pc="268436411" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="18" lineNum="54" parent="globals/TrioBGServiceDelegate" pc="268436416" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="18" lineNum="56" parent="globals/TrioBGServiceDelegate" pc="268436437" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" id="18" lineNum="58" parent="globals/TrioBGServiceDelegate" pc="268436455" symbol="onTransmitComplete"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="19" lineNum="108" parent="globals" pc="268436471" symbol="getApp"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" id="19" lineNum="109" parent="globals" pc="268436481" symbol="getApp"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="20" lineNum="14" parent="globals/Background" pc="268436492" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="21" lineNum="7" parent="globals/Rez" pc="268436504" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="22" lineNum="15" parent="globals/HeaderDrawable" pc="268436524" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="23" lineNum="19" parent="globals/TrioWatchfaceView" pc="268436536" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="24" lineNum="16" parent="globals/Background" pc="268436548" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="24" lineNum="17" parent="globals/Background" pc="268436551" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="24" lineNum="21" parent="globals/Background" pc="268436569" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="25" lineNum="24" parent="globals/Background" pc="268436586" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="25" lineNum="26" parent="globals/Background" pc="268436588" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceBackground.mc" id="25" lineNum="27" parent="globals/Background" pc="268436619" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="103" parent="globals/HeaderDrawable" pc="268436628" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="104" parent="globals/HeaderDrawable" pc="268436631" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="105" parent="globals/HeaderDrawable" pc="268436664" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="106" parent="globals/HeaderDrawable" pc="268436679" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="107" parent="globals/HeaderDrawable" pc="268436689" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="108" parent="globals/HeaderDrawable" pc="268436695" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="111" parent="globals/HeaderDrawable" pc="268436698" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="112" parent="globals/HeaderDrawable" pc="268436700" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="115" parent="globals/HeaderDrawable" pc="268436719" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="118" parent="globals/HeaderDrawable" pc="268436738" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="121" parent="globals/HeaderDrawable" pc="268436757" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="124" parent="globals/HeaderDrawable" pc="268436776" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="127" parent="globals/HeaderDrawable" pc="268436795" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="128" parent="globals/HeaderDrawable" pc="268436814" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="131" parent="globals/HeaderDrawable" pc="268436833" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="132" parent="globals/HeaderDrawable" pc="268436852" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="135" parent="globals/HeaderDrawable" pc="268436871" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="113" parent="globals/HeaderDrawable" pc="268436874" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="114" parent="globals/HeaderDrawable" pc="268436907" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="116" parent="globals/HeaderDrawable" pc="268436910" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="117" parent="globals/HeaderDrawable" pc="268436943" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="119" parent="globals/HeaderDrawable" pc="268436946" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="120" parent="globals/HeaderDrawable" pc="268436979" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="122" parent="globals/HeaderDrawable" pc="268436982" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="123" parent="globals/HeaderDrawable" pc="268437015" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="125" parent="globals/HeaderDrawable" pc="268437018" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="126" parent="globals/HeaderDrawable" pc="268437051" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="129" parent="globals/HeaderDrawable" pc="268437054" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="130" parent="globals/HeaderDrawable" pc="268437087" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="133" parent="globals/HeaderDrawable" pc="268437090" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="134" parent="globals/HeaderDrawable" pc="268437123" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="138" parent="globals/HeaderDrawable" pc="268437127" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="26" lineNum="140" parent="globals/HeaderDrawable" pc="268437130" symbol="getDirection"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="27" lineNum="16" parent="globals/HeaderDrawable" pc="268437133" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="27" lineNum="17" parent="globals/HeaderDrawable" pc="268437136" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="27" lineNum="21" parent="globals/HeaderDrawable" pc="268437154" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="24" parent="globals/HeaderDrawable" pc="268437171" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="25" parent="globals/HeaderDrawable" pc="268437174" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="26" parent="globals/HeaderDrawable" pc="268437185" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="28" parent="globals/HeaderDrawable" pc="268437197" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="29" parent="globals/HeaderDrawable" pc="268437206" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="30" parent="globals/HeaderDrawable" pc="268437215" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="31" parent="globals/HeaderDrawable" pc="268437236" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="32" parent="globals/HeaderDrawable" pc="268437260" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="33" parent="globals/HeaderDrawable" pc="268437272" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="34" parent="globals/HeaderDrawable" pc="268437284" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="35" parent="globals/HeaderDrawable" pc="268437299" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="36" parent="globals/HeaderDrawable" pc="268437312" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="37" parent="globals/HeaderDrawable" pc="268437325" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="39" parent="globals/HeaderDrawable" pc="268437340" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="40" parent="globals/HeaderDrawable" pc="268437350" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="42" parent="globals/HeaderDrawable" pc="268437360" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="44" parent="globals/HeaderDrawable" pc="268437374" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="46" parent="globals/HeaderDrawable" pc="268437394" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="48" parent="globals/HeaderDrawable" pc="268437411" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="56" parent="globals/HeaderDrawable" pc="268437455" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="58" parent="globals/HeaderDrawable" pc="268437500" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="59" parent="globals/HeaderDrawable" pc="268437512" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="61" parent="globals/HeaderDrawable" pc="268437524" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="62" parent="globals/HeaderDrawable" pc="268437538" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="64" parent="globals/HeaderDrawable" pc="268437550" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="66" parent="globals/HeaderDrawable" pc="268437602" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="67" parent="globals/HeaderDrawable" pc="268437639" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="28" lineNum="70" parent="globals/HeaderDrawable" pc="268437656" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="29" lineNum="77" parent="globals/HeaderDrawable" pc="268437694" symbol="getGlucoseText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="29" lineNum="79" parent="globals/HeaderDrawable" pc="268437697" symbol="getGlucoseText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="29" lineNum="80" parent="globals/HeaderDrawable" pc="268437712" symbol="getGlucoseText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="29" lineNum="81" parent="globals/HeaderDrawable" pc="268437722" symbol="getGlucoseText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="29" lineNum="82" parent="globals/HeaderDrawable" pc="268437740" symbol="getGlucoseText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="29" lineNum="85" parent="globals/HeaderDrawable" pc="268437743" symbol="getGlucoseText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="164" parent="globals/HeaderDrawable" pc="268437749" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="165" parent="globals/HeaderDrawable" pc="268437751" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="166" parent="globals/HeaderDrawable" pc="268437758" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="167" parent="globals/HeaderDrawable" pc="268437764" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="168" parent="globals/HeaderDrawable" pc="268437772" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="169" parent="globals/HeaderDrawable" pc="268437777" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="170" parent="globals/HeaderDrawable" pc="268437785" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="30" lineNum="172" parent="globals/HeaderDrawable" pc="268437791" symbol="getLoopColor"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="31" lineNum="90" parent="globals/HeaderDrawable" pc="268437797" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="31" lineNum="92" parent="globals/HeaderDrawable" pc="268437800" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="31" lineNum="93" parent="globals/HeaderDrawable" pc="268437815" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="31" lineNum="94" parent="globals/HeaderDrawable" pc="268437825" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="31" lineNum="95" parent="globals/HeaderDrawable" pc="268437843" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="31" lineNum="98" parent="globals/HeaderDrawable" pc="268437846" symbol="getDeltaText"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="145" parent="globals/HeaderDrawable" pc="268437852" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="147" parent="globals/HeaderDrawable" pc="268437855" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="148" parent="globals/HeaderDrawable" pc="268437870" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="149" parent="globals/HeaderDrawable" pc="268437880" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="150" parent="globals/HeaderDrawable" pc="268437886" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="153" parent="globals/HeaderDrawable" pc="268437889" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="155" parent="globals/HeaderDrawable" pc="268437907" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="157" parent="globals/HeaderDrawable" pc="268437917" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/drawables/Header.mc" id="32" lineNum="159" parent="globals/HeaderDrawable" pc="268437920" symbol="getMinutes"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="34" lineNum="32" parent="globals/TrioWatchfaceView" pc="268437923" symbol="onShow"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="34" lineNum="33" parent="globals/TrioWatchfaceView" pc="268437925" symbol="onShow"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="35" lineNum="25" parent="globals/TrioWatchfaceView" pc="268437944" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="35" lineNum="26" parent="globals/TrioWatchfaceView" pc="268437946" symbol="onLayout"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="98" parent="globals/TrioWatchfaceView" pc="268437980" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="100" parent="globals/TrioWatchfaceView" pc="268437983" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="101" parent="globals/TrioWatchfaceView" pc="268437995" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="102" parent="globals/TrioWatchfaceView" pc="268438003" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="104" parent="globals/TrioWatchfaceView" pc="268438043" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="105" parent="globals/TrioWatchfaceView" pc="268438055" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="106" parent="globals/TrioWatchfaceView" pc="268438063" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="108" parent="globals/TrioWatchfaceView" pc="268438094" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="36" lineNum="109" parent="globals/TrioWatchfaceView" pc="268438118" symbol="setSteps"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="152" parent="globals/TrioWatchfaceView" pc="268438131" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="153" parent="globals/TrioWatchfaceView" pc="268438134" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="154" parent="globals/TrioWatchfaceView" pc="268438158" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="156" parent="globals/TrioWatchfaceView" pc="268438187" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="157" parent="globals/TrioWatchfaceView" pc="268438202" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="158" parent="globals/TrioWatchfaceView" pc="268438212" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="159" parent="globals/TrioWatchfaceView" pc="268438227" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="161" parent="globals/TrioWatchfaceView" pc="268438244" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="162" parent="globals/TrioWatchfaceView" pc="268438262" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="163" parent="globals/TrioWatchfaceView" pc="268438274" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="165" parent="globals/TrioWatchfaceView" pc="268438275" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="37" lineNum="166" parent="globals/TrioWatchfaceView" pc="268438290" symbol="setEventualBG"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="132" parent="globals/TrioWatchfaceView" pc="268438291" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="133" parent="globals/TrioWatchfaceView" pc="268438294" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="135" parent="globals/TrioWatchfaceView" pc="268438318" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="136" parent="globals/TrioWatchfaceView" pc="268438333" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="138" parent="globals/TrioWatchfaceView" pc="268438343" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="139" parent="globals/TrioWatchfaceView" pc="268438358" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="141" parent="globals/TrioWatchfaceView" pc="268438392" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="143" parent="globals/TrioWatchfaceView" pc="268438429" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="144" parent="globals/TrioWatchfaceView" pc="268438441" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="146" parent="globals/TrioWatchfaceView" pc="268438442" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="38" lineNum="147" parent="globals/TrioWatchfaceView" pc="268438457" symbol="setCOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="39" lineNum="88" parent="globals/TrioWatchfaceView" pc="268438458" symbol="setHeartRate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="39" lineNum="89" parent="globals/TrioWatchfaceView" pc="268438461" symbol="setHeartRate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="39" lineNum="90" parent="globals/TrioWatchfaceView" pc="268438473" symbol="setHeartRate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="39" lineNum="92" parent="globals/TrioWatchfaceView" pc="268438481" symbol="setHeartRate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="39" lineNum="94" parent="globals/TrioWatchfaceView" pc="268438505" symbol="setHeartRate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="39" lineNum="95" parent="globals/TrioWatchfaceView" pc="268438529" symbol="setHeartRate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="112" parent="globals/TrioWatchfaceView" pc="268438542" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="113" parent="globals/TrioWatchfaceView" pc="268438545" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="115" parent="globals/TrioWatchfaceView" pc="268438569" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="116" parent="globals/TrioWatchfaceView" pc="268438584" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="117" parent="globals/TrioWatchfaceView" pc="268438594" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="118" parent="globals/TrioWatchfaceView" pc="268438609" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="120" parent="globals/TrioWatchfaceView" pc="268438649" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="123" parent="globals/TrioWatchfaceView" pc="268438692" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="124" parent="globals/TrioWatchfaceView" pc="268438704" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="127" parent="globals/TrioWatchfaceView" pc="268438705" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="41" lineNum="128" parent="globals/TrioWatchfaceView" pc="268438720" symbol="setIOB"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="77" parent="globals/TrioWatchfaceView" pc="268438721" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="78" parent="globals/TrioWatchfaceView" pc="268438724" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="79" parent="globals/TrioWatchfaceView" pc="268438736" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="81" parent="globals/TrioWatchfaceView" pc="268438754" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="83" parent="globals/TrioWatchfaceView" pc="268438804" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="84" parent="globals/TrioWatchfaceView" pc="268438828" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="42" lineNum="85" parent="globals/TrioWatchfaceView" pc="268438857" symbol="setDate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="43" lineNum="20" parent="globals/TrioWatchfaceView" pc="268438870" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="43" lineNum="21" parent="globals/TrioWatchfaceView" pc="268438872" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="37" parent="globals/TrioWatchfaceView" pc="268438885" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="39" parent="globals/TrioWatchfaceView" pc="268438888" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="41" parent="globals/TrioWatchfaceView" pc="268438912" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="42" parent="globals/TrioWatchfaceView" pc="268438919" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="43" parent="globals/TrioWatchfaceView" pc="268438926" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="44" parent="globals/TrioWatchfaceView" pc="268438933" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="45" parent="globals/TrioWatchfaceView" pc="268438940" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="46" parent="globals/TrioWatchfaceView" pc="268438951" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="47" parent="globals/TrioWatchfaceView" pc="268438962" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="45" lineNum="49" parent="globals/TrioWatchfaceView" pc="268438973" symbol="onUpdate"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="52" parent="globals/TrioWatchfaceView" pc="268438994" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="54" parent="globals/TrioWatchfaceView" pc="268438997" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="55" parent="globals/TrioWatchfaceView" pc="268439004" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="56" parent="globals/TrioWatchfaceView" pc="268439016" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="57" parent="globals/TrioWatchfaceView" pc="268439024" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="58" parent="globals/TrioWatchfaceView" pc="268439031" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="59" parent="globals/TrioWatchfaceView" pc="268439050" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="60" parent="globals/TrioWatchfaceView" pc="268439058" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="61" parent="globals/TrioWatchfaceView" pc="268439065" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="63" parent="globals/TrioWatchfaceView" pc="268439075" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="66" parent="globals/TrioWatchfaceView" pc="268439085" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="67" parent="globals/TrioWatchfaceView" pc="268439092" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="69" parent="globals/TrioWatchfaceView" pc="268439108" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="72" parent="globals/TrioWatchfaceView" pc="268439158" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="73" parent="globals/TrioWatchfaceView" pc="268439182" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceView.mc" id="46" lineNum="74" parent="globals/TrioWatchfaceView" pc="268439211" symbol="setTime"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="47" lineNum="103" parent="globals/Rez/Drawables/HeartRate" pc="268439224" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="48" lineNum="124" parent="globals/Rez/Drawables/StepsIcon" pc="268439236" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="49" lineNum="61" parent="globals/Rez/Drawables/Eventual" pc="268439248" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="50" lineNum="42" parent="globals/Rez/Drawables/line2" pc="268439260" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="51" lineNum="82" parent="globals/Rez/Drawables/ISF" pc="268439272" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="52" lineNum="23" parent="globals/Rez/Drawables/line1" pc="268439284" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="147" parent="globals/Rez/Layouts" pc="268439296" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="148" parent="globals/Rez/Layouts" pc="268439307" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="150" parent="globals/Rez/Layouts" pc="268439331" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="152" parent="globals/Rez/Layouts" pc="268439450" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="154" parent="globals/Rez/Layouts" pc="268439474" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="155" parent="globals/Rez/Layouts" pc="268439508" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="156" parent="globals/Rez/Layouts" pc="268439518" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="159" parent="globals/Rez/Layouts" pc="268439531" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="161" parent="globals/Rez/Layouts" pc="268439630" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="163" parent="globals/Rez/Layouts" pc="268439729" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="164" parent="globals/Rez/Layouts" pc="268439763" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="165" parent="globals/Rez/Layouts" pc="268439773" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="168" parent="globals/Rez/Layouts" pc="268439786" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="169" parent="globals/Rez/Layouts" pc="268439820" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="170" parent="globals/Rez/Layouts" pc="268439830" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="173" parent="globals/Rez/Layouts" pc="268439843" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="175" parent="globals/Rez/Layouts" pc="268439943" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="176" parent="globals/Rez/Layouts" pc="268439977" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="177" parent="globals/Rez/Layouts" pc="268439987" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="180" parent="globals/Rez/Layouts" pc="268440000" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="181" parent="globals/Rez/Layouts" pc="268440034" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="182" parent="globals/Rez/Layouts" pc="268440044" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="185" parent="globals/Rez/Layouts" pc="268440057" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="187" parent="globals/Rez/Layouts" pc="268440157" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="188" parent="globals/Rez/Layouts" pc="268440191" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="189" parent="globals/Rez/Layouts" pc="268440201" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="192" parent="globals/Rez/Layouts" pc="268440214" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="194" parent="globals/Rez/Layouts" pc="268440314" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="53" lineNum="196" parent="globals/Rez/Layouts" pc="268440433" symbol="WatchFace"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="54" lineNum="107" parent="globals/Rez/Drawables/HeartRate" pc="268440513" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="54" lineNum="108" parent="globals/Rez/Drawables/HeartRate" pc="268440515" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="54" lineNum="109" parent="globals/Rez/Drawables/HeartRate" pc="268440531" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="55" lineNum="112" parent="globals/Rez/Drawables/HeartRate" pc="268440570" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="55" lineNum="113" parent="globals/Rez/Drawables/HeartRate" pc="268440572" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="55" lineNum="114" parent="globals/Rez/Drawables/HeartRate" pc="268440582" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="55" lineNum="115" parent="globals/Rez/Drawables/HeartRate" pc="268440592" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="55" lineNum="120" parent="globals/Rez/Drawables/HeartRate" pc="268440593" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="56" lineNum="128" parent="globals/Rez/Drawables/StepsIcon" pc="268440619" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="56" lineNum="129" parent="globals/Rez/Drawables/StepsIcon" pc="268440621" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="56" lineNum="130" parent="globals/Rez/Drawables/StepsIcon" pc="268440637" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="57" lineNum="133" parent="globals/Rez/Drawables/StepsIcon" pc="268440676" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="57" lineNum="134" parent="globals/Rez/Drawables/StepsIcon" pc="268440678" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="57" lineNum="135" parent="globals/Rez/Drawables/StepsIcon" pc="268440688" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="57" lineNum="136" parent="globals/Rez/Drawables/StepsIcon" pc="268440698" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="57" lineNum="141" parent="globals/Rez/Drawables/StepsIcon" pc="268440699" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="58" lineNum="65" parent="globals/Rez/Drawables/Eventual" pc="268440725" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="58" lineNum="66" parent="globals/Rez/Drawables/Eventual" pc="268440727" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="58" lineNum="67" parent="globals/Rez/Drawables/Eventual" pc="268440743" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="59" lineNum="70" parent="globals/Rez/Drawables/Eventual" pc="268440782" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="59" lineNum="71" parent="globals/Rez/Drawables/Eventual" pc="268440784" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="59" lineNum="72" parent="globals/Rez/Drawables/Eventual" pc="268440794" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="59" lineNum="73" parent="globals/Rez/Drawables/Eventual" pc="268440804" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="59" lineNum="78" parent="globals/Rez/Drawables/Eventual" pc="268440805" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="60" lineNum="44" parent="globals/Rez/Drawables/line2" pc="268440831" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="60" lineNum="45" parent="globals/Rez/Drawables/line2" pc="268440833" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="61" lineNum="48" parent="globals/Rez/Drawables/line2" pc="268440850" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="61" lineNum="49" parent="globals/Rez/Drawables/line2" pc="268440852" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="61" lineNum="50" parent="globals/Rez/Drawables/line2" pc="268440862" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="61" lineNum="51" parent="globals/Rez/Drawables/line2" pc="268440872" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="61" lineNum="56" parent="globals/Rez/Drawables/line2" pc="268440873" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="61" lineNum="57" parent="globals/Rez/Drawables/line2" pc="268440890" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="62" lineNum="86" parent="globals/Rez/Drawables/ISF" pc="268440914" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="62" lineNum="87" parent="globals/Rez/Drawables/ISF" pc="268440916" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="62" lineNum="88" parent="globals/Rez/Drawables/ISF" pc="268440932" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="63" lineNum="91" parent="globals/Rez/Drawables/ISF" pc="268440971" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="63" lineNum="92" parent="globals/Rez/Drawables/ISF" pc="268440973" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="63" lineNum="93" parent="globals/Rez/Drawables/ISF" pc="268440983" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="63" lineNum="94" parent="globals/Rez/Drawables/ISF" pc="268440993" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="63" lineNum="99" parent="globals/Rez/Drawables/ISF" pc="268440994" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="64" lineNum="25" parent="globals/Rez/Drawables/line1" pc="268441020" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="64" lineNum="26" parent="globals/Rez/Drawables/line1" pc="268441022" symbol="initialize"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="65" lineNum="29" parent="globals/Rez/Drawables/line1" pc="268441039" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="65" lineNum="30" parent="globals/Rez/Drawables/line1" pc="268441041" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="65" lineNum="31" parent="globals/Rez/Drawables/line1" pc="268441051" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="65" lineNum="32" parent="globals/Rez/Drawables/line1" pc="268441061" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="65" lineNum="37" parent="globals/Rez/Drawables/line1" pc="268441062" symbol="draw"/>
+        <entry filename="/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/gen/006-B3943-00/source/Rez.mcgen" id="65" lineNum="38" parent="globals/Rez/Drawables/line1" pc="268441079" symbol="draw"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8389346" symbol="text"/>
+        <entry id="8391592" method="true" symbol="registerForPhoneAppMessageEvent"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="17" method="true" symbol="getGlucoseText"/>
+        <entry field="true" id="39" symbol="Steps"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="52" symbol="ColorRed"/>
+        <entry field="true" id="30" symbol="Flat"/>
+        <entry field="true" id="12" symbol="mCallback"/>
+        <entry field="true" id="11" symbol="inBackground"/>
+        <entry id="35" object="true" symbol="ISF"/>
+        <entry id="6" object="true" symbol="CommsRelay"/>
+        <entry field="true" id="28" symbol="DoubleUp"/>
+        <entry field="true" id="38" symbol="SingleUp"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="43" symbol="arrow2"/>
+        <entry field="true" id="58" symbol="image_UpDown"/>
+        <entry id="9" object="true" symbol="TrioWatchfaceApp"/>
+        <entry id="34" object="true" symbol="HeartRate"/>
+        <entry id="8390063" method="true" symbol="onTransmitComplete"/>
+        <entry field="true" id="49" symbol="ColorBlue"/>
+        <entry field="true" id="46" symbol="AppName"/>
+        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
+        <entry id="7" object="true" symbol="HeaderDrawable"/>
+        <entry id="5" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
+        <entry id="8390147" object="true" symbol="ServiceDelegate"/>
+        <entry field="true" id="57" symbol="image_arrow2"/>
+        <entry id="29" object="true" symbol="Eventual"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="8390148" method="true" symbol="onTemporalEvent"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry id="40" object="true" symbol="StepsIcon"/>
+        <entry field="true" id="42" symbol="UpDown"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry field="true" id="8389067" symbol="height"/>
+        <entry id="8390169" method="true" symbol="getServiceDelegate"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="50" symbol="ColorDarkGray"/>
+        <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
+        <entry field="true" id="8389066" symbol="width"/>
+        <entry field="true" id="8391300" method="true" symbol="isVisible"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="32" symbol="FortyFiveUp"/>
+        <entry id="8" object="true" symbol="TrioBGServiceDelegate"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry id="22" method="true" symbol="setEventualBG"/>
+        <entry field="true" id="14" symbol="phoneCallback"/>
+        <entry id="8389119" method="true" symbol="getDirection"/>
+        <entry field="true" id="53" symbol="ColorWhite"/>
+        <entry field="true" id="48" symbol="ColorBlack"/>
+        <entry id="18" method="true" symbol="getLoopColor"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8390170" method="true" symbol="onBackgroundData"/>
+        <entry id="8388828" method="true" symbol="onError"/>
+        <entry id="23" method="true" symbol="setHeartRate"/>
+        <entry field="true" id="41" symbol="Unknown"/>
+        <entry id="10" object="true" symbol="TrioWatchfaceView"/>
+        <entry id="19" method="true" symbol="getMinutes"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry field="true" id="33" symbol="HR"/>
+        <entry id="8388645" module="true" symbol="Time"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="45" object="true" symbol="line2"/>
+        <entry id="44" object="true" symbol="line1"/>
+        <entry field="true" id="56" symbol="image_Steps"/>
+        <entry field="true" id="37" symbol="SingleDown"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="36" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="47" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="16" method="true" symbol="getDeltaText"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8391507" method="true" symbol="onPhoneAppMessage"/>
+        <entry field="true" id="55" symbol="image_HR"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="27" symbol="DoubleDown"/>
+        <entry id="21" method="true" symbol="setDate"/>
+        <entry field="true" id="54" symbol="PrimaryColorTitle"/>
+        <entry field="true" id="51" symbol="ColorLightGray"/>
+        <entry id="8391701" method="true" symbol="setAntiAlias"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry id="8389347" symbol="color"/>
+        <entry id="20" method="true" symbol="setCOB"/>
+        <entry id="8388829" method="true" symbol="onComplete"/>
+        <entry id="15" module="true" symbol="Layouts"/>
+        <entry id="24" method="true" symbol="setIOB"/>
+        <entry id="25" method="true" symbol="setSteps"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="26" method="true" symbol="setTime"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+        <entry id="13" method="true" symbol="onReceiveMessage"/>
+        <entry field="true" id="31" symbol="FortyFiveDown"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435681" name="state" stackId="1" startPc="268435493"/>
+        <entry endPc="268435680" name="now" stackId="2" startPc="268435496"/>
+        <entry endPc="268435680" name="lastLoopDateInterval" stackId="3" startPc="268435496"/>
+        <entry endPc="268435680" name="sampleData" stackId="4" startPc="268435496"/>
+        <entry arg="true" endPc="268436009" name="data" stackId="1" startPc="268435801"/>
+        <entry arg="true" endPc="268436050" name="state" stackId="1" startPc="268436010"/>
+        <entry arg="true" endPc="268436110" name="callback" stackId="1" startPc="268436087"/>
+        <entry arg="true" endPc="268436165" name="msg" stackId="1" startPc="268436111"/>
+        <entry arg="true" endPc="268436244" name="msg" stackId="1" startPc="268436166"/>
+        <entry arg="true" endPc="268436470" name="isSuccess" stackId="1" startPc="268436409"/>
+        <entry endPc="268436584" name="dictionary" stackId="1" startPc="268436551"/>
+        <entry arg="true" endPc="268436627" name="dc" stackId="1" startPc="268436586"/>
+        <entry arg="true" endPc="268437132" name="status" stackId="1" startPc="268436628"/>
+        <entry endPc="268437169" name="dictionary" stackId="1" startPc="268437136"/>
+        <entry arg="true" endPc="268437693" name="dc" stackId="1" startPc="268437171"/>
+        <entry endPc="268437692" name="width" stackId="2" startPc="268437174"/>
+        <entry endPc="268437692" name="height" stackId="3" startPc="268437174"/>
+        <entry endPc="268437692" name="primaryColor" stackId="4" startPc="268437174"/>
+        <entry endPc="268437692" name="status" stackId="5" startPc="268437174"/>
+        <entry endPc="268437692" name="glucoseText" stackId="6" startPc="268437174"/>
+        <entry endPc="268437692" name="deltaText" stackId="7" startPc="268437174"/>
+        <entry endPc="268437692" name="glucoseWidth" stackId="8" startPc="268437174"/>
+        <entry endPc="268437692" name="glucoseHeight" stackId="9" startPc="268437174"/>
+        <entry endPc="268437692" name="deltaHeight" stackId="10" startPc="268437174"/>
+        <entry endPc="268437692" name="deltaWidth" stackId="11" startPc="268437174"/>
+        <entry endPc="268437692" name="glucoseX" stackId="12" startPc="268437174"/>
+        <entry endPc="268437692" name="glucoseY" stackId="13" startPc="268437174"/>
+        <entry endPc="268437692" name="min" stackId="14" startPc="268437174"/>
+        <entry endPc="268437692" name="loopColor" stackId="15" startPc="268437174"/>
+        <entry endPc="268437692" name="loopString" stackId="16" startPc="268437174"/>
+        <entry arg="true" endPc="268437748" name="status" stackId="1" startPc="268437694"/>
+        <entry arg="true" endPc="268437796" name="min" stackId="1" startPc="268437749"/>
+        <entry arg="true" endPc="268437851" name="status" stackId="1" startPc="268437797"/>
+        <entry arg="true" endPc="268437922" name="status" stackId="1" startPc="268437852"/>
+        <entry arg="true" endPc="268437979" name="dc" stackId="1" startPc="268437944"/>
+        <entry endPc="268438129" name="myStats" stackId="1" startPc="268437983"/>
+        <entry endPc="268438129" name="batlevel" stackId="2" startPc="268437983"/>
+        <entry endPc="268438129" name="batString" stackId="3" startPc="268437983"/>
+        <entry endPc="268438129" name="info" stackId="4" startPc="268437983"/>
+        <entry endPc="268438129" name="steps" stackId="5" startPc="268437983"/>
+        <entry endPc="268438129" name="stepsString" stackId="6" startPc="268437983"/>
+        <entry endPc="268438129" name="view" stackId="7" startPc="268437983"/>
+        <entry arg="true" endPc="268438290" name="status" stackId="1" startPc="268438131"/>
+        <entry arg="true" endPc="268438457" name="status" stackId="1" startPc="268438291"/>
+        <entry endPc="268438540" name="info" stackId="1" startPc="268438461"/>
+        <entry endPc="268438540" name="hr" stackId="2" startPc="268438461"/>
+        <entry endPc="268438540" name="hrString" stackId="3" startPc="268438461"/>
+        <entry endPc="268438540" name="view" stackId="4" startPc="268438461"/>
+        <entry arg="true" endPc="268438720" name="status" stackId="1" startPc="268438542"/>
+        <entry endPc="268438868" name="now" stackId="1" startPc="268438724"/>
+        <entry endPc="268438868" name="info" stackId="2" startPc="268438724"/>
+        <entry endPc="268438868" name="dateStr" stackId="3" startPc="268438724"/>
+        <entry endPc="268438868" name="view" stackId="4" startPc="268438724"/>
+        <entry arg="true" endPc="268438993" name="dc" stackId="1" startPc="268438885"/>
+        <entry endPc="268438992" name="status" stackId="2" startPc="268438888"/>
+        <entry endPc="268439222" name="timeFormat" stackId="1" startPc="268438997"/>
+        <entry endPc="268439222" name="clockTime" stackId="2" startPc="268438997"/>
+        <entry endPc="268439222" name="hours" stackId="3" startPc="268438997"/>
+        <entry endPc="268439222" name="suffix" stackId="4" startPc="268438997"/>
+        <entry endPc="268439222" name="timeString" stackId="5" startPc="268438997"/>
+        <entry endPc="268439222" name="view" stackId="6" startPc="268438997"/>
+        <entry arg="true" endPc="268440512" name="dc" stackId="1" startPc="268439296"/>
+        <entry arg="true" endPc="268440618" name="dc" stackId="1" startPc="268440570"/>
+        <entry arg="true" endPc="268440724" name="dc" stackId="1" startPc="268440676"/>
+        <entry arg="true" endPc="268440830" name="dc" stackId="1" startPc="268440782"/>
+        <entry arg="true" endPc="268440913" name="dc" stackId="1" startPc="268440850"/>
+        <entry arg="true" endPc="268441019" name="dc" stackId="1" startPc="268440971"/>
+        <entry arg="true" endPc="268441102" name="dc" stackId="1" startPc="268441039"/>
+    </localVars>
+    <deviceInfo deviceVersion="fcbb2d71ec35a1d3f34d13093a6835d1c69522b8" partNumber="006-B3943-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onPhoneAppMessage"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FortyFiveDown"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="onStop"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Steps"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="phoneCallback"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Eventual" module="globals/Rez/Drawables" symbol="image_arrow2"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="onComplete"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onTemporalEvent"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoubleUp"/>
+        <annotationEntry annotation="initialized" class="HeartRate" module="globals/Rez/Drawables" symbol="image_HR"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="onStart"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="mCallback"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="UpDown"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="arrow2"/>
+        <annotationEntry annotation="background" class="CommsRelay" module="globals" symbol="onError"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="DoubleDown"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+        <annotationEntry annotation="initialized" class="StepsIcon" module="globals/Rez/Drawables" symbol="image_Steps"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SingleDown"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Unknown"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onReceiveMessage"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="onBackgroundData"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="getInitialView"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="FortyFiveUp"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="onSettingsChanged"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="SingleUp"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="Flat"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="PrimaryColorTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="HR"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="ISF" module="globals/Rez/Drawables" symbol="image_UpDown"/>
+        <annotationEntry annotation="background" class="TrioBGServiceDelegate" module="globals" symbol="onTransmitComplete"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="initialize"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="inBackground"/>
+        <annotationEntry annotation="background" class="TrioWatchfaceApp" module="globals" symbol="getServiceDelegate"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="58" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/TrioWatchfaceApp" offset="161" parentId="globals" symbolId="TrioWatchfaceApp" type="class"/>
+        <dataEntry label="globals/CommsRelay" offset="268" parentId="globals" symbolId="CommsRelay" type="class"/>
+        <dataEntry label="globals/TrioBGServiceDelegate" offset="339" parentId="globals" symbolId="TrioBGServiceDelegate" type="class"/>
+        <dataEntry label="globals/Background" offset="1189" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/Rez" offset="1242" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/HeaderDrawable" offset="1295" parentId="globals" symbolId="HeaderDrawable" type="class"/>
+        <dataEntry label="globals/TrioWatchfaceView" offset="1393" parentId="globals" symbolId="TrioWatchfaceView" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1554" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1751" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1786" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Drawables/HeartRate" offset="1893" parentId="Drawables" symbolId="HeartRate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables/StepsIcon" offset="1955" parentId="Drawables" symbolId="StepsIcon" type="class"/>
+        <dataEntry label="globals/Rez/Drawables/Eventual" offset="2017" parentId="Drawables" symbolId="Eventual" type="class"/>
+        <dataEntry label="globals/Rez/Drawables/line2" offset="2079" parentId="Drawables" symbolId="line2" type="class"/>
+        <dataEntry label="globals/Rez/Drawables/ISF" offset="2132" parentId="Drawables" symbolId="ISF" type="class"/>
+        <dataEntry label="globals/Rez/Drawables/line1" offset="2194" parentId="Drawables" symbolId="line1" type="class"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="TrioWatchfaceApp" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435480" name="&lt;init&gt;" parent="CommsRelay" startPc="268435469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="&lt;init&gt;" parent="TrioBGServiceDelegate" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435681" name="onStart" parent="TrioWatchfaceApp" startPc="268435493">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435695" name="onSettingsChanged" parent="TrioWatchfaceApp" startPc="268435682">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435753" name="getServiceDelegate" parent="TrioWatchfaceApp" startPc="268435696">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435785" name="getInitialView" parent="TrioWatchfaceApp" startPc="268435754">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435800" name="initialize" parent="TrioWatchfaceApp" startPc="268435786">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436009" name="onBackgroundData" parent="TrioWatchfaceApp" startPc="268435801">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436050" name="onStop" parent="TrioWatchfaceApp" startPc="268436010">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436068" name="onError" parent="CommsRelay" startPc="268436051">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436086" name="onComplete" parent="CommsRelay" startPc="268436069">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436110" name="initialize" parent="CommsRelay" startPc="268436087">
+            <param id="callback"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436165" name="onReceiveMessage" parent="TrioBGServiceDelegate" startPc="268436111">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436244" name="onPhoneAppMessage" parent="TrioBGServiceDelegate" startPc="268436166">
+            <param id="msg"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436333" name="onTemporalEvent" parent="TrioBGServiceDelegate" startPc="268436245">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436408" name="initialize" parent="TrioBGServiceDelegate" startPc="268436334">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436470" name="onTransmitComplete" parent="TrioBGServiceDelegate" startPc="268436409">
+            <param id="isSuccess"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436491" name="getApp" startPc="268436471">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436503" name="&lt;init&gt;" parent="Background" startPc="268436492">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436523" name="&lt;init&gt;" parent="Rez" startPc="268436504">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436535" name="&lt;init&gt;" parent="HeaderDrawable" startPc="268436524">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436547" name="&lt;init&gt;" parent="TrioWatchfaceView" startPc="268436536">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436585" name="initialize" parent="Background" startPc="268436548">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436627" name="draw" parent="Background" startPc="268436586">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437132" name="getDirection" parent="HeaderDrawable" startPc="268436628">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437170" name="initialize" parent="HeaderDrawable" startPc="268437133">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437693" name="draw" parent="HeaderDrawable" startPc="268437171">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437748" name="getGlucoseText" parent="HeaderDrawable" startPc="268437694">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437796" name="getLoopColor" parent="HeaderDrawable" startPc="268437749">
+            <param id="min"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437851" name="getDeltaText" parent="HeaderDrawable" startPc="268437797">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437922" name="getMinutes" parent="HeaderDrawable" startPc="268437852">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onExitSleep" parent="TrioWatchfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437943" name="onShow" parent="TrioWatchfaceView" startPc="268437923">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437979" name="onLayout" parent="TrioWatchfaceView" startPc="268437944">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438130" name="setSteps" parent="TrioWatchfaceView" startPc="268437980">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438290" name="setEventualBG" parent="TrioWatchfaceView" startPc="268438131">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438457" name="setCOB" parent="TrioWatchfaceView" startPc="268438291">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438541" name="setHeartRate" parent="TrioWatchfaceView" startPc="268438458">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onEnterSleep" parent="TrioWatchfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438720" name="setIOB" parent="TrioWatchfaceView" startPc="268438542">
+            <param id="status"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438869" name="setDate" parent="TrioWatchfaceView" startPc="268438721">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438884" name="initialize" parent="TrioWatchfaceView" startPc="268438870">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="TrioWatchfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438993" name="onUpdate" parent="TrioWatchfaceView" startPc="268438885">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439223" name="setTime" parent="TrioWatchfaceView" startPc="268438994">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439235" name="&lt;init&gt;" parent="HeartRate" startPc="268439224">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439247" name="&lt;init&gt;" parent="StepsIcon" startPc="268439236">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439259" name="&lt;init&gt;" parent="Eventual" startPc="268439248">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439271" name="&lt;init&gt;" parent="line2" startPc="268439260">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439283" name="&lt;init&gt;" parent="ISF" startPc="268439272">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439295" name="&lt;init&gt;" parent="line1" startPc="268439284">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440512" name="WatchFace" parent="Layouts" startPc="268439296">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440569" name="initialize" parent="HeartRate" startPc="268440513">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440618" name="draw" parent="HeartRate" startPc="268440570">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440675" name="initialize" parent="StepsIcon" startPc="268440619">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440724" name="draw" parent="StepsIcon" startPc="268440676">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440781" name="initialize" parent="Eventual" startPc="268440725">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440830" name="draw" parent="Eventual" startPc="268440782">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440849" name="initialize" parent="line2" startPc="268440831">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440913" name="draw" parent="line2" startPc="268440850">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440970" name="initialize" parent="ISF" startPc="268440914">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441019" name="draw" parent="ISF" startPc="268440971">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441038" name="initialize" parent="line1" startPc="268441020">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441102" name="draw" parent="line1" startPc="268441039">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

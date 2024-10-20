@@ -1,0 +1,324 @@
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 9; ]
+import Toybox.Application;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 10; ]
+import Toybox.Lang;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 11; ]
+import Toybox.WatchUi;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 12; ]
+import Toybox.Background;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 13; ]
+import Toybox.Time;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 14; ]
+import Toybox.System;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 15; ]
+import Toybox.Communications;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 18; background = true; ]
+class TrioWatchfaceApp extends Application.AppBase{
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 18; ]
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 18; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 20; @position = 8; ]
+    var inBackground = false;
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 22; ]
+    function initialize() as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_22_26_24_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 23 8 ]
+        %tmp.2 = getv ? :AppBase;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_22_26_24_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 27; ]
+    function onStart(state as Dictionary or Null) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 29 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_8_41_8_if_stmt:
+        %tmp.2 = getv ? :Toybox;
+        %tmp.3 = getv %tmp.2 :System;
+        %tmp.5 = const :ServiceDelegate;
+        %tmp.6 = canhazplz %tmp.3 %tmp.5;
+        bf %tmp.6 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_8_41_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_8_41_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_47_39_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 31 12 ]
+        %tmp.7 = getm $.Toybox.Background;
+        %tmp.8 = getv function %tmp.7 :registerForTemporalEvent;
+        %tmp.11 = getm $.Toybox.Time;
+        %tmp.12 = getv function ? %tmp.11 :Duration;
+        %tmp.13 = 5;
+        %tmp.14 = 60;
+        %tmp.15 = mul %tmp.13 %tmp.14;
+        %tmp.9 = newc %tmp.12 (%tmp.15);
+        invoke %tmp.7 %tmp.8(%tmp.9);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 32 12 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_12_37_12_if_stmt:
+        %tmp.17 = getm $.Toybox.Background;
+        %tmp.19 = const :registerForPhoneAppMessageEvent;
+        %tmp.20 = canhazplz %tmp.17 %tmp.19;
+        bf %tmp.20 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_12_37_12_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_12_37_12_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_65_35_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 33 16 ]
+        %tmp.21 = getm $.Toybox.Background;
+        %tmp.22 = getv function %tmp.21 :registerForPhoneAppMessageEvent;
+        invoke %tmp.21 %tmp.22();
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 34 16 ]
+        %tmp.23 = getm $.Toybox.System;
+        %tmp.24 = getv function %tmp.23 :println;
+        %tmp.25 = "****background is ok****";
+        invoke %tmp.23 %tmp.24(%tmp.25);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_65_35_12_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_12_37_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_12_37_12_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_35_19_37_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 36 16 ]
+        %tmp.26 = getm $.Toybox.System;
+        %tmp.27 = getv function %tmp.26 :println;
+        %tmp.28 = "****registerForPhoneAppMessageEvent is not available****";
+        invoke %tmp.26 %tmp.27(%tmp.28);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_35_19_37_12_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_32_12_37_12_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_47_39_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_8_41_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_8_41_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_39_15_41_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 40 12 ]
+        %tmp.29 = getm $.Toybox.System;
+        %tmp.30 = getv function %tmp.29 :println;
+        %tmp.31 = "****background not available on this device****";
+        invoke %tmp.29 %tmp.30(%tmp.31);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_39_15_41_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_29_8_41_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 44 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_stop" ]
+        %now.1 = local;
+        %tmp.32 = getm $.Toybox.Time;
+        %tmp.33 = getv function %tmp.32 :now;
+        %tmp.34 = invoke %tmp.32 %tmp.33();
+        %tmp.35 = getv function %tmp.34 :value;
+        %tmp.36 = invoke %tmp.34 %tmp.35();
+        %tmp.37 = as %tmp.36 Number;
+        lputv %now.1 %tmp.37;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 47 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_stop" ]
+        %lastLoopDateInterval.2 = local;
+        %tmp.39 = lgetv %now.1;
+        %tmp.40 = 4;
+        %tmp.41 = 60;
+        %tmp.42 = mul %tmp.40 %tmp.41;
+        %tmp.43 = sub %tmp.39 %tmp.42;
+        lputv %lastLoopDateInterval.2 %tmp.43;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 50 8 ]
+        [ "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_start" "_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_stop" ]
+        %sampleData.3 = local;
+        %tmp.44 = newd Dictionary 8;
+        %tmp.45 = "glucose";
+        %tmp.46 = "188";
+        %tmp.47 = dup %tmp.44;
+        %tmp.48 = aputv %tmp.47 %tmp.45 %tmp.46;
+        %tmp.49 = "lastLoopDateInterval";
+        %tmp.51 = lgetv %lastLoopDateInterval.2;
+        %tmp.52 = dup %tmp.48;
+        %tmp.53 = aputv %tmp.52 %tmp.49 %tmp.51;
+        %tmp.54 = "delta";
+        %tmp.55 = "-20";
+        %tmp.56 = dup %tmp.53;
+        %tmp.57 = aputv %tmp.56 %tmp.54 %tmp.55;
+        %tmp.58 = "iob";
+        %tmp.59 = "2.42";
+        %tmp.60 = dup %tmp.57;
+        %tmp.61 = aputv %tmp.60 %tmp.58 %tmp.59;
+        %tmp.62 = "cob";
+        %tmp.63 = "70.2";
+        %tmp.64 = dup %tmp.61;
+        %tmp.65 = aputv %tmp.64 %tmp.62 %tmp.63;
+        %tmp.66 = "isf";
+        %tmp.67 = "124";
+        %tmp.68 = dup %tmp.65;
+        %tmp.69 = aputv %tmp.68 %tmp.66 %tmp.67;
+        %tmp.70 = "eventualBGRaw";
+        %tmp.71 = "166";
+        %tmp.72 = dup %tmp.69;
+        %tmp.73 = aputv %tmp.72 %tmp.70 %tmp.71;
+        %tmp.74 = "trendRaw";
+        %tmp.75 = "FortyFiveDown";
+        %tmp.76 = dup %tmp.73;
+        %tmp.77 = aputv %tmp.76 %tmp.74 %tmp.75;
+        lputv %sampleData.3 %tmp.77;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_27_51_63_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 65; ]
+    function onBackgroundData(data) {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_65_36_81_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 66 7 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_stmt:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_11_66_45_begin:
+        %tmp.2 = lgetv %data;
+        %tmp.4 = getv ? :Number;
+        %tmp.5 = isa %tmp.2 %tmp.4;
+        bt %tmp.5 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_true;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_37_66_45_false:
+        %tmp.7 = lgetv %data;
+        %tmp.8 = as %tmp.7 { (!Number) };
+        %tmp.9 = null;
+        %tmp.10 = eq %tmp.8 %tmp.9;
+        push %tmp.10;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_37_66_45_end:
+        %tmp.11 = phi [%tmp.5 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_11_66_45_begin] [%tmp.10 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_37_66_45_false] [%tmp.11 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_37_66_45_end];
+        bf %tmp.11 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_51_68_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 67 17 ]
+        %tmp.12 = getm $.Toybox.System;
+        %tmp.13 = getv function %tmp.12 :println;
+        %tmp.14 = "Not a dictionary";
+        invoke %tmp.12 %tmp.13(%tmp.14);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_51_68_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_68_15_78_12_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 69 19 ]
+        %tmp.15 = getm $.Toybox.System;
+        %tmp.16 = getv function %tmp.15 :println;
+        %tmp.17 = "try to update the status";
+        invoke %tmp.15 %tmp.16(%tmp.17);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 70 19 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_19_77_20_if_stmt:
+        %tmp.19 = getm $.Toybox.Background;
+        %tmp.21 = const :registerForPhoneAppMessageEvent;
+        %tmp.22 = canhazplz %tmp.19 %tmp.21;
+        bf %tmp.22 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_19_77_20_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_19_77_20_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_72_73_20_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 71 24 ]
+        %tmp.23 = getm $.Toybox.System;
+        %tmp.24 = getv function %tmp.23 :println;
+        %tmp.25 = "updated with registerForPhoneAppMessageEvent";
+        invoke %tmp.23 %tmp.24(%tmp.25);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_72_73_20_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_19_77_20_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_19_77_20_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_73_27_77_20_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 74 24 ]
+        %tmp.26 = getm $.Toybox.System;
+        %tmp.27 = getv function %tmp.26 :println;
+        %tmp.28 = "update status";
+        invoke %tmp.26 %tmp.27(%tmp.28);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 75 24 ]
+        %tmp.29 = getm $.Toybox.Application;
+        %tmp.30 = getv %tmp.29 :Storage;
+        %tmp.31 = getv function %tmp.30 :setValue;
+        %tmp.32 = "status";
+        %tmp.34 = lgetv %data;
+        %tmp.35 = as %tmp.34 { (!Number) && (!Null) };
+        %tmp.36 = as %tmp.35 Dictionary;
+        invoke %tmp.30 %tmp.31(%tmp.32, %tmp.36);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 76 24 ]
+        %tmp.37 = getm $.Toybox.Background;
+        %tmp.38 = getv function %tmp.37 :registerForTemporalEvent;
+        %tmp.41 = getm $.Toybox.Time;
+        %tmp.42 = getv function ? %tmp.41 :Duration;
+        %tmp.43 = 5;
+        %tmp.44 = 60;
+        %tmp.45 = mul %tmp.43 %tmp.44;
+        %tmp.39 = newc %tmp.42 (%tmp.45);
+        invoke %tmp.37 %tmp.38(%tmp.39);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_73_27_77_20_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_70_19_77_20_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_68_15_78_12_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_66_7_78_12_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 79 9 ]
+        %tmp.46 = getm $.Toybox.System;
+        %tmp.47 = getv function %tmp.46 :println;
+        %tmp.48 = "requestUpdate";
+        invoke %tmp.46 %tmp.47(%tmp.48);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 80 9 ]
+        %tmp.49 = getm $.Toybox.WatchUi;
+        %tmp.50 = getv function %tmp.49 :requestUpdate;
+        invoke %tmp.49 %tmp.50();
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_65_36_81_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 84; ]
+    function onStop(state as Dictionary or Null) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_84_50_89_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 85 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_8_88_5_if_stmt:
+        %tmp.2 = getv ? :inBackground;
+        %tmp.3 = not %tmp.2;
+        bf %tmp.3 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_8_88_5_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_8_88_5_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_26_88_5_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 86 12 ]
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.6 = "stop temp event";
+        invoke %tmp.4 %tmp.5(%tmp.6);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 87 6 ]
+        %tmp.7 = getm $.Toybox.Background;
+        %tmp.8 = getv function %tmp.7 :deleteTemporalEvent;
+        invoke %tmp.7 %tmp.8();
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_26_88_5_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_8_88_5_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_85_8_88_5_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_84_50_89_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 92; ]
+    function getInitialView() as [Views] or [Views, InputDelegates] {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_92_68_94_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 93 8 ]
+        %tmp.1 = newa 1 [Views];
+        %tmp.5 = getv ? :TrioWatchfaceView;
+        %tmp.2 = newc %tmp.5 ();
+        %tmp.6 = dup %tmp.1;
+        %tmp.7 = aputv %tmp.6 0 %tmp.2;
+        ret %tmp.7;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_92_68_94_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 97; ]
+    function onSettingsChanged() as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_97_41_99_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 98 8 ]
+        %tmp.1 = getm $.Toybox.WatchUi;
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_97_41_99_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 101; ]
+    function getServiceDelegate() {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_101_34_105_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 102 8 ]
+        %tmp.1 = true;
+        putv self :inBackground %tmp.1;
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 103 8 ]
+        %tmp.2 = getm $.Toybox.System;
+        %tmp.3 = getv function %tmp.2 :println;
+        %tmp.4 = "start background";
+        invoke %tmp.2 %tmp.3(%tmp.4);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 104 8 ]
+        %tmp.5 = newa 1;
+        %tmp.9 = getv ? :TrioBGServiceDelegate;
+        %tmp.6 = newc %tmp.9 ();
+        %tmp.10 = dup %tmp.5;
+        %tmp.11 = aputv %tmp.10 0 %tmp.6;
+        ret %tmp.11;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_101_34_105_4_stop:
+    }
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 108; ]
+function getApp() as TrioWatchfaceApp {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_108_38_110_0_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc" 109 4 ]
+    %tmp.1 = getm $.Toybox.Application;
+    %tmp.2 = getv function %tmp.1 :getApp;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = as %tmp.3 TrioWatchfaceApp;
+    ret %tmp.4;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioWatchfaceApp_mc_108_38_110_0_stop:
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioWatchfaceApp.mc"; @line = 9; ]
+<init> {
+}

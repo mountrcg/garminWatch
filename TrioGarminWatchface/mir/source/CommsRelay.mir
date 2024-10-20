@@ -1,0 +1,52 @@
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 9; ]
+using Toybox.Communications as :Comms;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 10; ]
+import Toybox.Background;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 13; background = true; ]
+class CommsRelay extends Comms.ConnectionListener{
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 13; ]
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 13; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 14; @position = 15; ]
+    protected
+    var mCallback;
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 16; ]
+    function initialize(callback) as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_CommsRelay_mc_16_34_19_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" 17 8 ]
+        %tmp.2 = getv ? :ConnectionListener;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" 18 8 ]
+        %tmp.5 = lgetv %callback;
+        putv self :mCallback %tmp.5;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_CommsRelay_mc_16_34_19_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 21; ]
+    function onComplete() {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_CommsRelay_mc_21_26_23_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" 22 8 ]
+        %tmp.2 = getv ? :mCallback;
+        %tmp.3 = getv function %tmp.2 :invoke;
+        %tmp.4 = true;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_CommsRelay_mc_21_26_23_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 25; ]
+    function onError() {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_CommsRelay_mc_25_23_27_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc" 26 8 ]
+        %tmp.2 = getv ? :mCallback;
+        %tmp.3 = getv function %tmp.2 :invoke;
+        %tmp.4 = false;
+        invoke %tmp.2 %tmp.3(%tmp.4);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_CommsRelay_mc_25_23_27_4_stop:
+    }
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/CommsRelay.mc"; @line = 9; ]
+<init> {
+}

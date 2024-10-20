@@ -1,0 +1,171 @@
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 9; ]
+import Toybox.Application;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 10; ]
+import Toybox.Lang;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 11; ]
+import Toybox.WatchUi;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 12; ]
+import Toybox.Background;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 13; ]
+import Toybox.System;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 14; ]
+import Toybox.Communications;
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 17; background = true; ]
+class TrioBGServiceDelegate extends System.ServiceDelegate{
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 17; ]
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 17; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 18; @position = 8; ]
+    var phoneCallback;
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 20; ]
+    function initialize() as Void {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_20_25_30_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 21 8 ]
+        %tmp.2 = getv ? :ServiceDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 24 9 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_24_9_29_8_if_stmt:
+        %tmp.5 = getm $.Toybox.Background;
+        %tmp.7 = const :registerForPhoneAppMessageEvent;
+        %tmp.8 = canhazplz %tmp.5 %tmp.7;
+        bf %tmp.8 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_24_9_29_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_24_9_29_8_if_true:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_24_9_29_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_24_9_29_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_26_15_29_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 27 16 ]
+        %tmp.9 = getm $.Toybox.Communications;
+        %tmp.10 = getv function %tmp.9 :registerForPhoneAppMessages;
+        %tmp.11 = self;
+        %tmp.12 = getv function %tmp.11 :method;
+        %tmp.14 = const :onReceiveMessage;
+        %tmp.15 = invoke %tmp.11 %tmp.12(%tmp.14);
+        %tmp.16 = as %tmp.15 Communications.PhoneMessageCallback;
+        invoke %tmp.9 %tmp.10(%tmp.16);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 28 16 ]
+        %tmp.17 = getm $.Toybox.System;
+        %tmp.18 = getv function %tmp.17 :println;
+        %tmp.19 = "****add the registerForPhoneAppMessages done****";
+        invoke %tmp.17 %tmp.18(%tmp.19);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_26_15_29_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_24_9_29_8_if_end:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_20_25_30_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 32; ]
+    function onReceiveMessage(msg) {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_33_1_37_1_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 34 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "a message from onReceiveMessage! ";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 35 8 ]
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.7 = lgetv %msg;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 36 8 ]
+        %tmp.8 = getm $.Toybox.Background;
+        %tmp.9 = getv function %tmp.8 :exit;
+        %tmp.10 = lgetv %msg;
+        %tmp.11 = getv %tmp.10 :data;
+        invoke %tmp.8 %tmp.9(%tmp.11);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_33_1_37_1_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 39; ]
+    function onTemporalEvent() {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_39_31_43_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 40 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "Temp event";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 41 8 ]
+        %tmp.4 = getm $.Toybox.Communications;
+        %tmp.5 = getv function %tmp.4 :transmit;
+        %tmp.6 = "status";
+        %tmp.7 = null;
+        %tmp.11 = getv ? :CommsRelay;
+        %tmp.12 = self;
+        %tmp.13 = getv function %tmp.12 :method;
+        %tmp.15 = const :onTransmitComplete;
+        %tmp.16 = invoke %tmp.12 %tmp.13(%tmp.15);
+        %tmp.8 = newc %tmp.11 (%tmp.16);
+        invoke %tmp.4 %tmp.5(%tmp.6, %tmp.7, %tmp.8);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 42 8 ]
+        %tmp.17 = getm $.Toybox.Background;
+        %tmp.18 = getv function %tmp.17 :exit;
+        %tmp.19 = null;
+        invoke %tmp.17 %tmp.18(%tmp.19);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_39_31_43_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 45; ]
+    function onPhoneAppMessage(msg) {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_45_36_50_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 46 8 ]
+        %tmp.1 = getm $.Toybox.System;
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "****onPhoneAppMessage*****";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 47 8 ]
+        %tmp.4 = getm $.Toybox.System;
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.7 = lgetv %msg;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 48 8 ]
+        %tmp.8 = getm $.Toybox.Application;
+        %tmp.9 = getv %tmp.8 :Storage;
+        %tmp.10 = getv function %tmp.9 :setValue;
+        %tmp.11 = "status";
+        %tmp.12 = lgetv %msg;
+        %tmp.13 = getv %tmp.12 :data;
+        %tmp.14 = as %tmp.13 Dictionary;
+        invoke %tmp.9 %tmp.10(%tmp.11, %tmp.14);
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 49 8 ]
+        %tmp.15 = getm $.Toybox.Background;
+        %tmp.16 = getv function %tmp.15 :exit;
+        %tmp.17 = null;
+        invoke %tmp.15 %tmp.16(%tmp.17);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_45_36_50_4_stop:
+    }
+    [ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 52; ]
+    function onTransmitComplete(isSuccess) {
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_52_43_59_4_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 53 8 ]
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_8_57_8_if_stmt:
+        %tmp.2 = lgetv %isSuccess;
+        bf %tmp.2 @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_8_57_8_if_false;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_8_57_8_if_true:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_23_55_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 54 12 ]
+        %tmp.3 = getm $.Toybox.System;
+        %tmp.4 = getv function %tmp.3 :println;
+        %tmp.5 = "Listener onComplete";
+        invoke %tmp.3 %tmp.4(%tmp.5);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_23_55_8_stop:
+        goto @_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_8_57_8_if_end;
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_8_57_8_if_false:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_55_15_57_8_start:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 56 12 ]
+        %tmp.6 = getm $.Toybox.System;
+        %tmp.7 = getv function %tmp.6 :println;
+        %tmp.8 = "Listener onError";
+        invoke %tmp.6 %tmp.7(%tmp.8);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_55_15_57_8_stop:
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_53_8_57_8_if_end:
+[ "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc" 58 8 ]
+        %tmp.9 = getm $.Toybox.Background;
+        %tmp.10 = getv function %tmp.9 :exit;
+        %tmp.12 = lgetv %isSuccess;
+        invoke %tmp.9 %tmp.10(%tmp.12);
+_Users_RCG_Projects_garminWatchiAPS_TrioGarminWatchface_source_TrioBGServiceDelegate_mc_52_43_59_4_stop:
+    }
+}
+[ @file = "/Users/RCG/Projects/garminWatchiAPS/TrioGarminWatchface/source/TrioBGServiceDelegate.mc"; @line = 9; ]
+<init> {
+}
