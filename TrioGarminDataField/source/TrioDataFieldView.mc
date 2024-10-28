@@ -1,9 +1,9 @@
 //**********************************************************************
-// DESCRIPTION : DataField for iAPS 
-// AUTHORS : 
-//          Created by ivalkou - https://github.com/ivalkou 
+// DESCRIPTION : DataField for Trio
+// AUTHORS :
+//          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
-// COPYRIGHT : (c) 2023 ivalkou / Lagarde 
+// COPYRIGHT : (c) 2023 ivalkou / Lagarde
 //
 
 import Toybox.Activity;
@@ -12,60 +12,10 @@ import Toybox.Lang;
 import Toybox.WatchUi;
 
 
-class iAPSDataFieldView extends WatchUi.DataField {
+class TrioDataFieldView extends WatchUi.DataField {
 
     function initialize() {
         DataField.initialize();
-
-        // Write values in Fit-File, prepare fields
-        bgField = DataField.createField(
-            "Bloodglucose",
-            0,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"G" }
-        );
-        basalField = DataField.createField(
-            "Basal",
-            1,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"%" }
-        );
-        iobField = DataField.createField(
-            "InsulinOnBoard",
-            2,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"U" }
-        );
-        cobField = DataField.createField(
-            "CarbonBoard",
-            3,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"g" }
-        );
-        carbsconsumedField = DataField.createField(
-            "CarbsConsumed",
-            4,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"g" }
-        );
-        iobaverageField = DataField.createField(
-            "IOBAverage",
-            5,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"U" }
-        );
-        bgstartField = DataField.createField(
-            "BGStart",
-            6,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"G" }
-        );
-        bgfinishField = DataField.createField(
-            "BGFinish",
-            7,
-            Fit.DATA_TYPE_FLOAT,
-            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"G" }
-        );
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -100,13 +50,13 @@ class iAPSDataFieldView extends WatchUi.DataField {
             valueView.locY = valueView.locY - 10;
             var valueViewTime = View.findDrawableById("valueTime");
             valueViewTime.locX = valueViewTime.locX  + 10 ;
-            valueViewTime.locY = valueViewTime.locY + 20; 
-            var valueViewDelta = View.findDrawableById("valueDelta"); 
-            valueViewDelta.locX = valueViewDelta.locX - 40;   
-            valueViewDelta.locY = valueViewDelta.locY + 20;   
-            var valueViewArrow = View.findDrawableById("arrow"); 
-            valueViewArrow.locX = valueView.locX + 30 ;  
-            valueViewArrow.locY = valueViewArrow.locY - 10 ;   
+            valueViewTime.locY = valueViewTime.locY + 20;
+            var valueViewDelta = View.findDrawableById("valueDelta");
+            valueViewDelta.locX = valueViewDelta.locX - 40;
+            valueViewDelta.locY = valueViewDelta.locY + 20;
+            var valueViewArrow = View.findDrawableById("arrow");
+            valueViewArrow.locX = valueView.locX + 30 ;
+            valueViewArrow.locY = valueViewArrow.locY - 10 ;
         }
 
         (View.findDrawableById("label") as Text).setText(Rez.Strings.label);
@@ -117,35 +67,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
     // Note that compute() and onUpdate() are asynchronous, and there is no
     // guarantee that compute() will be called before onUpdate().
     function compute(info) {
-        // Write values in fit-file
-        if( bgtofit == 1 ) {
-            if( bgforField != null && bgforField instanceof Toybox.Lang.Float) {
-                bgField.setData(bgforField);
-                if( firstbg == false ) {
-                    bgstartField.setData(bgforField);
-                    firstbg = true;
-                }
-                bgfinishField.setData(bgforField);
-            }
-            if( iobforField != null && iobforField instanceof Toybox.Lang.Float) {
-                iobField.setData(iobforField);
-                iobaverageforField = iobaverageforField + iobforField;
-                var iobaverageErgebnis = iobaverageforField / iobAnzahl;
-                iobaverageField.setData(iobaverageErgebnis);
-                iobAnzahl = iobAnzahl + 1;
-            }
-            if( cobforField != null && cobforField instanceof Toybox.Lang.Float) {
-                cobField.setData(cobforField);
-                if( cobforField > cobalt ) {
-                    carbtotalforField = carbtotalforField + cobforField - cobalt;
-                }
-                var carbsconsumed = carbtotalforField - cobforField;
-                carbsconsumedField.setData(carbsconsumed);
-                cobalt = cobforField;
-            }
-
         }
-    }
 
     // Display the value you computed here. This will be called
     // once a second when the data field is visible.
@@ -168,27 +90,27 @@ class iAPSDataFieldView extends WatchUi.DataField {
             var min = getMinutes(status);
             loopColor = getLoopColor(min);
             loopString = (min < 0 ? "(--)" : "(" + min.format("%d")) + " mn)" as String;
-            deltaString = getDeltaText(status) as String; 
+            deltaString = getDeltaText(status) as String;
         }
         // Set the background color
         //View.findDrawableById("Background").setColor(loopColor);
         (View.findDrawableById("Background") as Text).setColor(loopColor);    //getBackgroundColor());
-      
+
         // Set the foreground color and value
         var value = View.findDrawableById("value") as Text;
         var valueTime = View.findDrawableById("valueTime") as Text;
         var valueDelta = View.findDrawableById("valueDelta") as Text;
-       
+
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
             value.setColor(Graphics.COLOR_WHITE);
             valueTime.setColor(Graphics.COLOR_WHITE);
-            valueDelta.setColor(Graphics.COLOR_WHITE);  
-           
+            valueDelta.setColor(Graphics.COLOR_WHITE);
+
         } else {
             value.setColor(Graphics.COLOR_BLACK);
             valueTime.setColor(Graphics.COLOR_BLACK);
             valueDelta.setColor(Graphics.COLOR_BLACK);
-            
+
         }
 
 
@@ -196,14 +118,14 @@ class iAPSDataFieldView extends WatchUi.DataField {
         valueDelta.setText(deltaString);
         valueTime.setText(loopString);
 
-        var arrowView = View.findDrawableById("arrow") as Bitmap;   
+        var arrowView = View.findDrawableById("arrow") as Bitmap;
         if (getBackgroundColor() == Graphics.COLOR_BLACK) {
-             arrowView.setBitmap(getDirection(status));   
-        }  
+             arrowView.setBitmap(getDirection(status));
+        }
         else {
             arrowView.setBitmap(getDirectionBlack(status));
         }
-        
+
 
         // Call parent's onUpdate(dc) to redraw the layout
         View.onUpdate(dc);
@@ -222,10 +144,10 @@ class iAPSDataFieldView extends WatchUi.DataField {
         }
 
         if (lastLoopDate instanceof Number) {
-            
+
 
             var now = Time.now().value() as Number;
-            
+
             var min = (now - lastLoopDate) / 60;
             return min;
         } else {
@@ -243,7 +165,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
         } else {
             return Graphics.COLOR_RED as Number;
         }
-    } 
+    }
 
     function getDeltaText(status as Dictionary) as String {
         // var status = Application.Storage.getValue("status") as Dictionary;
@@ -296,7 +218,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
         } else {
             return bitmap;
         }
-        
+
     }
 
     function getDirection(status) as BitmapType {
@@ -338,7 +260,7 @@ class iAPSDataFieldView extends WatchUi.DataField {
         } else {
             return bitmap;
         }
-        
+
     }
 
 
