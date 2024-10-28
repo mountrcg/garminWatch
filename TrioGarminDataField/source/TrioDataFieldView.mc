@@ -131,28 +131,27 @@ class TrioDataFieldView extends WatchUi.DataField {
         View.onUpdate(dc);
     }
 
-    function getMinutes(status as Dictionary) as Number {
-        //var status = Application.Storage.getValue("status") as Dictionary;
-        //System.print(Time.now().value());
-        if (status == null) {
-            return -1;
-        }
-        var lastLoopDate = status["lastLoopDateInterval"] as Number;
+    function getMinutes(status) as Number {
 
-        if (lastLoopDate == null) {
-            return -1;
-        }
-
-        if (lastLoopDate instanceof Number) {
-
+        if (status instanceof Dictionary)  {
+            var lastLoopDate = status["lastLoopDateInterval"] as Number;
+            if (lastLoopDate == null) {
+                return -1;
+            }
 
             var now = Time.now().value() as Number;
 
-            var min = (now - lastLoopDate) / 60;
+            // Calculate seconds difference
+            var deltaSeconds = now - lastLoopDate;
+
+            // Round up to the nearest minute if delta is positive
+            var min = (deltaSeconds > 0) ? ((deltaSeconds + 59) / 60) : 0;
+
             return min;
         } else {
             return -1;
         }
+
     }
 
     function getLoopColor(min as Number) as Number {
