@@ -152,7 +152,11 @@ class HeaderDrawable extends WatchUi.Drawable {
 
             var now = Time.now().value() as Number;
 
-            var min = (now - lastLoopDate) / 60;
+            // Calculate seconds difference
+            var deltaSeconds = now - lastLoopDate;
+
+            // Round up to the nearest minute if delta is positive
+            var min = (deltaSeconds > 0) ? ((deltaSeconds + 59) / 60) : 0;
 
             return min;
         } else {
