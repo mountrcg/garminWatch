@@ -15,7 +15,57 @@ import Toybox.WatchUi;
 class iAPSDataFieldView extends WatchUi.DataField {
 
     function initialize() {
-        DataField.initialize();   
+        DataField.initialize();
+
+        // Write values in Fit-File, prepare fields
+        bgField = DataField.createField(
+            "Bloodglucose",
+            0,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"G" }
+        );
+        basalField = DataField.createField(
+            "Basal",
+            1,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"%" }
+        );
+        iobField = DataField.createField(
+            "InsulinOnBoard",
+            2,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"U" }
+        );
+        cobField = DataField.createField(
+            "CarbonBoard",
+            3,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_RECORD, :units=>"g" }
+        );
+        carbsconsumedField = DataField.createField(
+            "CarbsConsumed",
+            4,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"g" }
+        );
+        iobaverageField = DataField.createField(
+            "IOBAverage",
+            5,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"U" }
+        );
+        bgstartField = DataField.createField(
+            "BGStart",
+            6,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"G" }
+        );
+        bgfinishField = DataField.createField(
+            "BGFinish",
+            7,
+            Fit.DATA_TYPE_FLOAT,
+            {:mesgType => Fit.MESG_TYPE_SESSION, :units=>"G" }
+        );
     }
 
     // Set your layout here. Anytime the size of obscurity of
@@ -66,9 +116,35 @@ class iAPSDataFieldView extends WatchUi.DataField {
     // Calculate a value and save it locally in this method.
     // Note that compute() and onUpdate() are asynchronous, and there is no
     // guarantee that compute() will be called before onUpdate().
-    function compute(info as Activity.Info) as Void {
-        // See Activity.Info in the documentation for available information.
-        
+    function compute(info) {
+        // Write values in fit-file
+        if( bgtofit == 1 ) {
+            if( bgforField != null && bgforField instanceof Toybox.Lang.Float) {
+                bgField.setData(bgforField);
+                if( firstbg == false ) {
+                    bgstartField.setData(bgforField);
+                    firstbg = true;
+                }
+                bgfinishField.setData(bgforField);
+            }
+            if( iobforField != null && iobforField instanceof Toybox.Lang.Float) {
+                iobField.setData(iobforField);
+                iobaverageforField = iobaverageforField + iobforField;
+                var iobaverageErgebnis = iobaverageforField / iobAnzahl;
+                iobaverageField.setData(iobaverageErgebnis);
+                iobAnzahl = iobAnzahl + 1;
+            }
+            if( cobforField != null && cobforField instanceof Toybox.Lang.Float) {
+                cobField.setData(cobforField);
+                if( cobforField > cobalt ) {
+                    carbtotalforField = carbtotalforField + cobforField - cobalt;
+                }
+                var carbsconsumed = carbtotalforField - cobforField;
+                carbsconsumedField.setData(carbsconsumed);
+                cobalt = cobforField;
+            }
+
+        }
     }
 
     // Display the value you computed here. This will be called

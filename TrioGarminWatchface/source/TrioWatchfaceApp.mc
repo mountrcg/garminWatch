@@ -1,5 +1,5 @@
 //**********************************************************************
-// DESCRIPTION : Watch Faces for iAPS
+// DESCRIPTION : Watch Faces for Trio
 // AUTHORS :
 //          Created by ivalkou - https://github.com/ivalkou
 //          Modify by Pierre Lagarde - https://github.com/avouspierre
@@ -15,7 +15,7 @@ import Toybox.System;
 import Toybox.Communications;
 
 (:background)
-class iAPSWatchfaceApp extends Application.AppBase {
+class TrioWatchfaceApp extends Application.AppBase {
 
     var inBackground=false;
 
@@ -40,6 +40,26 @@ class iAPSWatchfaceApp extends Application.AppBase {
             System.println("****background not available on this device****");
         }
 
+        // Get the current Unix time
+        var now = Time.now().value() as Number;
+
+        // Subtract x minutes (x * 60 seconds) to get the timestamp for x minutes ago
+        var lastLoopDateInterval = now - (4 * 60);
+
+        // Simulate data for testing in the simulator
+        var sampleData = {
+            "glucose" => "188",
+            "lastLoopDateInterval" => lastLoopDateInterval,
+            "delta" => "-20",
+            "iob" => "2.42",
+            "cob" => "70.2",
+            "isf" => "124",
+            "eventualBGRaw" => "166",
+            "trendRaw" => "FortyFiveDown"
+        } as Dictionary;
+
+        // Store the sample data
+        // Application.Storage.setValue("status", sampleData);
     }
 
     function onBackgroundData(data) {
@@ -70,7 +90,7 @@ class iAPSWatchfaceApp extends Application.AppBase {
 
     // Return the initial view of your application here
     function getInitialView() as [Views] or [Views, InputDelegates] {
-        return [ new iAPSWatchfaceView() ] as [Views];
+        return [ new TrioWatchfaceView() ] as [Views];
     }
 
     // New app settings have been received so trigger a UI update
@@ -81,10 +101,10 @@ class iAPSWatchfaceApp extends Application.AppBase {
     function getServiceDelegate() {
         inBackground=true;
         System.println("start background");
-        return [new iAPSBGServiceDelegate()];
+        return [new TrioBGServiceDelegate()];
     }
 }
 
-function getApp() as iAPSWatchfaceApp {
-    return Application.getApp() as iAPSWatchfaceApp;
+function getApp() as TrioWatchfaceApp {
+    return Application.getApp() as TrioWatchfaceApp;
 }

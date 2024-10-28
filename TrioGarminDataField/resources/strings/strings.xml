@@ -1,0 +1,23 @@
+<strings>
+    <string id="AppName">TrioDataField</string>
+    <string id="label">BG</string>
+    <string id="bg_graph_label">Blood Glucose</string>
+    <string id="bg_units"> </string>
+    <string id="basal_label">Basal</string>
+    <string id="basal_graph_label">Basal Rate</string>
+    <string id="basal_units">%</string>
+    <string id="iob_label">IOB</string>
+    <string id="iob_graph_label">Insulin on Board</string>
+    <string id="iob_units">U</string>
+    <string id="cob_label">COB</string>
+    <string id="cob_graph_label">Carbs on Board</string>
+    <string id="cob_units">g</string>
+    <string id="carbsconsumed_label">Carbs consumed</string>
+    <string id="carbsconsumed_units">g</string>
+    <string id="iobaverage_label">IOB Average</string>
+    <string id="iobaverage_units">U</string>
+    <string id="bgstart_label">BG Start</string>
+    <string id="bgstart_units"> </string>
+    <string id="bgfinish_label">BG Finish</string>
+    <string id="bgfinish_units"> </string>
+</strings>
