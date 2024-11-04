@@ -58,7 +58,7 @@ class TrioWatchfaceApp extends Application.AppBase {
             "trendRaw" => "FortyFiveDown"
         } as Dictionary;
 
-        // Store the sample data
+        // Store the sample data , uncomment line below for testing in IQ sim
         // Application.Storage.setValue("status", sampleData);
     }
 
