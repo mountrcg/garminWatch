@@ -13,8 +13,9 @@
 
     <!-- Center -->
     <label id="IOBLabel" text="10.5U" x="8%" y="50%" font="Gfx.FONT_MEDIUM" color="Graphics.COLOR_BLUE" justification="Graphics.TEXT_JUSTIFY_LEFT|Gfx.TEXT_JUSTIFY_VCENTER" />
-    <label id="COBLabel" text="120g" x="45%" y="50%" font="Gfx.FONT_MEDIUM" color="Graphics.COLOR_GREEN" justification="Graphics.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER" />
-    <drawable id="ISF" />
+    <label id="COBLabel" text="120g" x="50%" y="50%" font="Gfx.FONT_MEDIUM" color="Graphics.COLOR_YELLOW" justification="Graphics.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER" />
+<!--     <label id="COBLabel" text="120g" x="45%" y="50%" font="Gfx.FONT_MEDIUM" color="Graphics.COLOR_GREEN" justification="Graphics.TEXT_JUSTIFY_CENTER|Gfx.TEXT_JUSTIFY_VCENTER" />
+    <drawable id="ISF" /> -->
     <drawable id="Eventual" />
     <label id="EventualBGLabel" text="5.5" x="76%" y="50%" font="Gfx.FONT_MEDIUM" color="Graphics.COLOR_WHITE" justification="Graphics.TEXT_JUSTIFY_LEFT|Gfx.TEXT_JUSTIFY_VCENTER" />
 
