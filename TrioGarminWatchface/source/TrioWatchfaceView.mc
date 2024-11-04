@@ -56,9 +56,11 @@ class TrioWatchfaceView extends WatchUi.WatchFace {
         var hours = clockTime.hour;
         var suffix = "";
         if (!System.getDeviceSettings().is24Hour) {
-            if (hours > 12) {
-                hours = hours - 12;
+            if (hours >= 12) {
                 suffix = " PM";
+                if (hours > 12) {
+                    hours = hours - 12;
+                    }
             } else {
                 suffix = " AM";
             }
