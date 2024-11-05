@@ -22,7 +22,7 @@ You don't find your device/watch in release... ask at [Trio Discord in the chann
 
 # How to compile and adapt the code 
 
-You need to install Monkey C and compile with the use of Visual Studio Code. 
+You need to install Monkey C, the Garmin SDK and compile (Build for device) with the use of Visual Studio Code (CMD-Shift-P: Monkey ...). 
 All information are available here : https://developer.garmin.com/connect-iq/overview/ 
 
 
